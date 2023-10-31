@@ -1,7 +1,7 @@
 class DndService 
 
   def conn
-    Faraday.new(url: "https://www.dnd5eapi.co/api/")
+    Faraday.new(url: "https://www.dnd5eapi.co")
   end
 
   def get_url(url)
@@ -10,14 +10,14 @@ class DndService
   end
 
   def monsters
-    get_url("monsters")
+    get_url("/api/monsters")
   end
   
   def spells
-    get_url("spells")
+    get_url("/api/spells")
   end
   
   def players
-    get_url("classes")
+    get_url("/api/classes")
   end
 end
