@@ -12,4 +12,12 @@ class DndService
   def monsters
     get_url("monsters")
   end
+  
+  def spells
+    get_url("spells")
+  end
+  
+  def players
+    get_url("classes")
+  end
 end
