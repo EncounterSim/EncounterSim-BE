@@ -11,6 +11,7 @@ RSpec.describe SimBarbarian do
   end
   describe "Attributes" do
     it "can accept and read its attributes" do
+      expect(@gronk.level).to eq(3)
       expect(@gronk.name).to eq("Gronk")
       expect(@gronk.hit_points).to eq(12)
       expect(@gronk.armor_class).to eq(14)

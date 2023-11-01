@@ -1,5 +1,6 @@
 def load_test_data
   data = {
+    level: 3,
     name: "Gronk",
     hit_points: 12,
     armor_class: 14,
