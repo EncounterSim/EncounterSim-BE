@@ -1,5 +1,7 @@
 class SimMonster
-  attr_reader :attacks
+  attr_reader :name, :armor_class, :hit_points, :damage_dice,
+              :strength, :dexterity, :constitution, :intelligence,
+              :wisdom, :charisma, :attacks
   
   def initialize(data)
     @name = data[:name]    

@@ -44,6 +44,17 @@ RSpec.describe DndFacade, test: :model do
     it "#monster", :vcr do
       monster = DndFacade.new.monster("aboleth")
       expect(monster).to be_a SimMonster
+      expect(monster.name).to be_a String
+      expect(monster.armor_class).to be_a Integer
+      expect(monster.hit_points).to be_a Integer
+      expect(monster.damage_dice).to be_a String
+      expect(monster.strength).to be_a Integer
+      expect(monster.dexterity).to be_a Integer
+      expect(monster.constitution).to be_a Integer
+      expect(monster.intelligence).to be_a Integer
+      expect(monster.wisdom).to be_a Integer
+      expect(monster.charisma).to be_a Integer
+      expect(monster.attacks).to be_an Array
     end
   end
 end
