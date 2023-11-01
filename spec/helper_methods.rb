@@ -12,5 +12,5 @@ def load_test_data
     wisdom: 8,
     charisma: 8
   }
-  @gronk = SimBarbarian.new(data)
+  @gronk = PlayerCharacter.new(data)
 end

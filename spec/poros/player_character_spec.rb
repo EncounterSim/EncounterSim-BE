@@ -1,12 +1,12 @@
 require 'rails_helper'
 
-RSpec.describe SimBarbarian do
+RSpec.describe PlayerCharacter do
   before :each do 
     load_test_data
   end
   describe "It exists" do
     it "Is a SimBarbarian" do
-      expect(@gronk).to be_a SimBarbarian
+      expect(@gronk).to be_a PlayerCharacter
     end
   end
   describe "Attributes" do
