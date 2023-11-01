@@ -20,4 +20,8 @@ class DndService
   def players
     get_url("/api/classes")
   end
+
+  def monster(index)
+    get_url("/api/monsters/#{index}")
+  end
 end
