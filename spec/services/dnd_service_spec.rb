@@ -31,5 +31,15 @@ RSpec.describe DndService do
       expect(results[:results][0][:name]).to be_a String
       expect(results[:results][0][:url]).to be_a String
     end
+
+    it "#monster", :vcr do
+      results = DndService.new.monster("aboleth")
+      expect(results).to be_a Hash
+      expect(results[:name]).to be_a String
+      expect(results[:armor_class].first[:value]).to be_a Integer
+      expect(results[:hit_points]).to be_a Integer
+      expect(results[:proficiencies]).to be_an Array
+      expect(results[:actions]).to be_an Array
+    end
   end
 end
