@@ -26,4 +26,9 @@ class DndFacade
     monster = @service.monster(index)
     SimMonster.new(monster)
   end
+
+  def spell(index)
+    spell = @service.spell(index)
+    SimSpell.new(spell)
+  end
 end
