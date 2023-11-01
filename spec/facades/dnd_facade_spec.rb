@@ -40,5 +40,10 @@ RSpec.describe DndFacade, test: :model do
         expect(player.url).to be_a String
       end
     end
+
+    it "#monster", :vcr do
+      monster = DndFacade.new.monster("aboleth")
+      expect(monster).to be_a SimMonster
+    end
   end
 end

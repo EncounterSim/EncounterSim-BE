@@ -21,4 +21,9 @@ class DndFacade
       Player.new(player)
     end
   end
+
+  def monster(index)
+    monster = @service.monster(index)
+    SimMonster.new(monster)
+  end
 end
