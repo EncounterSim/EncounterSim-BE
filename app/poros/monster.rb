@@ -3,6 +3,7 @@ class Monster
 
   def initialize(info)
     @id = nil
+    @index = info[:index]
     @name = info[:name]
     @url = info[:url]
   end
