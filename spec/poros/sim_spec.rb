@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Simulation do
+RSpec.describe Sim do
   it "works", :vcr do
     monster = DndFacade.new.monster("berserker")
     barb_data = {
@@ -33,7 +33,7 @@ RSpec.describe Simulation do
     }
     player1 = SimBarbarian.new(barb_data)
     player2 = SimFighter.new(fight_data)
-    game1 = Simulation.new
+    game1 = Sim.new
     game1.roll_initiative([player1, player2], [monster])
   end
 end

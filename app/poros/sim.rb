@@ -1,4 +1,4 @@
-class Simulation
+class Sim
 
   def initialize
     @round = 0
