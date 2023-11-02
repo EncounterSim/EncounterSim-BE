@@ -19,6 +19,24 @@ class SimMonster
     @attacks = get_attacks(data[:actions])
   end
 
+  def determine_action
+    multiattack = @attacks.select {|attack| attack.name == "Multiattack"}
+    if multiattack == []
+      return [{ attack: @attacks.max_by {|attack| attack.max_damage}, count: 1 }]
+    else
+      multiattack.action.map do |action|
+        {
+          attack: @attacks.select {|attack| attack.name == action[:action_name]},
+          count: action[:count]
+        }
+      end
+    end
+  end
+
+  def take_damage(amount)
+    @hit_points -= amount
+  end
+
   private
 
   def get_attacks(attacks_array)
