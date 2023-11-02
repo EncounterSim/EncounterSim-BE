@@ -56,5 +56,10 @@ RSpec.describe DndFacade, test: :model do
       expect(monster.charisma).to be_a Integer
       expect(monster.attacks).to be_an Array
     end
+
+    it "spell", :vcr do
+      spell = DndFacade.new.spell('lightning-bolt')
+      expect(spell).to be_a SimSpell
+    end
   end
 end
