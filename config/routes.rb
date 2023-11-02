@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   namespace :api do
     namespace :v1 do
-      resources :monsters, only: [:index]
+      resources :monsters, only: [:index, :show]
       resources :spells, only: [:index]
       resources :players, only: [:index]
     end

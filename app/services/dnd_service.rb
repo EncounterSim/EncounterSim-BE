@@ -24,4 +24,8 @@ class DndService
   def monster(index)
     get_url("/api/monsters/#{index}")
   end
+
+  def spell(index)
+    get_url("/api/spells/#{index}")
+  end
 end
