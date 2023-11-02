@@ -1,7 +1,7 @@
 class PlayerCharacter 
   attr_reader :name, :hit_points, :armor_class, :damage_die,
               :strength, :dexterity, :constitution, :intelligence,
-              :wisdom, :charisma, :level, :prof_bonus
+              :wisdom, :charisma, :level, :prof_bonus, :damage_dealt
               
   def initialize(data)
     @level = data[:level]
@@ -16,6 +16,15 @@ class PlayerCharacter
     @intelligence = data[:intelligence]
     @wisdom = data[:wisdom]
     @charisma = data[:charisma]
+    @damage_dealt = 0
+  end
+
+  def damage_output(num)
+    @damage_dealt += num
+  end
+
+  def reset_damage_dealt
+    @damage_dealt = 0
   end
 
   def determine_action
@@ -33,5 +42,6 @@ class PlayerCharacter
 
   def take_damage(amount)
     @hit_points -= amount
+    amount
   end
 end
