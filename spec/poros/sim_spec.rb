@@ -31,9 +31,11 @@ RSpec.describe Sim do
       wisdom: 2,
       charisma: 2
     }
+    sim1 = Simulation.create!(user_id: 1)
     player1 = SimBarbarian.new(barb_data)
     player2 = SimFighter.new(fight_data)
     game1 = Sim.new
     game1.roll_initiative([player1, player2], [monster])
+    require 'pry'; binding.pry
   end
 end

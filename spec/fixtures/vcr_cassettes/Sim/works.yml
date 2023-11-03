@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/monsters/berserker
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Thu, 02 Nov 2023 22:04:31 GMT
+      X-Ratelimit-Reset:
+      - '1698962672'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1272'
+      Etag:
+      - W/"4f8-859QEvCnvPJ9uLly4wKwDxS0fds"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"berserker","name":"Berserker","size":"Medium","type":"humanoid","subtype":"any
+        race","alignment":"any chaotic alignment","armor_class":[{"type":"armor","value":13,"armor":[{"index":"hide-armor","name":"Hide
+        Armor","url":"/api/equipment/hide-armor"}]}],"hit_points":67,"hit_dice":"9d8","hit_points_roll":"9d8+27","speed":{"walk":"30
+        ft."},"strength":16,"dexterity":12,"constitution":17,"intelligence":9,"wisdom":11,"charisma":9,"proficiencies":[],"damage_vulnerabilities":[],"damage_resistances":[],"damage_immunities":[],"condition_immunities":[],"senses":{"passive_perception":10},"languages":"any
+        one language (usually Common)","challenge_rating":2,"proficiency_bonus":2,"xp":450,"special_abilities":[{"name":"Reckless","desc":"At
+        the start of its turn, the berserker can gain advantage on all melee weapon
+        attack rolls during that turn, but attack rolls against it have advantage
+        until the start of its next turn."}],"actions":[{"name":"Greataxe","desc":"Melee
+        Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing
+        damage.","attack_bonus":5,"damage":[{"damage_type":{"index":"slashing","name":"Slashing","url":"/api/damage-types/slashing"},"damage_dice":"1d12+3"}],"actions":[]}],"url":"/api/monsters/berserker","legendary_actions":[]}'
+  recorded_at: Thu, 02 Nov 2023 22:04:31 GMT
+recorded_with: VCR 6.2.0
