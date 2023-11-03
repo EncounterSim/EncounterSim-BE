@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.dnd5eapi.co/api/monsters/berserker
+    uri: https://www.dnd5eapi.co/api/monsters/adult-black-dragon
     body:
       encoding: US-ASCII
       string: ''
@@ -20,6 +20,12 @@ http_interactions:
     headers:
       Server:
       - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699038354&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=o%2B0n02uY98SlCYEhmPZma7dIuDazfVmxyWLeJARLmrs%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699038354&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=o%2B0n02uY98SlCYEhmPZma7dIuDazfVmxyWLeJARLmrs%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
       Connection:
       - keep-alive
       X-Powered-By:
@@ -31,28 +37,55 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Thu, 02 Nov 2023 22:04:31 GMT
+      - Fri, 03 Nov 2023 19:05:54 GMT
       X-Ratelimit-Reset:
-      - '1698962672'
+      - '1699038355'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '1272'
+      - '4921'
       Etag:
-      - W/"4f8-859QEvCnvPJ9uLly4wKwDxS0fds"
+      - W/"1339-/vBK8nfTUDekZyRRUxf77yQsKOY"
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"index":"berserker","name":"Berserker","size":"Medium","type":"humanoid","subtype":"any
-        race","alignment":"any chaotic alignment","armor_class":[{"type":"armor","value":13,"armor":[{"index":"hide-armor","name":"Hide
-        Armor","url":"/api/equipment/hide-armor"}]}],"hit_points":67,"hit_dice":"9d8","hit_points_roll":"9d8+27","speed":{"walk":"30
-        ft."},"strength":16,"dexterity":12,"constitution":17,"intelligence":9,"wisdom":11,"charisma":9,"proficiencies":[],"damage_vulnerabilities":[],"damage_resistances":[],"damage_immunities":[],"condition_immunities":[],"senses":{"passive_perception":10},"languages":"any
-        one language (usually Common)","challenge_rating":2,"proficiency_bonus":2,"xp":450,"special_abilities":[{"name":"Reckless","desc":"At
-        the start of its turn, the berserker can gain advantage on all melee weapon
-        attack rolls during that turn, but attack rolls against it have advantage
-        until the start of its next turn."}],"actions":[{"name":"Greataxe","desc":"Melee
-        Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing
-        damage.","attack_bonus":5,"damage":[{"damage_type":{"index":"slashing","name":"Slashing","url":"/api/damage-types/slashing"},"damage_dice":"1d12+3"}],"actions":[]}],"url":"/api/monsters/berserker","legendary_actions":[]}'
-  recorded_at: Thu, 02 Nov 2023 22:04:31 GMT
+      string: '{"index":"adult-black-dragon","name":"Adult Black Dragon","size":"Huge","type":"dragon","alignment":"chaotic
+        evil","armor_class":[{"type":"natural","value":19}],"hit_points":195,"hit_dice":"17d12","hit_points_roll":"17d12+85","speed":{"walk":"40
+        ft.","fly":"80 ft.","swim":"40 ft."},"strength":23,"dexterity":14,"constitution":21,"intelligence":14,"wisdom":13,"charisma":17,"proficiencies":[{"value":7,"proficiency":{"index":"saving-throw-dex","name":"Saving
+        Throw: DEX","url":"/api/proficiencies/saving-throw-dex"}},{"value":10,"proficiency":{"index":"saving-throw-con","name":"Saving
+        Throw: CON","url":"/api/proficiencies/saving-throw-con"}},{"value":6,"proficiency":{"index":"saving-throw-wis","name":"Saving
+        Throw: WIS","url":"/api/proficiencies/saving-throw-wis"}},{"value":8,"proficiency":{"index":"saving-throw-cha","name":"Saving
+        Throw: CHA","url":"/api/proficiencies/saving-throw-cha"}},{"value":11,"proficiency":{"index":"skill-perception","name":"Skill:
+        Perception","url":"/api/proficiencies/skill-perception"}},{"value":7,"proficiency":{"index":"skill-stealth","name":"Skill:
+        Stealth","url":"/api/proficiencies/skill-stealth"}}],"damage_vulnerabilities":[],"damage_resistances":[],"damage_immunities":["acid"],"condition_immunities":[],"senses":{"blindsight":"60
+        ft.","darkvision":"120 ft.","passive_perception":21},"languages":"Common,
+        Draconic","challenge_rating":14,"proficiency_bonus":5,"xp":11500,"special_abilities":[{"name":"Amphibious","desc":"The
+        dragon can breathe air and water."},{"name":"Legendary Resistance","desc":"If
+        the dragon fails a saving throw, it can choose to succeed instead.","usage":{"type":"per
+        day","times":3,"rest_types":[]}}],"actions":[{"name":"Multiattack","multiattack_type":"actions","desc":"The
+        dragon can use its Frightful Presence. It then makes three attacks: one with
+        its bite and two with its claws.","actions":[{"action_name":"Frightful Presence","count":1,"type":"ability"},{"action_name":"Bite","count":1,"type":"melee"},{"action_name":"Claw","count":2,"type":"melee"}]},{"name":"Bite","desc":"Melee
+        Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing
+        damage plus 4 (1d8) acid damage.","attack_bonus":11,"damage":[{"damage_type":{"index":"piercing","name":"Piercing","url":"/api/damage-types/piercing"},"damage_dice":"2d10+6"},{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_dice":"1d8"}],"actions":[]},{"name":"Claw","desc":"Melee
+        Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing
+        damage.","attack_bonus":11,"damage":[{"damage_type":{"index":"slashing","name":"Slashing","url":"/api/damage-types/slashing"},"damage_dice":"2d6+6"}],"actions":[]},{"name":"Tail","desc":"Melee
+        Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning
+        damage.","attack_bonus":11,"damage":[{"damage_type":{"index":"bludgeoning","name":"Bludgeoning","url":"/api/damage-types/bludgeoning"},"damage_dice":"2d8+6"}],"actions":[]},{"name":"Frightful
+        Presence","desc":"Each creature of the dragon''s choice that is within 120
+        feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw
+        or become frightened for 1 minute. A creature can repeat the saving throw
+        at the end of each of its turns, ending the effect on itself on a success.
+        If a creature''s saving throw is successful or the effect ends for it, the
+        creature is immune to the dragon''s Frightful Presence for the next 24 hours.","dc":{"dc_type":{"index":"wis","name":"WIS","url":"/api/ability-scores/wis"},"dc_value":16,"success_type":"none"},"actions":[]},{"name":"Acid
+        Breath","desc":"The dragon exhales acid in a 60-foot line that is 5 feet wide.
+        Each creature in that line must make a DC 18 Dexterity saving throw, taking
+        54 (12d8) acid damage on a failed save, or half as much damage on a successful
+        one.","usage":{"type":"recharge on roll","dice":"1d6","min_value":5},"dc":{"dc_type":{"index":"dex","name":"DEX","url":"/api/ability-scores/dex"},"dc_value":18,"success_type":"half"},"damage":[{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_dice":"12d8"}],"actions":[]}],"legendary_actions":[{"name":"Detect","desc":"The
+        dragon makes a Wisdom (Perception) check."},{"name":"Tail Attack","desc":"The
+        dragon makes a tail attack."},{"name":"Wing Attack (Costs 2 Actions)","desc":"The
+        dragon beats its wings. Each creature within 10 ft. of the dragon must succeed
+        on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage
+        and be knocked prone. The dragon can then fly up to half its flying speed.","dc":{"dc_type":{"index":"dex","name":"DEX","url":"/api/ability-scores/dex"},"dc_value":19,"success_type":"none"},"damage":[{"damage_type":{"index":"bludgeoning","name":"Bludgeoning","url":"/api/damage-types/bludgeoning"},"damage_dice":"2d6+6"}]}],"image":"/api/images/monsters/adult-black-dragon.png","url":"/api/monsters/adult-black-dragon"}'
+  recorded_at: Fri, 03 Nov 2023 19:05:54 GMT
 recorded_with: VCR 6.2.0

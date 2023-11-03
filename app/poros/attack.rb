@@ -1,5 +1,5 @@
 class Attack
-  attr_reader :name
+  attr_reader :name, :action
 
   def initialize(data)
     @name = data[:name]
@@ -21,21 +21,16 @@ class Attack
   end
 
   def attack(target, creature)
-    if @name == "Multiattack"
-      multiattack(target)
+    roll = to_hit
+    require 'pry'; binding.pry
+    if roll == "Critical Miss"
+      creature.damage_output(0)
+    elsif roll == "Critical Hit"
+      creature.damage_output(target.take_damage(roll_crit))
+    elsif roll < target.armor_class
+      creature.damage_output(0)
     else
-      roll = to_hit
-      if roll == "Critical Miss"
-        "Miss"
-        creature.damage_output(0)
-      elsif roll == "Critical Hit"
-        creature.damage_output(target.take_damage(roll_crit(@damage_dice)))
-      elsif roll < target.armor_class
-        "Miss"
-        creature.damage_output(0)
-      else
-        creature.damage_output(target.take_damage(roll_damage(@damage_dice)))
-      end
+      creature.damage_output(target.take_damage(roll_damage))
     end
   end
 
@@ -53,8 +48,8 @@ class Attack
   def multiattack(target)
   end
 
-  def roll_crit(dice)
-    hit = parse_die(dice)
+  def roll_crit
+    hit = parse_die
     damage = 0
     hit.each do |hit|
       hit_split =  hit.split(/[^\d]/)
@@ -70,15 +65,15 @@ class Attack
     damage
   end
 
-  def roll_damage(dice)
-    hit = parse_die(dice)
+  def roll_damage
+    hit = parse_die
     damage = 0
-    hit.each do |hit|
-      hit_split =  hit.split(/[^\d]/)
+    hit.each do |h|
+      hit_split =  h.split(/[^\d]/)
       if hit_split[2] != nil
-        damage = hit_split[2].to_i
+        damage += hit_split[2].to_i
       else
-        damage = 0
+        damage += 0
       end
       (hit_split[0].to_i).times do
         damage += (1..hit_split[1].to_i).to_a.sample
@@ -87,9 +82,9 @@ class Attack
     damage
   end
 
-  def parse_die(dice)
-    if dice.class == Array
-      dice.map {|d| d[:damage_dice]}
+  def parse_die
+    if @damage_dice.class == Array
+      @damage_dice.map {|d| d[:damage_dice]}
     else
       return [dice]
     end
