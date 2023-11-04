@@ -33,32 +33,7 @@ class DndFacade
   end
 
   def player(index)
-    player = @service.player(index)
-    if index == "barbarian"
-      SimBarbarian.new(player)
-    elsif index == "bard"
-      SimBard.new(player)
-    elsif index == "cleric"
-      SimCleric.new(player)
-    elsif index == "druid"
-      SimDruid.new(player)
-    elsif index == "fighter"
-      SimFighter.new(player)
-    elsif index == "monk"
-      SimMonk.new(player)
-    elsif index == "paladin"
-      SimPaladin.new(player)
-    elsif index == "ranger"
-      SimRanger.new(player)
-    elsif index == "rogue"
-      SimRogue.new(player)
-    elsif index == "sorcerer"
-      SimSorcerer.new(player)
-    elsif index == "warlock"
-      SimWarlock.new(player)
-    elsif index == "wizard"
-      SimWizard.new(player)
-    end
+    @service.player(index)
   end
     
 end

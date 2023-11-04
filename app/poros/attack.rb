@@ -22,7 +22,6 @@ class Attack
 
   def attack(target, creature)
     roll = to_hit
-    require 'pry'; binding.pry
     if roll == "Critical Miss"
       creature.damage_output(0)
     elsif roll == "Critical Hit"
@@ -86,7 +85,7 @@ class Attack
     if @damage_dice.class == Array
       @damage_dice.map {|d| d[:damage_dice]}
     else
-      return [dice]
+      return [@damage_dice]
     end
   end
 
