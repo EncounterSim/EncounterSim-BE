@@ -1,7 +1,7 @@
 class SimMonster
   attr_reader :name, :armor_class, :hit_points, :damage_dice,
               :strength, :dexterity, :constitution, :intelligence,
-              :wisdom, :charisma, :attacks, :id, :image
+              :wisdom, :charisma, :attacks, :id, :damage_dealt, :image
   
   def initialize(data)
     @id = nil
@@ -17,6 +17,7 @@ class SimMonster
     @charisma = data[:charisma]
 
     @attacks = get_attacks(data[:actions])
+    @damage_dealt = 0
 
     @image = data[:image]
   end
