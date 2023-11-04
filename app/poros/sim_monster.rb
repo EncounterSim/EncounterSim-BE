@@ -36,8 +36,17 @@ class SimMonster
     end
   end
 
+  def reset_damage_dealt
+    @damage_dealt = 0
+  end
+
+  def damage_output(num)
+    @damage_dealt += num
+  end
+
   def take_damage(amount)
     @hit_points -= amount
+    amount
   end
 
   private

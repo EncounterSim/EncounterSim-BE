@@ -20,19 +20,21 @@ class Attack
     end
   end
 
-  def attack(target)
+  def attack(target, creature)
     if @name == "Multiattack"
       multiattack(target)
     else
       roll = to_hit
       if roll == "Critical Miss"
         "Miss"
+        creature.damage_output(0)
       elsif roll == "Critical Hit"
-        target.take_damage(roll_crit(@damage_dice))
+        creature.damage_output(target.take_damage(roll_crit(@damage_dice)))
       elsif roll < target.armor_class
         "Miss"
+        creature.damage_output(0)
       else
-        target.take_damage(roll_damage(@damage_dice))
+        creature.damage_output(target.take_damage(roll_damage(@damage_dice)))
       end
     end
   end
