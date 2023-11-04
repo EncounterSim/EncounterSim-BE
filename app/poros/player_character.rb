@@ -1,11 +1,12 @@
 class PlayerCharacter 
   attr_reader :name, :hit_points, :armor_class, :damage_die,
               :strength, :dexterity, :constitution, :intelligence,
-              :wisdom, :charisma, :level, :prof_bonus, :damage_dealt
+              :wisdom, :charisma, :level, :prof_bonus, :damage_dealt,
+              :features, :class_specific, :spells
               
   def initialize(data)
     @level = data[:level].to_i
-    @name = data[:name]
+    @name = data[:class]
     @prof_bonus = data[:prof_bonus]
     @hit_points = data[:hit_points].to_i
     @armor_class = data[:armor_class].to_i
@@ -16,6 +17,9 @@ class PlayerCharacter
     @intelligence = data[:intelligence].to_i
     @wisdom = data[:wisdom].to_i
     @charisma = data[:charisma].to_i
+    @spells = data[:spells]
+    @features = data[:features]
+    @class_specific = data[:class_specific]
     @damage_dealt = 0
   end
 

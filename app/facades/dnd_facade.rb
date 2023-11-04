@@ -31,4 +31,9 @@ class DndFacade
     spell = @service.spell(index)
     SimSpell.new(spell)
   end
+
+  def player(index)
+    @service.player(index)
+  end
+    
 end

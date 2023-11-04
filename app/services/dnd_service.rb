@@ -28,4 +28,8 @@ class DndService
   def spell(index)
     get_url("/api/spells/#{index}")
   end
+
+  def player(index)
+    get_url("/api/classes/#{index}/levels")
+  end
 end

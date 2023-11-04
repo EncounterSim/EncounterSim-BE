@@ -9,12 +9,12 @@ class SimMonster
     @armor_class = data[:armor_class].first[:value] 
     @hit_points = data[:hit_points]    
     @damage_dice = data[:hit_dice]    
-    @strength = data[:strength]    
-    @dexterity = data[:dexterity]    
-    @constitution = data[:constitution]    
-    @intelligence = data[:intelligence]    
-    @wisdom = data[:wisdom]    
-    @charisma = data[:charisma]
+    @strength = (data[:strength] - 10) / 2
+    @dexterity = (data[:dexterity] - 10) / 2
+    @constitution = (data[:constitution] - 10) / 2
+    @intelligence = (data[:intelligence] - 10) / 2
+    @wisdom = (data[:wisdom] - 10) / 2
+    @charisma = (data[:charisma] - 10) / 2
 
     @attacks = get_attacks(data[:actions])
     @damage_dealt = 0
@@ -27,12 +27,8 @@ class SimMonster
     if multiattack == []
       return [{ attack: @attacks.max_by {|attack| attack.max_damage}, count: 1 }]
     else
-      multiattack.action.map do |action|
-        {
-          attack: @attacks.select {|attack| attack.name == action[:action_name]},
-          count: action[:count]
-        }
-      end
+      attacks = multiattack[0].action.select { |action| action[:type] != "ability" }
+      this = attacks.map {|each| {attack: @attacks.select {|a| a.name == each[:action_name]}[0], count: each[:count]}}
     end
   end
 

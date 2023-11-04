@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Sim do
   it "works", :vcr do
-    monster = DndFacade.new.monster("berserker")
+    monster = DndFacade.new.monster("adult-black-dragon")
     barb_data = {
       name: "Barbarian",
       level: 5,
