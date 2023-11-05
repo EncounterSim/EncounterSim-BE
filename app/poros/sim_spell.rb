@@ -30,27 +30,29 @@ class SimSpell
   end
 
   def attack(target, creature)
+    creature.attempt_hit
+    level_cast = creature.cast_level
     if !@saving_throw
       roll = to_hit(creature.spell_to_hit)
       if roll == "Critical Miss"
-        creature.damage_output(0)
+        target.missed_me
       elsif roll == "Critical Hit"
-        creature.damage_output(target.take_damage(roll_crit(creature)))
+        creature.damage_output(target.take_damage(roll_crit(level_cast)))
       elsif roll < target.armor_class
-        creature.damage_output(0)
+        target.missed_me
       else
-        creature.damage_output(target.take_damage(roll_damage(creature)))
+        creature.damage_output(target.take_damage(roll_damage(level_cast)))
       end
     else
       roll = (roll_die + target.saving_throw(@saving_throw[:type]))
       if roll >= creature.spell_save_dc
         if @saving_throw[:dc_success] == "half"
-          creature.damage_output(target.take_damage(roll_damage(creature) / 2))
+          creature.damage_output(target.take_damage(roll_damage(level_cast) / 2))
         else
-          creature.damage_output(0)
+          target.missed_me
         end
       else
-        creature.damage_output(target.take_damage(roll_damage(creature)))
+        creature.damage_output(target.take_damage(roll_damage(level_cast)))
       end
     end
   end
@@ -66,8 +68,8 @@ class SimSpell
     end
   end
 
-  def roll_crit(creature)
-    hit = @damage[:"#{creature.cast_level}"]
+  def roll_crit(level_cast)
+    hit = @damage[:"#{level_cast}"]
     damage = 0
     hit_split = hit.split(/[^\d]/)
     if hit_split[2] != nil
@@ -79,8 +81,8 @@ class SimSpell
     damage
   end
 
-  def roll_damage(creature)
-    hit = @damage[:"#{creature.cast_level}"]
+  def roll_damage(level_cast)
+    hit = @damage[:"#{level_cast}"]
     damage = 0
     hit_split =  hit.split(/[^\d]/)
     if hit_split[2] != nil

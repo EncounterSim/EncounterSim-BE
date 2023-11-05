@@ -1,6 +1,7 @@
 class Api::V1::EncountersController < ApplicationController
 
   def create
+    require 'pry'; binding.pry
     data = JSON.parse(request.body.read, symbolize_names: true)
     players = parse_players(params[:characters])
     monster_name = index_name(params[:monster])

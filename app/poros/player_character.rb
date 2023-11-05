@@ -2,7 +2,9 @@ class PlayerCharacter
   attr_reader :name, :hit_points, :armor_class, :damage_die,
               :strength, :dexterity, :constitution, :intelligence,
               :wisdom, :charisma, :level, :prof_bonus, :damage_dealt,
-              :features, :class_specific, :spells, :spell_casting, :resources
+              :features, :class_specific, :spells, :spell_casting, :resources,
+              :attacks_attempted, :attacks_successful, :attacks_against_me,
+              :attacks_hit_me
               
   def initialize(data)
     @level = data[:level].to_i
@@ -22,10 +24,30 @@ class PlayerCharacter
     @features = data[:features]
     @class_specific = data[:class_specific]
     @damage_dealt = 0
+    @attacks_attempted = 0
+    @attacks_successful = 0
+    @attacks_against_me = 0
+    @attacks_hit_me = 0
   end
 
   def damage_output(num)
+    @attacks_successful += 1
     @damage_dealt += num
+  end
+
+  def attempt_hit
+    @attacks_attempted += 1
+  end
+
+  def missed_me
+    @attacks_against_me += 1
+  end
+
+  def take_damage(amount)
+    @attacks_against_me += 1
+    @attacks_hit_me += 1
+    @hit_points -= amount
+    amount
   end
 
   def reset_damage_dealt
@@ -79,18 +101,25 @@ class PlayerCharacter
   end
 
   def cast_level
-    slot = get_spell_slot.to_i
-    @spellcasting[@spellcasting.keys[slot - 1]] -= 1
-    slot.to_s
+    slot = get_spell_slot
+    @spellcasting[@spellcasting.keys.select {|e| e.to_s[-1] == slot}.first] -= 1
+    slot
   end
 
   def get_spell_slot
     @spellcasting.select {|k, v| v > 0}.keys.last.to_s[-1]
   end
 
-  def take_damage(amount)
-    @hit_points -= amount
-    amount
+  def spell_count
+    @spellcasting.sum {|k, v| k.to_s[-1].to_i > 0 ? v : 0}
+  end
+
+  def count_resources
+    resources = 0
+    if @spellcasting
+      resources += spell_count
+    end
+    resources
   end
 
   def spell_save_dc

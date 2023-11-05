@@ -2,7 +2,8 @@ class SimMonster
   attr_reader :id, :name, :armor_class, :hit_points, :strength, 
               :dexterity, :constitution, :intelligence, :wisdom,
               :charisma, :proficiencies, :prof_bonus, :special_abilities, 
-              :attacks, :attacks, :damage_dealt
+              :attacks, :attacks, :damage_dealt, :attacks_attempted,
+              :attacks_successful, :attacks_against_me, :attacks_hit_me
   
   def initialize(data)
     @id = nil
@@ -20,6 +21,10 @@ class SimMonster
     @special_abilities = data[:special_abilities]
     @attacks = get_attacks(data[:actions])
     @damage_dealt = 0
+    @attacks_attempted = 0
+    @attacks_successful = 0
+    @attacks_against_me = 0
+    @attacks_hit_me = 0
   end
 
   def determine_action
@@ -37,10 +42,21 @@ class SimMonster
   end
 
   def damage_output(num)
+    @attacks_successful += 1
     @damage_dealt += num
   end
 
+  def attempt_hit
+    @attacks_attempted += 1
+  end
+
+  def missed_me
+    @attacks_against_me += 1
+  end
+
   def take_damage(amount)
+    @attacks_against_me += 1
+    @attacks_hit_me += 1
     @hit_points -= amount
     amount
   end

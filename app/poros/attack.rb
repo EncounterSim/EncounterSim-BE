@@ -27,13 +27,14 @@ class Attack
   end
 
   def attack(target, creature)
+    creature.attempt_hit
     roll = to_hit
     if roll == "Critical Miss"
-      creature.damage_output(0)
+      target.missed_me
     elsif roll == "Critical Hit"
       creature.damage_output(target.take_damage(roll_crit))
     elsif roll < target.armor_class
-      creature.damage_output(0)
+      target.missed_me
     else
       creature.damage_output(target.take_damage(roll_damage))
     end

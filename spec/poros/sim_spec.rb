@@ -106,7 +106,7 @@ RSpec.describe Sim do
     end
     monster = DndFacade.new.monster("adult-black-dragon")
     new_sim = Simulation.create(user_id: 1)
-    (1).times do
+    (15).times do
       sim_runner = Sim.new(new_sim.id)
       sim_runner.roll_initiative(players, [monster])
     end

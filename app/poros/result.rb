@@ -8,14 +8,25 @@ class Result
   end
 
   def total_wins
-    Simulation.last.combat_results.where(outcome: "Win").count
+    Simulation.find(@id).combat_results.where(outcome: "Win").count
   end
 
   def total_loses
-    Simulation.last.combat_results.where(outcome: "Lose").count
+    Simulation.find(@id).combat_results.where(outcome: "Lose").count
   end
 
-  def total_combats
-    require 'pry'; binding.pry
+  def damage_by_combat
+    total_damage("p1").each_with_object({}) do |e, hash|
+      hash[e.id] = e.total_damage
+    end
+  end
+
+  def total_damage(creature)
+    Simulation.find(@id)
+    .combats
+    .joins(:combat_rounds)
+    .select("combats.*, sum(combat_rounds.#{creature}_damage_dealt) as total_damage")
+    .group(:id)
+    .order(:id)
   end
 end
