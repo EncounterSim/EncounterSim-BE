@@ -1,6 +1,7 @@
 class Sim
 
-  def initialize
+  def initialize(sim_id)
+    @simulation = sim_id
     @combat = nil
     @pcs = []
     @enemies = []
@@ -8,12 +9,12 @@ class Sim
   end
 
   def start_combat
-    @combat = Simulation.last.combats.create!
+    @combat = Simulation.find(@simulation).combats.create!
     round = @combat.combat_rounds.create!
     @pcs.each_with_index do |pc, num|
       @combat.update!("p#{num + 1}" => pc.name)
       round.update!("p#{num + 1}_health" => pc.hit_points,
-                    "p#{num + 1}_resources" => 0,
+                    "p#{num + 1}_resources" => pc.resources,
                     "p#{num + 1}_damage_dealt" => 0)
     end
 
@@ -32,11 +33,15 @@ class Sim
     if target
       action.each do |each|
         (each[:count].to_i).times do
-          if target.hit_points > 0
-            each[:attack].attack(target, creature)
-          else
-            target = determine_target(creature)
-            each[:attack].attack(target, creature)
+          if target
+            if target.hit_points > 0
+              each[:attack].attack(target, creature)
+            else
+              target = determine_target(creature)
+              if target
+                each[:attack].attack(target, creature)
+              end
+            end
           end
         end
       end
@@ -106,7 +111,7 @@ class Sim
     round = @combat.combat_rounds.create!
     @pcs.each_with_index do |pc, num|
       round.update!("p#{num + 1}_health" => pc.hit_points,
-                    "p#{num + 1}_resources" => 0,
+                    "p#{num + 1}_resources" => pc.resources,
                     "p#{num + 1}_damage_dealt" => pc.damage_dealt)
     end
 

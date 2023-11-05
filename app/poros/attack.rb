@@ -6,8 +6,9 @@ class Attack
     @description = data[:desc] if data[:desc]
     @action = data[:actions] if data[:actions]
     @hit_bonus = data[:attack_bonus]
+    @usage = data[:usage] if data[:usage]
     @saving_throw = {
-      type: data[:dc][:name], 
+      type: data[:dc][:dc_type][:name], 
       threshold: data[:dc][:dc_value], 
       success: data[:dc][:success_type]
     } if data[:dc]
@@ -15,8 +16,13 @@ class Attack
   end
 
   def max_damage
-    @damage_dice.sum do |damage|
-      (damage[:damage_dice].split(/[^\d]/)[0].to_i * damage[:damage_dice].split(/[^\d]/)[1].to_i) + damage[:damage_dice].split(/[^\d]/)[3].to_i
+    if @damage_dice
+      @damage_dice.sum do |k, v|
+        nums = v.split(/[^\d]/)
+        (nums[0].to_i * nums[1].to_i) + nums[2].to_i
+      end
+    else
+      0
     end
   end
 
@@ -44,18 +50,15 @@ class Attack
     end
   end
 
-  def multiattack(target)
-  end
-
   def roll_crit
     hit = parse_die
     damage = 0
     hit.each do |hit|
       hit_split =  hit.split(/[^\d]/)
       if hit_split[2] != nil
-        damage = hit_split[2].to_i
+        damage += hit_split[2].to_i
       else
-        damage = 0
+        damage += 0
       end
       (hit_split[0].to_i).times do
         damage += ((1..hit_split[1].to_i).to_a.sample * 2)
@@ -85,7 +88,7 @@ class Attack
     if @damage_dice.class == Array
       @damage_dice.map {|d| d[:damage_dice]}
     else
-      return [@damage_dice]
+      return [@damage_dice[:damage_dice]]
     end
   end
 

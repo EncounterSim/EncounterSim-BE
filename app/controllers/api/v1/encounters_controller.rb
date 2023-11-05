@@ -5,10 +5,12 @@ class Api::V1::EncountersController < ApplicationController
     players = parse_players(params[:characters])
     monster_name = index_name(params[:monster])
     monster = DndFacade.new.monster(monster_name)
-    Simulation.create!(user_id: params[:user_id])
-    # add 50 times loop for more combats
-    Sim.new.roll_initiative(players, [monster])
-    require 'pry'; binding.pry
+    new_sim = Simulation.create!(user_id: params[:user_id])
+    (15).times do
+      sim_runner = Sim.new(new_sim.id)
+      sim_runner.roll_initiative(players, [monster])
+    end
+    render json: ResultSerializer.new(Result.new(new_sim.id))
     # Pry here to check simulation data
     # Simulation.last.combats.last.combat_results
     # Simulation.last.combats.last.combat_rounds
@@ -27,6 +29,9 @@ class Api::V1::EncountersController < ApplicationController
       player[:damage_die] = "#{player[:damage_die1]}"+"#{player[:damage_die2]}"
       player[:prof_bonus] = level_info[player[:level].to_i - 1][:prof_bonus]
       player[:spells] = [DndFacade.new.spell(index_name(player[:spell1])), DndFacade.new.spell(index_name(player[:spell2])), DndFacade.new.spell(index_name(player[:spell3]))]
+      if level_info[0][:spellcasting]
+        player[:spellcasting] = level_info[player[:level].to_i - 1][:spellcasting]
+      end
       player[:class_specific] = level_info[player[:level].to_i - 1][:class_specific]
       player[:features] = []
       index = 0
