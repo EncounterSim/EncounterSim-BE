@@ -2,9 +2,9 @@ class SimMonster
   attr_reader :id, :name, :armor_class, :hit_points, :strength, 
               :dexterity, :constitution, :intelligence, :wisdom,
               :charisma, :proficiencies, :prof_bonus, :special_abilities, 
-              :attacks, :attacks, :damage_dealt, :attacks_attempted,
+              :attacks, :image, :damage_dealt, :attacks_attempted,
               :attacks_successful, :attacks_against_me, :attacks_hit_me
-  
+
   def initialize(data)
     @id = nil
     @name = data[:name]
@@ -25,6 +25,7 @@ class SimMonster
     @attacks_successful = 0
     @attacks_against_me = 0
     @attacks_hit_me = 0
+    @image = data[:image]
   end
 
   def determine_action
