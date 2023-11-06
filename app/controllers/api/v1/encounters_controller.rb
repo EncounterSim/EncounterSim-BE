@@ -48,7 +48,6 @@ class Api::V1::EncountersController < ApplicationController
         index += 1
       end
       player
-      PlayerCharacter.make_character(player)
     end
   end
 end
