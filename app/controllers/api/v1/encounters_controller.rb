@@ -4,11 +4,12 @@ class Api::V1::EncountersController < ApplicationController
     data = JSON.parse(request.body.read, symbolize_names: true)
     players = parse_players(params[:characters])
     monster_name = index_name(params[:monster])
-    monster = DndFacade.new.monster(monster_name)
     new_sim = Simulation.create!(user_id: params[:user_id])
     (15).times do
+      pcs = players.map {|player| PlayerCharacter.make_character(player)}
+      monster ||= DndFacade.new.monster(monster_name)
       sim_runner = Sim.new(new_sim.id)
-      sim_runner.roll_initiative(players, [monster])
+      sim_runner.roll_initiative(pcs, [monster])
     end
     render json: ResultSerializer.new(Result.new(new_sim.id))
     # Pry here to check simulation data
@@ -46,6 +47,7 @@ class Api::V1::EncountersController < ApplicationController
         player[:features].concat(feat_names)
         index += 1
       end
+      player
       PlayerCharacter.make_character(player)
     end
   end
