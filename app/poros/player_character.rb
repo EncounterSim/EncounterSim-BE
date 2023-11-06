@@ -112,8 +112,11 @@ class PlayerCharacter
   end
 
   def spell_count
-    require 'pry'; binding.pry
-    @spellcasting.sum {|k, v| k.to_s[-1].to_i > 0 ? v : 0}
+    if @spellcasting.class != Hash
+      @spellcasting.to_unsafe_h.sum {|k, v| k.to_s[-1].to_i > 0 ? v : 0}
+    else
+      @spellcasting.sum {|k, v| k.to_s[-1].to_i > 0 ? v : 0}
+    end
   end
 
   def count_resources
