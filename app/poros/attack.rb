@@ -1,5 +1,6 @@
 class Attack
-  attr_reader :name, :action
+  attr_reader :name, :description, :action, :hit_bonus,
+              :usage, :saving_throw, :damage_dice
 
   def initialize(data)
     @name = data[:name]
@@ -17,8 +18,8 @@ class Attack
 
   def max_damage
     if @damage_dice
-      @damage_dice.sum do |k, v|
-        nums = v.split(/[^\d]/)
+      @damage_dice.sum do |e|
+        nums = e[:damage_dice].split(/[^\d]/)
         (nums[0].to_i * nums[1].to_i) + nums[2].to_i
       end
     else
@@ -40,16 +41,7 @@ class Attack
     end
   end
 
-  def to_hit
-    roll = roll_die
-    if roll == 20
-      "Critical Hit"
-    elsif roll == 1
-      "Critical Miss"
-    else
-      roll + @hit_bonus
-    end
-  end
+  private
 
   def roll_crit
     hit = parse_die
@@ -67,7 +59,7 @@ class Attack
     end
     damage
   end
-
+  
   def roll_damage
     hit = parse_die
     damage = 0
@@ -84,7 +76,7 @@ class Attack
     end
     damage
   end
-
+  
   def parse_die
     if @damage_dice.class == Array
       @damage_dice.map {|d| d[:damage_dice]}
@@ -92,8 +84,19 @@ class Attack
       return [@damage_dice[:damage_dice]]
     end
   end
-
+  
   def roll_die
     (1..20).to_a.sample
+  end
+
+  def to_hit
+    roll = roll_die
+    if roll == 20
+      "Critical Hit"
+    elsif roll == 1
+      "Critical Miss"
+    else
+      roll + @hit_bonus
+    end
   end
 end
