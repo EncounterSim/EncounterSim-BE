@@ -9,11 +9,12 @@ class Sim
   end
 
   def start_combat
+    # require 'pry'; binding.pry
     @combat = Simulation.find(@simulation).combats.create!
     round = @combat.combat_rounds.create!
     @pcs.each_with_index do |pc, num|
       @combat.update!("p#{num + 1}" => pc.name)
-      @combat.update!("p#{num + 1}_initiative" => find_initiative(pc.name))
+      @combat.update!("p#{num + 1}_initiative" => find_initiative(pc.id))
       round.update!("p#{num + 1}_health" => pc.hit_points,
                     "p#{num + 1}_resources" => pc.resources,
                     "p#{num + 1}_damage_dealt" => 0)
@@ -51,7 +52,7 @@ class Sim
   end
 
   def determine_target(creature)
-    if @pcs.any? {|pc| pc.name == creature.name}
+    if @pcs.any? {|pc| pc.id == creature.id}
       @enemies.select {|e| e.hit_points > 0}.sample
     else
       @pcs.select {|p| p.hit_points >0}.sample
@@ -61,23 +62,23 @@ class Sim
   def roll_initiative(pcs, enemies)
     pcs.each do |pc|
       @pcs << pc
-      @initiative << {name: pc.name, initiative: roll_die + pc.dexterity, dex: pc.dexterity}
+      @initiative << {id: pc.id, name: pc.name, initiative: roll_die + pc.dexterity, dex: pc.dexterity}
     end
     enemies.each do |enemy|
       @enemies << enemy
-      @initiative << {name: enemy.name, initiative: roll_die + enemy.dexterity, dex: enemy.dexterity}
+      @initiative << {id: enemy.id, name: enemy.name, initiative: roll_die + enemy.dexterity, dex: enemy.dexterity}
     end
     start_combat
     round
   end
 
-  def find_initiative(name)
+  def find_initiative(id)
     order = @initiative.sort_by {|k| [-k[:initiative], -k[:dex]]}
-    order.find_index {|e| e[:name] == name}
+    order.find_index {|e| e[:id] == id}
   end
 
   def determine_combatant(name)
-    pc = @pcs.select {|pc| pc.name == name[:name]}
+    pc = @pcs.select {|pc| pc.id == name[:id]}
     if pc == []
       @enemies.select {|enemy| enemy.name == name[:name]}[0]
     else

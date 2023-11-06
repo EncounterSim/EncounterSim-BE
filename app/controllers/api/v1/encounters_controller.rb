@@ -4,11 +4,12 @@ class Api::V1::EncountersController < ApplicationController
     data = JSON.parse(request.body.read, symbolize_names: true)
     players = parse_players(params[:characters])
     monster_name = index_name(params[:monster])
-    monster = DndFacade.new.monster(monster_name)
     new_sim = Simulation.create!(user_id: params[:user_id])
     (15).times do
+      pcs = players.map {|player| PlayerCharacter.make_character(player)}
+      monster ||= DndFacade.new.monster(monster_name)
       sim_runner = Sim.new(new_sim.id)
-      sim_runner.roll_initiative(players, [monster])
+      sim_runner.roll_initiative(pcs, [monster])
     end
     render json: ResultSerializer.new(Result.new(new_sim.id))
     # Pry here to check simulation data
@@ -29,8 +30,9 @@ class Api::V1::EncountersController < ApplicationController
 
   def parse_players(players_hash)
     active_players = players_hash.select {|p| p[:hit_points] != ""}
-    active_players.map do |player|
+    active_players.map.with_index do |player, index|
       level_info = DndFacade.new.player(player[:class].downcase)
+      player[:id] = index
       player[:damage_die] = "#{player[:damage_die1]}"+"#{player[:damage_die2]}"
       player[:prof_bonus] = level_info[player[:level].to_i - 1][:prof_bonus]
       player[:spells] = [DndFacade.new.spell(index_name(player[:spell1])), DndFacade.new.spell(index_name(player[:spell2])), DndFacade.new.spell(index_name(player[:spell3]))]
@@ -45,6 +47,7 @@ class Api::V1::EncountersController < ApplicationController
         player[:features].concat(feat_names)
         index += 1
       end
+      player
       PlayerCharacter.make_character(player)
     end
   end
