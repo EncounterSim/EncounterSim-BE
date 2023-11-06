@@ -1,10 +1,16 @@
 class Result
-  attr_reader :id, :total_wins, :total_loses
+  attr_reader :id, :total_wins, :total_loses, :total_rounds, :win_percentage
 
   def initialize(sim_id)
     @id = sim_id
+    @total_rounds = 
     @total_wins = total_wins
     @total_loses = total_loses
+    @win_percentage = win_percentage
+  end
+
+  def total_rounds
+    Simulation.find(@id).combat_rounds.count
   end
 
   def total_wins
@@ -13,6 +19,10 @@ class Result
 
   def total_loses
     Simulation.find(@id).combat_results.where(outcome: "Lose").count
+  end
+  
+  def win_percentage
+    (total_wins.to_f / total_rounds.to_f).round(2)
   end
 
   def damage_by_combat
