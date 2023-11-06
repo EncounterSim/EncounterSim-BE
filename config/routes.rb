@@ -11,7 +11,7 @@ Rails.application.routes.draw do
       resources :monsters, only: [:index, :show]
       resources :spells, only: [:index]
       resources :players, only: [:index]
-      resources :encounters, only: [:create]
+      resources :encounters, only: [:create, :show]
     end
   end
 end
