@@ -135,7 +135,11 @@ class Result
         hit_rate: total_hit_rate(p)
       }
     else
-      nil
+      {
+        player: p,
+        avg_dmg: nil,
+        hit_rate: nil
+      }
     end
   end
 end

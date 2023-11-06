@@ -71,7 +71,7 @@ RSpec.describe Sim do
     }
 
     wizard = {
-      :class=>"Barbarian",
+      :class=>"Wizard",
       :level=>"20",
       :strength=>"0",
       :dexterity=>"4",
