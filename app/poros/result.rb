@@ -6,7 +6,7 @@ class Result
   def initialize(sim_id)
     @id = sim_id
     @sim = Simulation.find(@id)
-    @total_rounds = 
+    @total_rounds = total_rounds
     @total_wins = total_wins
     @total_loses = total_loses
     @win_percentage = win_percentage
