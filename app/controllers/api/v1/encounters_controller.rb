@@ -24,8 +24,9 @@ class Api::V1::EncountersController < ApplicationController
 
   def parse_players(players_hash)
     active_players = players_hash.select {|p| p[:hit_points] != ""}
-    active_players.map do |player|
+    active_players.map.with_index do |player, index|
       level_info = DndFacade.new.player(player[:class].downcase)
+      player[:id] = index
       player[:damage_die] = "#{player[:damage_die1]}"+"#{player[:damage_die2]}"
       player[:prof_bonus] = level_info[player[:level].to_i - 1][:prof_bonus]
       player[:spells] = [DndFacade.new.spell(index_name(player[:spell1])), DndFacade.new.spell(index_name(player[:spell2])), DndFacade.new.spell(index_name(player[:spell3]))]
