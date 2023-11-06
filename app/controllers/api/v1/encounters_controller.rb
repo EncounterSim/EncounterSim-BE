@@ -1,5 +1,9 @@
 class Api::V1::EncountersController < ApplicationController
 
+  def index
+    render json: SimulationSerializer.new(Simulation.where(user_id: params[:user_id]))
+  end
+
   def create
     data = JSON.parse(request.body.read, symbolize_names: true)
     players = parse_players(params[:characters])
