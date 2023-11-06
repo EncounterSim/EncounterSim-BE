@@ -6,10 +6,12 @@ class Result
   def initialize(sim_id)
     @id = sim_id
     @sim = Simulation.find(@id)
-    @total_rounds = 
+    @total_combats = total_combats
+    @total_rounds = total_rounds
     @total_wins = total_wins
     @total_loses = total_loses
     @win_percentage = win_percentage
+    @damage_per_combat = per_combat_hash
     @p1_stats = stats("p1")
     @p2_stats = stats("p2")
     @p3_stats = stats("p3")
@@ -17,30 +19,46 @@ class Result
     @p5_stats = stats("p5")
   end
 
+  def total_combats
+    @sim.combats.count
+  end
+
   def total_rounds
-    Simulation.find(@id).combat_rounds.count
+    @sim.combat_rounds.count
   end
 
   def total_wins
-    Simulation.find(@id).combat_results.where(outcome: "Win").count
+    @sim.combat_results.where(outcome: "Win").count
   end
 
   def total_loses
-    Simulation.find(@id).combat_results.where(outcome: "Lose").count
+    @sim.combat_results.where(outcome: "Lose").count
   end
   
   def win_percentage
     (total_wins.to_f / total_rounds.to_f).round(2)
   end
 
-  def damage_by_combat
-    total_damage("p1").each_with_object({}) do |e, hash|
+  def per_combat_hash
+    this = {
+      p1: damage_by_combat("p1"),
+      p2: damage_by_combat("p2"),
+      p3: damage_by_combat("p3"),
+      p4: damage_by_combat("p4"),
+      p5: damage_by_combat("p5"),
+      monster: damage_by_combat("monster")
+    }
+    require 'pry'; binding.pry
+  end
+
+  def damage_by_combat(creature)
+    total_damage(creature).each_with_object({}) do |e, hash|
       hash[e.id] = e.total_damage
     end
   end
 
   def total_damage(creature)
-    Simulation.find(@id)
+    @sim
     .combats
     .joins(:combat_rounds)
     .select("combats.*, sum(combat_rounds.#{creature}_damage_dealt) as total_damage")
@@ -49,7 +67,7 @@ class Result
   end
 
   def hit_rate(p)
-    Simulation.find(@id)
+    @sim
     .combat_results
     .average("#{p}_attacks_successful::float / #{p}_attacks_attempted::float")
   end

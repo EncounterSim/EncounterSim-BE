@@ -110,6 +110,7 @@ RSpec.describe Sim do
       sim_runner = Sim.new(new_sim.id)
       sim_runner.roll_initiative(players, [monster])
     end
-    require 'pry'; binding.pry
+    Result.new(new_sim.id)
+    # require 'pry'; binding.pry
   end
 end
