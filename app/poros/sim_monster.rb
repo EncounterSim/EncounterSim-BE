@@ -6,7 +6,7 @@ class SimMonster
               :attacks_successful, :attacks_against_me, :attacks_hit_me
 
   def initialize(data)
-    @id = nil
+    @id = 6
     @name = data[:name]
     @armor_class = data[:armor_class].first[:value]
     @hit_points = data[:hit_points]

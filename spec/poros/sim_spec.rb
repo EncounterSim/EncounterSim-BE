@@ -71,7 +71,7 @@ RSpec.describe Sim do
     }
 
     wizard = {
-      :class=>"Barbarian",
+      :class=>"Wizard",
       :level=>"20",
       :strength=>"0",
       :dexterity=>"4",
@@ -103,14 +103,18 @@ RSpec.describe Sim do
         player[:features].concat(feat_names)
         index += 1
       end
-      PlayerCharacter.make_character(player)
+      player
     end
-    monster = DndFacade.new.monster("adult-black-dragon")
     new_sim = Simulation.create(user_id: 1)
     (15).times do
+      pcs = players.map {|player| PlayerCharacter.make_character(player)}
+      monster = DndFacade.new.monster("adult-black-dragon")
+      enemies = [monster]
       sim_runner = Sim.new(new_sim.id)
-      sim_runner.roll_initiative(players, [monster])
+      sim_runner.roll_initiative(pcs, enemies)
     end
-    require 'pry'; binding.pry
+    
+    # require 'pry'; binding.pry
+    Result.new(new_sim.id)
   end
 end

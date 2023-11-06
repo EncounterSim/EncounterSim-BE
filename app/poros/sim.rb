@@ -9,11 +9,12 @@ class Sim
   end
 
   def start_combat
+    # require 'pry'; binding.pry
     @combat = Simulation.find(@simulation).combats.create!
     round = @combat.combat_rounds.create!
     @pcs.each_with_index do |pc, num|
       @combat.update!("p#{num + 1}" => pc.name)
-      @combat.update!("p#{num + 1}_initiative" => find_initiative(pc.name))
+      @combat.update!("p#{num + 1}_initiative" => find_initiative(pc.id))
       round.update!("p#{num + 1}_health" => pc.hit_points,
                     "p#{num + 1}_resources" => pc.resources,
                     "p#{num + 1}_damage_dealt" => 0)
@@ -71,9 +72,9 @@ class Sim
     round
   end
 
-  def find_initiative(name)
+  def find_initiative(id)
     order = @initiative.sort_by {|k| [-k[:initiative], -k[:dex]]}
-    order.find_index {|e| e[:name] == name}
+    order.find_index {|e| e[:id] == id}
   end
 
   def determine_combatant(name)
