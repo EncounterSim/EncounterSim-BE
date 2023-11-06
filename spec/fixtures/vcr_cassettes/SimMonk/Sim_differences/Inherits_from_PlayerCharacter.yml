@@ -1,0 +1,259 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/classes/monk/levels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699236230&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=uPK%2FiJlYnPQ2OtWh5VFebJwZQQPfQ6hEF%2BSBBpR0%2F2c%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699236230&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=uPK%2FiJlYnPQ2OtWh5VFebJwZQQPfQ6hEF%2BSBBpR0%2F2c%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Mon, 06 Nov 2023 02:03:50 GMT
+      X-Ratelimit-Reset:
+      - '1699236231'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '8467'
+      Etag:
+      - W/"2113-2Cnjk5wV37Ba15SvrQ3+NpA0vAU"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"monk-unarmored-defense","name":"Unarmored
+        Defense","url":"/api/features/monk-unarmored-defense"},{"index":"martial-arts","name":"Martial
+        Arts","url":"/api/features/martial-arts"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":4},"ki_points":0,"unarmored_movement":0},"index":"monk-1","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"ki","name":"Ki","url":"/api/features/ki"},{"index":"flurry-of-blows","name":"Flurry
+        of Blows","url":"/api/features/flurry-of-blows"},{"index":"patient-defense","name":"Patient
+        Defense","url":"/api/features/patient-defense"},{"index":"step-of-the-wind","name":"Step
+        of the Wind","url":"/api/features/step-of-the-wind"},{"index":"unarmored-movement-1","name":"Unarmored
+        Movement","url":"/api/features/unarmored-movement-1"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":4},"ki_points":2,"unarmored_movement":10},"index":"monk-2","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"monastic-tradition","name":"Monastic
+        Tradition","url":"/api/features/monastic-tradition"},{"index":"deflect-missiles","name":"Deflect
+        Missiles","url":"/api/features/deflect-missiles"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":4},"ki_points":3,"unarmored_movement":10},"index":"monk-3","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"monk-ability-score-improvement-1","name":"Ability
+        Score Improvement","url":"/api/features/monk-ability-score-improvement-1"},{"index":"slow-fall","name":"Slow
+        Fall","url":"/api/features/slow-fall"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":4},"ki_points":4,"unarmored_movement":10},"index":"monk-4","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"monk-extra-attack","name":"Extra
+        Attack","url":"/api/features/monk-extra-attack"},{"index":"stunning-strike","name":"Stunning
+        Strike","url":"/api/features/stunning-strike"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":6},"ki_points":5,"unarmored_movement":10},"index":"monk-5","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"ki-empowered-strikes","name":"Ki
+        Empowered Strikes","url":"/api/features/ki-empowered-strikes"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":6},"ki_points":6,"unarmored_movement":15},"index":"monk-6","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"monk-evasion","name":"Evasion","url":"/api/features/monk-evasion"},{"index":"stillness-of-mind","name":"Stillness
+        of Mind","url":"/api/features/stillness-of-mind"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":6},"ki_points":7,"unarmored_movement":15},"index":"monk-7","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"monk-ability-score-improvement-2","name":"Ability
+        Score Improvement","url":"/api/features/monk-ability-score-improvement-2"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":6},"ki_points":8,"unarmored_movement":15},"index":"monk-8","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"unarmored-movement-2","name":"Unarmored
+        Movement","url":"/api/features/unarmored-movement-2"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":6},"ki_points":9,"unarmored_movement":15},"index":"monk-9","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/9"},{"level":10,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"purity-of-body","name":"Purity
+        of Body","url":"/api/features/purity-of-body"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":6},"ki_points":10,"unarmored_movement":20},"index":"monk-10","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":8},"ki_points":11,"unarmored_movement":20},"index":"monk-11","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/11"},{"level":12,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"monk-ability-score-improvement-3","name":"Ability
+        Score Improvement","url":"/api/features/monk-ability-score-improvement-3"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":8},"ki_points":12,"unarmored_movement":20},"index":"monk-12","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"tongue-of-the-sun-and-moon","name":"Tongue
+        of the Sun and Moon","url":"/api/features/tongue-of-the-sun-and-moon"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":8},"ki_points":13,"unarmored_movement":20},"index":"monk-13","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"diamond-soul","name":"Diamond
+        Soul","url":"/api/features/diamond-soul"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":8},"ki_points":14,"unarmored_movement":25},"index":"monk-14","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"monk-timeless-body","name":"Timeless
+        Body","url":"/api/features/monk-timeless-body"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":8},"ki_points":15,"unarmored_movement":25},"index":"monk-15","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/15"},{"level":16,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"monk-ability-score-improvement-4","name":"Ability
+        Score Improvement","url":"/api/features/monk-ability-score-improvement-4"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":8},"ki_points":16,"unarmored_movement":25},"index":"monk-16","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":10},"ki_points":17,"unarmored_movement":25},"index":"monk-17","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"empty-body","name":"Empty
+        Body","url":"/api/features/empty-body"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":10},"ki_points":18,"unarmored_movement":30},"index":"monk-18","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/18"},{"level":19,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"monk-ability-score-improvement-5","name":"Ability
+        Score Improvement","url":"/api/features/monk-ability-score-improvement-5"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":10},"ki_points":19,"unarmored_movement":30},"index":"monk-19","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"perfect-self","name":"Perfect
+        Self","url":"/api/features/perfect-self"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":10},"ki_points":20,"unarmored_movement":30},"index":"monk-20","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/20"}]'
+  recorded_at: Mon, 06 Nov 2023 02:03:50 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/fireball
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Mon, 06 Nov 2023 02:03:50 GMT
+      X-Ratelimit-Reset:
+      - '1699236232'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1570'
+      Etag:
+      - W/"622-Mtc7pANQhoeHhQT4wqBsNZ8ePDc"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"fireball","name":"Fireball","desc":["A bright streak flashes
+        from your pointing finger to a point you choose within range and then blossoms
+        with a low roar into an explosion of flame. Each creature in a 20-foot-radius
+        sphere centered on that point must make a dexterity saving throw. A target
+        takes 8d6 fire damage on a failed save, or half as much damage on a successful
+        one.","The fire spreads around corners. It ignites flammable objects in the
+        area that aren''t being worn or carried."],"higher_level":["When you cast
+        this spell using a spell slot of 4th level or higher, the damage increases
+        by 1d6 for each slot level above 3rd."],"range":"150 feet","components":["V","S","M"],"material":"A
+        tiny ball of bat guano and sulfur.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":3,"damage":{"damage_type":{"index":"fire","name":"Fire","url":"/api/damage-types/fire"},"damage_at_slot_level":{"3":"8d6","4":"9d6","5":"10d6","6":"11d6","7":"12d6","8":"13d6","9":"14d6"}},"dc":{"dc_type":{"index":"dex","name":"DEX","url":"/api/ability-scores/dex"},"dc_success":"half"},"area_of_effect":{"type":"sphere","size":20},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"sorcerer","name":"Sorcerer","url":"/api/classes/sorcerer"},{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"fiend","name":"Fiend","url":"/api/subclasses/fiend"}],"url":"/api/spells/fireball"}'
+  recorded_at: Mon, 06 Nov 2023 02:03:50 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/cone-of-cold
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699236231&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=KW%2B7a9%2BTBbj0xD2%2FNAToKHDQMcgg3IT9S0uQ7QTiaew%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699236231&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=KW%2B7a9%2BTBbj0xD2%2FNAToKHDQMcgg3IT9S0uQ7QTiaew%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Mon, 06 Nov 2023 02:03:51 GMT
+      X-Ratelimit-Reset:
+      - '1699236232'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1399'
+      Etag:
+      - W/"577-WZu5/KTNGG0CpamVq6wK+oULn+4"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"cone-of-cold","name":"Cone of Cold","desc":["A blast of cold
+        air erupts from your hands. Each creature in a 60-foot cone must make a constitution
+        saving throw. A creature takes 8d8 cold damage on a failed save, or half as
+        much damage on a successful one.","A creature killed by this spell becomes
+        a frozen statue until it thaws."],"higher_level":["When you cast this spell
+        using a spell slot of 6th level or higher, the damage increases by 1d8 for
+        each slot level above 5th."],"range":"Self","components":["V","S","M"],"material":"A
+        small crystal or glass cone.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":5,"damage":{"damage_type":{"index":"cold","name":"Cold","url":"/api/damage-types/cold"},"damage_at_slot_level":{"5":"8d8","6":"9d8","7":"10d8","8":"11d8","9":"12d8"}},"dc":{"dc_type":{"index":"con","name":"CON","url":"/api/ability-scores/con"},"dc_success":"half","desc":"A
+        creature killed by this spell becomes a frozen statue until it thaws."},"area_of_effect":{"type":"cone","size":60},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"sorcerer","name":"Sorcerer","url":"/api/classes/sorcerer"},{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/cone-of-cold"}'
+  recorded_at: Mon, 06 Nov 2023 02:03:51 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699236231&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=KW%2B7a9%2BTBbj0xD2%2FNAToKHDQMcgg3IT9S0uQ7QTiaew%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699236231&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=KW%2B7a9%2BTBbj0xD2%2FNAToKHDQMcgg3IT9S0uQ7QTiaew%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Mon, 06 Nov 2023 02:03:51 GMT
+      X-Ratelimit-Reset:
+      - '1699236232'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1350'
+      Etag:
+      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
+        arrow streaks toward a target within range and bursts in a spray of acid.
+        Make a ranged spell attack against the target. On a hit, the target takes
+        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
+        On a miss, the arrow splashes the target with acid for half as much of the
+        initial damage and no damage at the end of its next turn."],"higher_level":["When
+        you cast this spell using a spell slot of 3rd level or higher, the damage
+        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
+        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
+        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
+  recorded_at: Mon, 06 Nov 2023 02:03:51 GMT
+recorded_with: VCR 6.2.0

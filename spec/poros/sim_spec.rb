@@ -20,7 +20,7 @@ RSpec.describe Sim do
     }
 
     rogue = {
-      :class=>"Rogue",
+      :class=>"Barbarian",
       :level=>"20",
       :strength=>"2",
       :dexterity=>"5",
@@ -37,7 +37,7 @@ RSpec.describe Sim do
     }
 
     monk = {
-      :class=>"Monk",
+      :class=>"Barbarian",
       :level=>"20",
       :strength=>"2",
       :dexterity=>"5",
@@ -54,7 +54,7 @@ RSpec.describe Sim do
     }
 
     paladin = { 
-      :class=>"Paladin",
+      :class=>"Barbarian",
       :level=>"20",
       :strength=>"5",
       :dexterity=>"2",
@@ -71,7 +71,7 @@ RSpec.describe Sim do
     }
 
     wizard = {
-      :class=>"Wizard",
+      :class=>"Barbarian",
       :level=>"20",
       :strength=>"0",
       :dexterity=>"4",
@@ -87,8 +87,9 @@ RSpec.describe Sim do
       :damage_die=>"2d10"
     }
     data = [barbarian, rogue, monk, paladin, wizard]
-    players = data.map do |player|
+    players = data.map.with_index do |player, index|
       level_info = DndFacade.new.player(player[:class].downcase)
+      player[:id] = index
       player[:prof_bonus] = level_info[player[:level].to_i - 1][:prof_bonus]
       player[:spells] = [DndFacade.new.spell(player[:spell1]), DndFacade.new.spell(player[:spell2]), DndFacade.new.spell(player[:spell3])]
       if level_info[0][:spellcasting]

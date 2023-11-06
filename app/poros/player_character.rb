@@ -1,12 +1,13 @@
 class PlayerCharacter 
-  attr_reader :name, :hit_points, :armor_class, :damage_die,
+  attr_reader :id, :name, :hit_points, :armor_class, :damage_die,
               :strength, :dexterity, :constitution, :intelligence,
               :wisdom, :charisma, :level, :prof_bonus, :damage_dealt,
-              :features, :class_specific, :spells, :spell_casting, :resources,
+              :features, :class_specific, :spells, :spellcasting, :resources,
               :attacks_attempted, :attacks_successful, :attacks_against_me,
               :attacks_hit_me
               
   def initialize(data)
+    @id = data[:id]
     @level = data[:level].to_i
     @name = data[:class]
     @prof_bonus = data[:prof_bonus]
@@ -83,7 +84,7 @@ class PlayerCharacter
 
   def melee_attack
     attack_mod = @strength > @dexterity ? @strength : @dexterity
-    attack_info = { name: "Melee Attack", attack_bonus: attack_mod + @prof_bonus, damage: {damage_dice: @damage_die + "+#{attack_mod}"}}
+    attack_info = { name: "Melee Attack", attack_bonus: attack_mod + @prof_bonus, damage: [{damage_dice: @damage_die + "+#{attack_mod}"}]}
     if @features.any?("Extra Attack")
       [{ attack: Attack.new(attack_info), count: 2 }]
     else
@@ -92,7 +93,7 @@ class PlayerCharacter
   end
 
   def cantrip
-    cantrip_info = { name: "Cantrip", attack_bonus: spell_to_hit, damage: {damage_dice: @damage_die} }
+    cantrip_info = { name: "Cantrip", attack_bonus: spell_to_hit, damage: [{damage_dice: @damage_die}] }
     [{ attack: Attack.new(cantrip_info), count: 1 }]
   end
 
@@ -140,7 +141,7 @@ class PlayerCharacter
 
   def saving_throw(save_mod)
     mods = {"str": @strength, "dex": @dexterity, "con": @constitution, "wis": @wisdom, "cha": @charisma, "int": @intelligence}
-    mods[:save_mod]
+    mods[:"#{save_mod}"]
   end
 
   def self.make_character(data)

@@ -1,0 +1,248 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/classes/warlock/levels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699232842&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=32j9rX%2F9HNM9eOGokJ6fDfIKqcy0XrtJo0eLFhedEBs%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699232842&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=32j9rX%2F9HNM9eOGokJ6fDfIKqcy0XrtJo0eLFhedEBs%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Mon, 06 Nov 2023 01:07:22 GMT
+      X-Ratelimit-Reset:
+      - '1699232844'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '14007'
+      Etag:
+      - W/"36b7-yUZXRM2xnGwh4uUg4y8iHkKa540"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"otherworldly-patron","name":"Otherworldly
+        Patron","url":"/api/features/otherworldly-patron"},{"index":"pact-magic","name":"Pact
+        Magic","url":"/api/features/pact-magic"}],"spellcasting":{"cantrips_known":2,"spells_known":2,"spell_slots_level_1":1,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":0,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-1","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"eldritch-invocations","name":"Eldritch
+        Invocations","url":"/api/features/eldritch-invocations"}],"spellcasting":{"cantrips_known":2,"spells_known":3,"spell_slots_level_1":2,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":2,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-2","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"pact-boon","name":"Pact
+        Boon","url":"/api/features/pact-boon"}],"spellcasting":{"cantrips_known":2,"spells_known":4,"spell_slots_level_1":0,"spell_slots_level_2":2,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":2,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-3","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"warlock-ability-score-improvement-1","name":"Ability
+        Score Improvement","url":"/api/features/warlock-ability-score-improvement-1"}],"spellcasting":{"cantrips_known":3,"spells_known":5,"spell_slots_level_1":0,"spell_slots_level_2":2,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":3,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-4","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":3,"spells_known":6,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":2,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":3,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-5","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":3,"spells_known":7,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":2,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":4,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-6","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":3,"spells_known":8,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":2,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":4,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-7","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"warlock-ability-score-improvement-2","name":"Ability
+        Score Improvement","url":"/api/features/warlock-ability-score-improvement-2"}],"spellcasting":{"cantrips_known":3,"spells_known":9,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":2,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":4,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-8","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"spellcasting":{"cantrips_known":3,"spells_known":10,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":2,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":5,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-9","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/9"},{"level":10,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"spellcasting":{"cantrips_known":4,"spells_known":10,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":2,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":5,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-10","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"mystic-arcanum-6th-level","name":"Mystic
+        Arcanum (6th level)","url":"/api/features/mystic-arcanum-6th-level"}],"spellcasting":{"cantrips_known":4,"spells_known":11,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":3,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":5,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-11","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/11"},{"level":12,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"warlock-ability-score-improvement-3","name":"Ability
+        Score Improvement","url":"/api/features/warlock-ability-score-improvement-3"}],"spellcasting":{"cantrips_known":4,"spells_known":11,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":3,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":6,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-12","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"mystic-arcanum-7th-level","name":"Mystic
+        Arcanum (7th level)","url":"/api/features/mystic-arcanum-7th-level"}],"spellcasting":{"cantrips_known":4,"spells_known":12,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":3,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":6,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-13","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"spellcasting":{"cantrips_known":4,"spells_known":12,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":3,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":6,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-14","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"mystic-arcanum-8th-level","name":"Mystic
+        Arcanum (8th level)","url":"/api/features/mystic-arcanum-8th-level"}],"spellcasting":{"cantrips_known":4,"spells_known":13,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":3,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":7,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":1,"mystic_arcanum_level_9":0},"index":"warlock-15","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/15"},{"level":16,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"warlock-ability-score-improvement-4","name":"Ability
+        Score Improvement","url":"/api/features/warlock-ability-score-improvement-4"}],"spellcasting":{"cantrips_known":4,"spells_known":13,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":3,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":7,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":1,"mystic_arcanum_level_9":0},"index":"warlock-16","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"mystic-arcanum-9th-level","name":"Mystic
+        Arcanum (9th level)","url":"/api/features/mystic-arcanum-9th-level"}],"spellcasting":{"cantrips_known":4,"spells_known":14,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":4,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":7,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":1,"mystic_arcanum_level_9":1},"index":"warlock-17","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[],"spellcasting":{"cantrips_known":4,"spells_known":14,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":4,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":8,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":1,"mystic_arcanum_level_9":1},"index":"warlock-18","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/18"},{"level":19,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"warlock-ability-score-improvement-5","name":"Ability
+        Score Improvement","url":"/api/features/warlock-ability-score-improvement-5"}],"spellcasting":{"cantrips_known":4,"spells_known":15,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":4,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":8,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":1,"mystic_arcanum_level_9":1},"index":"warlock-19","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"eldritch-master","name":"Eldritch
+        Master","url":"/api/features/eldritch-master"}],"spellcasting":{"cantrips_known":4,"spells_known":15,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":4,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":8,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":1,"mystic_arcanum_level_9":1},"index":"warlock-20","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/20"}]'
+  recorded_at: Mon, 06 Nov 2023 01:07:22 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/fireball
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699232842&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=32j9rX%2F9HNM9eOGokJ6fDfIKqcy0XrtJo0eLFhedEBs%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699232842&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=32j9rX%2F9HNM9eOGokJ6fDfIKqcy0XrtJo0eLFhedEBs%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Mon, 06 Nov 2023 01:07:22 GMT
+      X-Ratelimit-Reset:
+      - '1699232844'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1570'
+      Etag:
+      - W/"622-Mtc7pANQhoeHhQT4wqBsNZ8ePDc"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"fireball","name":"Fireball","desc":["A bright streak flashes
+        from your pointing finger to a point you choose within range and then blossoms
+        with a low roar into an explosion of flame. Each creature in a 20-foot-radius
+        sphere centered on that point must make a dexterity saving throw. A target
+        takes 8d6 fire damage on a failed save, or half as much damage on a successful
+        one.","The fire spreads around corners. It ignites flammable objects in the
+        area that aren''t being worn or carried."],"higher_level":["When you cast
+        this spell using a spell slot of 4th level or higher, the damage increases
+        by 1d6 for each slot level above 3rd."],"range":"150 feet","components":["V","S","M"],"material":"A
+        tiny ball of bat guano and sulfur.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":3,"damage":{"damage_type":{"index":"fire","name":"Fire","url":"/api/damage-types/fire"},"damage_at_slot_level":{"3":"8d6","4":"9d6","5":"10d6","6":"11d6","7":"12d6","8":"13d6","9":"14d6"}},"dc":{"dc_type":{"index":"dex","name":"DEX","url":"/api/ability-scores/dex"},"dc_success":"half"},"area_of_effect":{"type":"sphere","size":20},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"sorcerer","name":"Sorcerer","url":"/api/classes/sorcerer"},{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"fiend","name":"Fiend","url":"/api/subclasses/fiend"}],"url":"/api/spells/fireball"}'
+  recorded_at: Mon, 06 Nov 2023 01:07:22 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/cone-of-cold
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Mon, 06 Nov 2023 01:07:23 GMT
+      X-Ratelimit-Reset:
+      - '1699232844'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1399'
+      Etag:
+      - W/"577-WZu5/KTNGG0CpamVq6wK+oULn+4"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"cone-of-cold","name":"Cone of Cold","desc":["A blast of cold
+        air erupts from your hands. Each creature in a 60-foot cone must make a constitution
+        saving throw. A creature takes 8d8 cold damage on a failed save, or half as
+        much damage on a successful one.","A creature killed by this spell becomes
+        a frozen statue until it thaws."],"higher_level":["When you cast this spell
+        using a spell slot of 6th level or higher, the damage increases by 1d8 for
+        each slot level above 5th."],"range":"Self","components":["V","S","M"],"material":"A
+        small crystal or glass cone.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":5,"damage":{"damage_type":{"index":"cold","name":"Cold","url":"/api/damage-types/cold"},"damage_at_slot_level":{"5":"8d8","6":"9d8","7":"10d8","8":"11d8","9":"12d8"}},"dc":{"dc_type":{"index":"con","name":"CON","url":"/api/ability-scores/con"},"dc_success":"half","desc":"A
+        creature killed by this spell becomes a frozen statue until it thaws."},"area_of_effect":{"type":"cone","size":60},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"sorcerer","name":"Sorcerer","url":"/api/classes/sorcerer"},{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/cone-of-cold"}'
+  recorded_at: Mon, 06 Nov 2023 01:07:23 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699232843&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=H1cze5r7E506oyN3H8uQ62hy72AXioqrxEiMAt9MAKI%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699232843&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=H1cze5r7E506oyN3H8uQ62hy72AXioqrxEiMAt9MAKI%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Mon, 06 Nov 2023 01:07:23 GMT
+      X-Ratelimit-Reset:
+      - '1699232845'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1350'
+      Etag:
+      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
+        arrow streaks toward a target within range and bursts in a spray of acid.
+        Make a ranged spell attack against the target. On a hit, the target takes
+        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
+        On a miss, the arrow splashes the target with acid for half as much of the
+        initial damage and no damage at the end of its next turn."],"higher_level":["When
+        you cast this spell using a spell slot of 3rd level or higher, the damage
+        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
+        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
+        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
+  recorded_at: Mon, 06 Nov 2023 01:07:23 GMT
+recorded_with: VCR 6.2.0

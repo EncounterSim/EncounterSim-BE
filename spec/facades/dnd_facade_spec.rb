@@ -47,19 +47,44 @@ RSpec.describe DndFacade, test: :model do
       expect(monster.name).to be_a String
       expect(monster.armor_class).to be_a Integer
       expect(monster.hit_points).to be_a Integer
-      expect(monster.damage_dice).to be_a String
       expect(monster.strength).to be_a Integer
       expect(monster.dexterity).to be_a Integer
       expect(monster.constitution).to be_a Integer
       expect(monster.intelligence).to be_a Integer
       expect(monster.wisdom).to be_a Integer
       expect(monster.charisma).to be_a Integer
+      expect(monster.proficiencies).to be_an Array
+      expect(monster.prof_bonus).to be_a Integer
+      expect(monster.special_abilities).to be_an Array
       expect(monster.attacks).to be_an Array
+      expect(monster.damage_dealt).to be_a Integer
+      expect(monster.attacks_attempted).to be_a Integer
+      expect(monster.attacks_successful).to be_a Integer
+      expect(monster.attacks_against_me).to be_a Integer
+      expect(monster.attacks_hit_me).to be_a Integer
+      expect(monster.image).to be_a String
     end
 
-    it "spell", :vcr do
+    it "#spell", :vcr do
       spell = DndFacade.new.spell('lightning-bolt')
       expect(spell).to be_a SimSpell
+      expect(spell.index).to be_a String
+      expect(spell.duration).to be_a String
+      expect(spell.casting_time).to be_a String
+      expect(spell.level).to be_a Integer
+      expect(spell.damage).to be_a Hash
+      expect(spell.saving_throw).to be_a Hash
+      expect(spell.aoe).to be_a Hash
+    end
+
+    it "#player", :vcr do
+      player = DndFacade.new.player("barbarian")
+      expect(player).to be_an Array
+      expect(player.count).to eq(20)
+      expect(player[0]).to have_key(:level)
+      expect(player[0]).to have_key(:prof_bonus)
+      expect(player[0]).to have_key(:features)
+      expect(player[0]).to have_key(:class_specific)
     end
   end
 end

@@ -34,17 +34,17 @@ class SimMonster
       return [{ attack: @attacks.max_by {|attack| attack.max_damage}, count: 1 }]
     else
       attacks = multiattack[0].action.select { |action| action[:type] != "ability" }
-      this = attacks.map {|each| {attack: @attacks.select {|a| a.name == each[:action_name]}[0], count: each[:count]}}
+      attacks.map {|each| {attack: @attacks.select {|a| a.name == each[:action_name]}[0], count: each[:count]}}
     end
-  end
-
-  def reset_damage_dealt
-    @damage_dealt = 0
   end
 
   def damage_output(num)
     @attacks_successful += 1
     @damage_dealt += num
+  end
+  
+  def reset_damage_dealt
+    @damage_dealt = 0
   end
 
   def attempt_hit

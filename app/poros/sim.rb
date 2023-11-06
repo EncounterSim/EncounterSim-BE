@@ -51,7 +51,7 @@ class Sim
   end
 
   def determine_target(creature)
-    if @pcs.any? {|pc| pc.name == creature.name}
+    if @pcs.any? {|pc| pc.id == creature.id}
       @enemies.select {|e| e.hit_points > 0}.sample
     else
       @pcs.select {|p| p.hit_points >0}.sample
@@ -61,11 +61,11 @@ class Sim
   def roll_initiative(pcs, enemies)
     pcs.each do |pc|
       @pcs << pc
-      @initiative << {name: pc.name, initiative: roll_die + pc.dexterity, dex: pc.dexterity}
+      @initiative << {id: pc.id, name: pc.name, initiative: roll_die + pc.dexterity, dex: pc.dexterity}
     end
     enemies.each do |enemy|
       @enemies << enemy
-      @initiative << {name: enemy.name, initiative: roll_die + enemy.dexterity, dex: enemy.dexterity}
+      @initiative << {id: enemy.id, name: enemy.name, initiative: roll_die + enemy.dexterity, dex: enemy.dexterity}
     end
     start_combat
     round
@@ -77,7 +77,7 @@ class Sim
   end
 
   def determine_combatant(name)
-    pc = @pcs.select {|pc| pc.name == name[:name]}
+    pc = @pcs.select {|pc| pc.id == name[:id]}
     if pc == []
       @enemies.select {|enemy| enemy.name == name[:name]}[0]
     else
