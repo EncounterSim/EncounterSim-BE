@@ -2,6 +2,1249 @@
 http_interactions:
 - request:
     method: get
+    uri: https://www.dnd5eapi.co/api/classes/barbarian/levels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:07 GMT
+      X-Ratelimit-Reset:
+      - '1699161788'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '7956'
+      Etag:
+      - W/"1f14-L4xeESyvE1HH5BpeTqQ1uTQXGj4"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"rage","name":"Rage","url":"/api/features/rage"},{"index":"barbarian-unarmored-defense","name":"Unarmored
+        Defense","url":"/api/features/barbarian-unarmored-defense"}],"class_specific":{"rage_count":2,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-1","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"reckless-attack","name":"Reckless
+        Attack","url":"/api/features/reckless-attack"},{"index":"danger-sense","name":"Danger
+        Sense","url":"/api/features/danger-sense"}],"class_specific":{"rage_count":2,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-2","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"primal-path","name":"Primal
+        Path","url":"/api/features/primal-path"}],"class_specific":{"rage_count":3,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-3","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"barbarian-ability-score-improvement-1","name":"Ability
+        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-1"}],"class_specific":{"rage_count":3,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-4","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"barbarian-extra-attack","name":"Extra
+        Attack","url":"/api/features/barbarian-extra-attack"},{"index":"fast-movement","name":"Fast
+        Movement","url":"/api/features/fast-movement"}],"class_specific":{"rage_count":3,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-5","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"class_specific":{"rage_count":4,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-6","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"feral-instinct","name":"Feral
+        Instinct","url":"/api/features/feral-instinct"}],"class_specific":{"rage_count":4,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-7","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"barbarian-ability-score-improvement-2","name":"Ability
+        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-2"}],"class_specific":{"rage_count":4,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-8","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"brutal-critical-1-die","name":"Brutal
+        Critical (1 die)","url":"/api/features/brutal-critical-1-die"}],"class_specific":{"rage_count":4,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-9","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/9"},{"level":10,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"class_specific":{"rage_count":4,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-10","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"relentless-rage","name":"Relentless
+        Rage","url":"/api/features/relentless-rage"}],"class_specific":{"rage_count":4,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-11","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/11"},{"level":12,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"barbarian-ability-score-improvement-3","name":"Ability
+        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-3"}],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-12","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"brutal-critical-2-dice","name":"Brutal
+        Critical (2 dice)","url":"/api/features/brutal-critical-2-dice"}],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":2},"index":"barbarian-13","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":2},"index":"barbarian-14","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"persistent-rage","name":"Persistent
+        Rage","url":"/api/features/persistent-rage"}],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":2},"index":"barbarian-15","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/15"},{"level":16,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"barbarian-ability-score-improvement-4","name":"Ability
+        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-4"}],"class_specific":{"rage_count":5,"rage_damage_bonus":4,"brutal_critical_dice":2},"index":"barbarian-16","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"brutal-critical-3-dice","name":"Brutal
+        Critical (3 dice)","url":"/api/features/brutal-critical-3-dice"}],"class_specific":{"rage_count":6,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-17","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"indomitable-might","name":"Indomitable
+        Might","url":"/api/features/indomitable-might"}],"class_specific":{"rage_count":6,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-18","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/18"},{"level":19,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"barbarian-ability-score-improvement-5","name":"Ability
+        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-5"}],"class_specific":{"rage_count":6,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-19","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"primal-champion","name":"Primal
+        Champion","url":"/api/features/primal-champion"}],"class_specific":{"rage_count":9999,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-20","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/20"}]'
+  recorded_at: Sun, 05 Nov 2023 05:23:07 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161787&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=30oLhQqmR4bg8koOegd0%2FOl83SHorzzh%2FBu7pxZ34nw%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161787&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=30oLhQqmR4bg8koOegd0%2FOl83SHorzzh%2FBu7pxZ34nw%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:07 GMT
+      X-Ratelimit-Reset:
+      - '1699161788'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1350'
+      Etag:
+      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
+        arrow streaks toward a target within range and bursts in a spray of acid.
+        Make a ranged spell attack against the target. On a hit, the target takes
+        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
+        On a miss, the arrow splashes the target with acid for half as much of the
+        initial damage and no damage at the end of its next turn."],"higher_level":["When
+        you cast this spell using a spell slot of 3rd level or higher, the damage
+        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
+        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
+        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
+  recorded_at: Sun, 05 Nov 2023 05:23:07 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161787&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=30oLhQqmR4bg8koOegd0%2FOl83SHorzzh%2FBu7pxZ34nw%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161787&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=30oLhQqmR4bg8koOegd0%2FOl83SHorzzh%2FBu7pxZ34nw%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:07 GMT
+      X-Ratelimit-Reset:
+      - '1699161789'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1350'
+      Etag:
+      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
+        arrow streaks toward a target within range and bursts in a spray of acid.
+        Make a ranged spell attack against the target. On a hit, the target takes
+        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
+        On a miss, the arrow splashes the target with acid for half as much of the
+        initial damage and no damage at the end of its next turn."],"higher_level":["When
+        you cast this spell using a spell slot of 3rd level or higher, the damage
+        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
+        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
+        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
+  recorded_at: Sun, 05 Nov 2023 05:23:08 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161788&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=hOphrkjVCHHwWqjOpuL1QByAqk2YqrCjYkBVXElMB%2BM%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161788&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=hOphrkjVCHHwWqjOpuL1QByAqk2YqrCjYkBVXElMB%2BM%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:08 GMT
+      X-Ratelimit-Reset:
+      - '1699161789'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1350'
+      Etag:
+      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
+        arrow streaks toward a target within range and bursts in a spray of acid.
+        Make a ranged spell attack against the target. On a hit, the target takes
+        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
+        On a miss, the arrow splashes the target with acid for half as much of the
+        initial damage and no damage at the end of its next turn."],"higher_level":["When
+        you cast this spell using a spell slot of 3rd level or higher, the damage
+        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
+        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
+        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
+  recorded_at: Sun, 05 Nov 2023 05:23:08 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/classes/rogue/levels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161788&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=hOphrkjVCHHwWqjOpuL1QByAqk2YqrCjYkBVXElMB%2BM%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161788&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=hOphrkjVCHHwWqjOpuL1QByAqk2YqrCjYkBVXElMB%2BM%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:08 GMT
+      X-Ratelimit-Reset:
+      - '1699161789'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '7040'
+      Etag:
+      - W/"1b80-xOHyB0GIdZo+HMlUskKysxEVr/U"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"rogue-expertise-1","name":"Expertise","url":"/api/features/rogue-expertise-1"},{"index":"sneak-attack","name":"Sneak
+        Attack","url":"/api/features/sneak-attack"},{"index":"thieves-cant","name":"Thieves''
+        Cant","url":"/api/features/thieves-cant"}],"class_specific":{"sneak_attack":{"dice_count":1,"dice_value":6}},"index":"rogue-1","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"cunning-action","name":"Cunning
+        Action","url":"/api/features/cunning-action"}],"class_specific":{"sneak_attack":{"dice_count":1,"dice_value":6}},"index":"rogue-2","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"roguish-archetype","name":"Roguish
+        Archetype","url":"/api/features/roguish-archetype"}],"class_specific":{"sneak_attack":{"dice_count":2,"dice_value":6}},"index":"rogue-3","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"rogue-ability-score-improvement-1","name":"Ability
+        Score Improvement","url":"/api/features/rogue-ability-score-improvement-1"}],"class_specific":{"sneak_attack":{"dice_count":2,"dice_value":6}},"index":"rogue-4","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"uncanny-dodge","name":"Uncanny
+        Dodge","url":"/api/features/uncanny-dodge"}],"class_specific":{"sneak_attack":{"dice_count":3,"dice_value":6}},"index":"rogue-5","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"rogue-expertise-2","name":"Expertise","url":"/api/features/rogue-expertise-2"}],"class_specific":{"sneak_attack":{"dice_count":3,"dice_value":6}},"index":"rogue-6","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"rogue-evasion","name":"Evasion","url":"/api/features/rogue-evasion"}],"class_specific":{"sneak_attack":{"dice_count":4,"dice_value":6}},"index":"rogue-7","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"rogue-ability-score-improvement-2","name":"Ability
+        Score Improvement","url":"/api/features/rogue-ability-score-improvement-2"}],"class_specific":{"sneak_attack":{"dice_count":4,"dice_value":6}},"index":"rogue-8","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"class_specific":{"sneak_attack":{"dice_count":5,"dice_value":6}},"index":"rogue-9","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/9"},{"level":10,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"rogue-ability-score-improvement-3","name":"Ability
+        Score Improvement","url":"/api/features/rogue-ability-score-improvement-3"}],"class_specific":{"sneak_attack":{"dice_count":5,"dice_value":6}},"index":"rogue-10","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"reliable-talent","name":"Reliable
+        Talent","url":"/api/features/reliable-talent"}],"class_specific":{"sneak_attack":{"dice_count":6,"dice_value":6}},"index":"rogue-11","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/11"},{"level":12,"ability_score_bonuses":4,"prof_bonus":4,"features":[{"index":"rogue-ability-score-improvement-4","name":"Ability
+        Score Improvement","url":"/api/features/rogue-ability-score-improvement-4"}],"class_specific":{"sneak_attack":{"dice_count":6,"dice_value":6}},"index":"rogue-12","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"class_specific":{"sneak_attack":{"dice_count":7,"dice_value":6}},"index":"rogue-13","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"blindsense","name":"Blindsense","url":"/api/features/blindsense"}],"class_specific":{"sneak_attack":{"dice_count":7,"dice_value":6}},"index":"rogue-14","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"slippery-mind","name":"Slippery
+        Mind","url":"/api/features/slippery-mind"}],"class_specific":{"sneak_attack":{"dice_count":8,"dice_value":6}},"index":"rogue-15","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/15"},{"level":16,"ability_score_bonuses":5,"prof_bonus":5,"features":[{"index":"rogue-ability-score-improvement-5","name":"Ability
+        Score Improvement","url":"/api/features/rogue-ability-score-improvement-5"}],"class_specific":{"sneak_attack":{"dice_count":8,"dice_value":6}},"index":"rogue-16","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[],"class_specific":{"sneak_attack":{"dice_count":9,"dice_value":6}},"index":"rogue-17","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"elusive","name":"Elusive","url":"/api/features/elusive"}],"class_specific":{"sneak_attack":{"dice_count":9,"dice_value":6}},"index":"rogue-18","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/18"},{"level":19,"ability_score_bonuses":6,"prof_bonus":6,"features":[{"index":"rogue-ability-score-improvement-6","name":"Ability
+        Score Improvement","url":"/api/features/rogue-ability-score-improvement-6"}],"class_specific":{"sneak_attack":{"dice_count":10,"dice_value":6}},"index":"rogue-19","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"stroke-of-luck","name":"Stroke
+        of Luck","url":"/api/features/stroke-of-luck"}],"class_specific":{"sneak_attack":{"dice_count":10,"dice_value":6}},"index":"rogue-20","class":{"index":"rogue","name":"Rogue","url":"/api/classes/rogue"},"url":"/api/classes/rogue/levels/20"}]'
+  recorded_at: Sun, 05 Nov 2023 05:23:08 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161789&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=goVFBczDa2ycKzNK6d4T%2FsQP69o08yNAhmVrW9jrBkg%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161789&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=goVFBczDa2ycKzNK6d4T%2FsQP69o08yNAhmVrW9jrBkg%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:09 GMT
+      X-Ratelimit-Reset:
+      - '1699161790'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1350'
+      Etag:
+      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
+        arrow streaks toward a target within range and bursts in a spray of acid.
+        Make a ranged spell attack against the target. On a hit, the target takes
+        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
+        On a miss, the arrow splashes the target with acid for half as much of the
+        initial damage and no damage at the end of its next turn."],"higher_level":["When
+        you cast this spell using a spell slot of 3rd level or higher, the damage
+        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
+        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
+        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
+  recorded_at: Sun, 05 Nov 2023 05:23:09 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161789&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=goVFBczDa2ycKzNK6d4T%2FsQP69o08yNAhmVrW9jrBkg%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161789&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=goVFBczDa2ycKzNK6d4T%2FsQP69o08yNAhmVrW9jrBkg%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:09 GMT
+      X-Ratelimit-Reset:
+      - '1699161790'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1350'
+      Etag:
+      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
+        arrow streaks toward a target within range and bursts in a spray of acid.
+        Make a ranged spell attack against the target. On a hit, the target takes
+        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
+        On a miss, the arrow splashes the target with acid for half as much of the
+        initial damage and no damage at the end of its next turn."],"higher_level":["When
+        you cast this spell using a spell slot of 3rd level or higher, the damage
+        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
+        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
+        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
+  recorded_at: Sun, 05 Nov 2023 05:23:09 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161789&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=goVFBczDa2ycKzNK6d4T%2FsQP69o08yNAhmVrW9jrBkg%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161789&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=goVFBczDa2ycKzNK6d4T%2FsQP69o08yNAhmVrW9jrBkg%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:09 GMT
+      X-Ratelimit-Reset:
+      - '1699161790'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1350'
+      Etag:
+      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
+        arrow streaks toward a target within range and bursts in a spray of acid.
+        Make a ranged spell attack against the target. On a hit, the target takes
+        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
+        On a miss, the arrow splashes the target with acid for half as much of the
+        initial damage and no damage at the end of its next turn."],"higher_level":["When
+        you cast this spell using a spell slot of 3rd level or higher, the damage
+        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
+        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
+        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
+  recorded_at: Sun, 05 Nov 2023 05:23:09 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/classes/monk/levels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:10 GMT
+      X-Ratelimit-Reset:
+      - '1699161791'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '8467'
+      Etag:
+      - W/"2113-2Cnjk5wV37Ba15SvrQ3+NpA0vAU"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"monk-unarmored-defense","name":"Unarmored
+        Defense","url":"/api/features/monk-unarmored-defense"},{"index":"martial-arts","name":"Martial
+        Arts","url":"/api/features/martial-arts"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":4},"ki_points":0,"unarmored_movement":0},"index":"monk-1","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"ki","name":"Ki","url":"/api/features/ki"},{"index":"flurry-of-blows","name":"Flurry
+        of Blows","url":"/api/features/flurry-of-blows"},{"index":"patient-defense","name":"Patient
+        Defense","url":"/api/features/patient-defense"},{"index":"step-of-the-wind","name":"Step
+        of the Wind","url":"/api/features/step-of-the-wind"},{"index":"unarmored-movement-1","name":"Unarmored
+        Movement","url":"/api/features/unarmored-movement-1"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":4},"ki_points":2,"unarmored_movement":10},"index":"monk-2","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"monastic-tradition","name":"Monastic
+        Tradition","url":"/api/features/monastic-tradition"},{"index":"deflect-missiles","name":"Deflect
+        Missiles","url":"/api/features/deflect-missiles"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":4},"ki_points":3,"unarmored_movement":10},"index":"monk-3","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"monk-ability-score-improvement-1","name":"Ability
+        Score Improvement","url":"/api/features/monk-ability-score-improvement-1"},{"index":"slow-fall","name":"Slow
+        Fall","url":"/api/features/slow-fall"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":4},"ki_points":4,"unarmored_movement":10},"index":"monk-4","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"monk-extra-attack","name":"Extra
+        Attack","url":"/api/features/monk-extra-attack"},{"index":"stunning-strike","name":"Stunning
+        Strike","url":"/api/features/stunning-strike"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":6},"ki_points":5,"unarmored_movement":10},"index":"monk-5","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"ki-empowered-strikes","name":"Ki
+        Empowered Strikes","url":"/api/features/ki-empowered-strikes"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":6},"ki_points":6,"unarmored_movement":15},"index":"monk-6","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"monk-evasion","name":"Evasion","url":"/api/features/monk-evasion"},{"index":"stillness-of-mind","name":"Stillness
+        of Mind","url":"/api/features/stillness-of-mind"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":6},"ki_points":7,"unarmored_movement":15},"index":"monk-7","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"monk-ability-score-improvement-2","name":"Ability
+        Score Improvement","url":"/api/features/monk-ability-score-improvement-2"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":6},"ki_points":8,"unarmored_movement":15},"index":"monk-8","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"unarmored-movement-2","name":"Unarmored
+        Movement","url":"/api/features/unarmored-movement-2"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":6},"ki_points":9,"unarmored_movement":15},"index":"monk-9","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/9"},{"level":10,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"purity-of-body","name":"Purity
+        of Body","url":"/api/features/purity-of-body"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":6},"ki_points":10,"unarmored_movement":20},"index":"monk-10","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":8},"ki_points":11,"unarmored_movement":20},"index":"monk-11","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/11"},{"level":12,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"monk-ability-score-improvement-3","name":"Ability
+        Score Improvement","url":"/api/features/monk-ability-score-improvement-3"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":8},"ki_points":12,"unarmored_movement":20},"index":"monk-12","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"tongue-of-the-sun-and-moon","name":"Tongue
+        of the Sun and Moon","url":"/api/features/tongue-of-the-sun-and-moon"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":8},"ki_points":13,"unarmored_movement":20},"index":"monk-13","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"diamond-soul","name":"Diamond
+        Soul","url":"/api/features/diamond-soul"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":8},"ki_points":14,"unarmored_movement":25},"index":"monk-14","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"monk-timeless-body","name":"Timeless
+        Body","url":"/api/features/monk-timeless-body"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":8},"ki_points":15,"unarmored_movement":25},"index":"monk-15","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/15"},{"level":16,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"monk-ability-score-improvement-4","name":"Ability
+        Score Improvement","url":"/api/features/monk-ability-score-improvement-4"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":8},"ki_points":16,"unarmored_movement":25},"index":"monk-16","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":10},"ki_points":17,"unarmored_movement":25},"index":"monk-17","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"empty-body","name":"Empty
+        Body","url":"/api/features/empty-body"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":10},"ki_points":18,"unarmored_movement":30},"index":"monk-18","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/18"},{"level":19,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"monk-ability-score-improvement-5","name":"Ability
+        Score Improvement","url":"/api/features/monk-ability-score-improvement-5"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":10},"ki_points":19,"unarmored_movement":30},"index":"monk-19","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"perfect-self","name":"Perfect
+        Self","url":"/api/features/perfect-self"}],"class_specific":{"martial_arts":{"dice_count":1,"dice_value":10},"ki_points":20,"unarmored_movement":30},"index":"monk-20","class":{"index":"monk","name":"Monk","url":"/api/classes/monk"},"url":"/api/classes/monk/levels/20"}]'
+  recorded_at: Sun, 05 Nov 2023 05:23:10 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161790&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=n9rZ9cOiXzUp4FisczGdubzprTbbk8wx8Pkm1lwrTCE%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161790&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=n9rZ9cOiXzUp4FisczGdubzprTbbk8wx8Pkm1lwrTCE%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:10 GMT
+      X-Ratelimit-Reset:
+      - '1699161791'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1350'
+      Etag:
+      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
+        arrow streaks toward a target within range and bursts in a spray of acid.
+        Make a ranged spell attack against the target. On a hit, the target takes
+        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
+        On a miss, the arrow splashes the target with acid for half as much of the
+        initial damage and no damage at the end of its next turn."],"higher_level":["When
+        you cast this spell using a spell slot of 3rd level or higher, the damage
+        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
+        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
+        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
+  recorded_at: Sun, 05 Nov 2023 05:23:10 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161790&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=n9rZ9cOiXzUp4FisczGdubzprTbbk8wx8Pkm1lwrTCE%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161790&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=n9rZ9cOiXzUp4FisczGdubzprTbbk8wx8Pkm1lwrTCE%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:10 GMT
+      X-Ratelimit-Reset:
+      - '1699161791'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1350'
+      Etag:
+      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
+        arrow streaks toward a target within range and bursts in a spray of acid.
+        Make a ranged spell attack against the target. On a hit, the target takes
+        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
+        On a miss, the arrow splashes the target with acid for half as much of the
+        initial damage and no damage at the end of its next turn."],"higher_level":["When
+        you cast this spell using a spell slot of 3rd level or higher, the damage
+        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
+        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
+        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
+  recorded_at: Sun, 05 Nov 2023 05:23:10 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161791&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=JZornGSQrxlNkoat5%2FunsxEBQadWdhgt%2FZgS38i94ms%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161791&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=JZornGSQrxlNkoat5%2FunsxEBQadWdhgt%2FZgS38i94ms%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:11 GMT
+      X-Ratelimit-Reset:
+      - '1699161792'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1350'
+      Etag:
+      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
+        arrow streaks toward a target within range and bursts in a spray of acid.
+        Make a ranged spell attack against the target. On a hit, the target takes
+        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
+        On a miss, the arrow splashes the target with acid for half as much of the
+        initial damage and no damage at the end of its next turn."],"higher_level":["When
+        you cast this spell using a spell slot of 3rd level or higher, the damage
+        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
+        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
+        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
+  recorded_at: Sun, 05 Nov 2023 05:23:11 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/classes/paladin/levels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161791&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=JZornGSQrxlNkoat5%2FunsxEBQadWdhgt%2FZgS38i94ms%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161791&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=JZornGSQrxlNkoat5%2FunsxEBQadWdhgt%2FZgS38i94ms%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:11 GMT
+      X-Ratelimit-Reset:
+      - '1699161792'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '9520'
+      Etag:
+      - W/"2530-1tkm2VKJ+7ldX/m7yBWeWJgefzA"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"divine-sense","name":"Divine
+        Sense","url":"/api/features/divine-sense"},{"index":"lay-on-hands","name":"Lay
+        on Hands","url":"/api/features/lay-on-hands"}],"spellcasting":{"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0},"class_specific":{"aura_range":0},"index":"paladin-1","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"paladin-fighting-style","name":"Fighting
+        Style","url":"/api/features/paladin-fighting-style"},{"index":"spellcasting-paladin","name":"Spellcasting:
+        Paladin","url":"/api/features/spellcasting-paladin"},{"index":"divine-smite","name":"Divine
+        Smite","url":"/api/features/divine-smite"}],"spellcasting":{"spell_slots_level_1":2,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0},"class_specific":{"aura_range":0},"index":"paladin-2","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"divine-health","name":"Divine
+        Health","url":"/api/features/divine-health"},{"index":"sacred-oath","name":"Sacred
+        Oath","url":"/api/features/sacred-oath"},{"index":"oath-spells","name":"Oath
+        Spells","url":"/api/features/oath-spells"},{"index":"channel-divinity","name":"Channel
+        Divinity","url":"/api/features/channel-divinity"}],"spellcasting":{"spell_slots_level_1":3,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0},"class_specific":{"aura_range":0},"index":"paladin-3","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"paladin-ability-score-improvement-1","name":"Ability
+        Score Improvement","url":"/api/features/paladin-ability-score-improvement-1"}],"spellcasting":{"spell_slots_level_1":3,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0},"class_specific":{"aura_range":0},"index":"paladin-4","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"paladin-extra-attack","name":"Extra
+        Attack","url":"/api/features/paladin-extra-attack"}],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":2,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0},"class_specific":{"aura_range":0},"index":"paladin-5","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"aura-of-protection","name":"Aura
+        of Protection","url":"/api/features/aura-of-protection"}],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":2,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0},"class_specific":{"aura_range":10},"index":"paladin-6","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0},"class_specific":{"aura_range":10},"index":"paladin-7","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"paladin-ability-score-improvement-2","name":"Ability
+        Score Improvement","url":"/api/features/paladin-ability-score-improvement-2"}],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0},"class_specific":{"aura_range":10},"index":"paladin-8","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":2,"spell_slots_level_4":0,"spell_slots_level_5":0},"class_specific":{"aura_range":10},"index":"paladin-9","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/9"},{"level":10,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"aura-of-courage","name":"Aura
+        of Courage","url":"/api/features/aura-of-courage"}],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":2,"spell_slots_level_4":0,"spell_slots_level_5":0},"class_specific":{"aura_range":10},"index":"paladin-10","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"improved-divine-smite","name":"Improved
+        Divine Smite","url":"/api/features/improved-divine-smite"}],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":0,"spell_slots_level_5":0},"class_specific":{"aura_range":10},"index":"paladin-11","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/11"},{"level":12,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"paladin-ability-score-improvement-3","name":"Ability
+        Score Improvement","url":"/api/features/paladin-ability-score-improvement-3"}],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":0,"spell_slots_level_5":0},"class_specific":{"aura_range":10},"index":"paladin-12","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":1,"spell_slots_level_5":0},"class_specific":{"aura_range":10},"index":"paladin-13","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"cleansing-touch","name":"Cleansing
+        Touch","url":"/api/features/cleansing-touch"}],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":1,"spell_slots_level_5":0},"class_specific":{"aura_range":10},"index":"paladin-14","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":2,"spell_slots_level_5":0},"class_specific":{"aura_range":10},"index":"paladin-15","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/15"},{"level":16,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"paladin-ability-score-improvement-4","name":"Ability
+        Score Improvement","url":"/api/features/paladin-ability-score-improvement-4"}],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":2,"spell_slots_level_5":0},"class_specific":{"aura_range":10},"index":"paladin-16","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":1},"class_specific":{"aura_range":10},"index":"paladin-17","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"aura-improvements","name":"Aura
+        improvements","url":"/api/features/aura-improvements"}],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":1},"class_specific":{"aura_range":30},"index":"paladin-18","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/18"},{"level":19,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"paladin-ability-score-improvement-5","name":"Ability
+        Score Improvement","url":"/api/features/paladin-ability-score-improvement-5"}],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2},"class_specific":{"aura_range":30},"index":"paladin-19","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[],"spellcasting":{"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2},"class_specific":{"aura_range":30},"index":"paladin-20","class":{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"},"url":"/api/classes/paladin/levels/20"}]'
+  recorded_at: Sun, 05 Nov 2023 05:23:11 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/branding-smite
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161791&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=JZornGSQrxlNkoat5%2FunsxEBQadWdhgt%2FZgS38i94ms%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161791&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=JZornGSQrxlNkoat5%2FunsxEBQadWdhgt%2FZgS38i94ms%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:11 GMT
+      X-Ratelimit-Reset:
+      - '1699161792'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1102'
+      Etag:
+      - W/"44e-BQ7CAVZykqR69GR8pDOz8N2beck"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"branding-smite","name":"Branding Smite","desc":["The next
+        time you hit a creature with a weapon attack before this spell ends, the weapon
+        gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant
+        damage to the target, which becomes visible if it''s invisible, and the target
+        sheds dim light in a 5-foot radius and can''t become invisible until the spell
+        ends."],"higher_level":["When you cast this spell using a spell slot of 3rd
+        level or higher, the extra damage increases by 1d6 for each slot level above
+        2nd."],"range":"Self","components":["V"],"ritual":false,"duration":"Up to
+        1 minute","concentration":true,"casting_time":"1 bonus action","level":2,"damage":{"damage_type":{"index":"radiant","name":"Radiant","url":"/api/damage-types/radiant"},"damage_at_slot_level":{"2":"2d6","3":"3d6","4":"4d6","5":"5d6","6":"6d6","7":"7d6","8":"8d6","9":"9d6"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"}],"subclasses":[],"url":"/api/spells/branding-smite"}'
+  recorded_at: Sun, 05 Nov 2023 05:23:11 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/branding-smite
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161792&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=mYnlDbo5ta9oODW4IFVFGnXSgRzsr1otFfaBs9pBAzs%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161792&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=mYnlDbo5ta9oODW4IFVFGnXSgRzsr1otFfaBs9pBAzs%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:12 GMT
+      X-Ratelimit-Reset:
+      - '1699161793'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1102'
+      Etag:
+      - W/"44e-BQ7CAVZykqR69GR8pDOz8N2beck"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"branding-smite","name":"Branding Smite","desc":["The next
+        time you hit a creature with a weapon attack before this spell ends, the weapon
+        gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant
+        damage to the target, which becomes visible if it''s invisible, and the target
+        sheds dim light in a 5-foot radius and can''t become invisible until the spell
+        ends."],"higher_level":["When you cast this spell using a spell slot of 3rd
+        level or higher, the extra damage increases by 1d6 for each slot level above
+        2nd."],"range":"Self","components":["V"],"ritual":false,"duration":"Up to
+        1 minute","concentration":true,"casting_time":"1 bonus action","level":2,"damage":{"damage_type":{"index":"radiant","name":"Radiant","url":"/api/damage-types/radiant"},"damage_at_slot_level":{"2":"2d6","3":"3d6","4":"4d6","5":"5d6","6":"6d6","7":"7d6","8":"8d6","9":"9d6"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"}],"subclasses":[],"url":"/api/spells/branding-smite"}'
+  recorded_at: Sun, 05 Nov 2023 05:23:12 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/branding-smite
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161792&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=mYnlDbo5ta9oODW4IFVFGnXSgRzsr1otFfaBs9pBAzs%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161792&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=mYnlDbo5ta9oODW4IFVFGnXSgRzsr1otFfaBs9pBAzs%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:12 GMT
+      X-Ratelimit-Reset:
+      - '1699161793'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1102'
+      Etag:
+      - W/"44e-BQ7CAVZykqR69GR8pDOz8N2beck"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"branding-smite","name":"Branding Smite","desc":["The next
+        time you hit a creature with a weapon attack before this spell ends, the weapon
+        gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant
+        damage to the target, which becomes visible if it''s invisible, and the target
+        sheds dim light in a 5-foot radius and can''t become invisible until the spell
+        ends."],"higher_level":["When you cast this spell using a spell slot of 3rd
+        level or higher, the extra damage increases by 1d6 for each slot level above
+        2nd."],"range":"Self","components":["V"],"ritual":false,"duration":"Up to
+        1 minute","concentration":true,"casting_time":"1 bonus action","level":2,"damage":{"damage_type":{"index":"radiant","name":"Radiant","url":"/api/damage-types/radiant"},"damage_at_slot_level":{"2":"2d6","3":"3d6","4":"4d6","5":"5d6","6":"6d6","7":"7d6","8":"8d6","9":"9d6"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"}],"subclasses":[],"url":"/api/spells/branding-smite"}'
+  recorded_at: Sun, 05 Nov 2023 05:23:12 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/classes/wizard/levels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161792&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=mYnlDbo5ta9oODW4IFVFGnXSgRzsr1otFfaBs9pBAzs%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161792&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=mYnlDbo5ta9oODW4IFVFGnXSgRzsr1otFfaBs9pBAzs%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:12 GMT
+      X-Ratelimit-Reset:
+      - '1699161793'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '11027'
+      Etag:
+      - W/"2b13-DQLgqlgkjbgI3M7SGqK8Ub1aB6Q"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"spellcasting-wizard","name":"Spellcasting:
+        Wizard","url":"/api/features/spellcasting-wizard"},{"index":"arcane-recovery","name":"Arcane
+        Recovery","url":"/api/features/arcane-recovery"}],"spellcasting":{"cantrips_known":3,"spell_slots_level_1":2,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":1},"index":"wizard-1","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"arcane-tradition","name":"Arcane
+        Tradition","url":"/api/features/arcane-tradition"}],"spellcasting":{"cantrips_known":3,"spell_slots_level_1":3,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":1},"index":"wizard-2","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[],"spellcasting":{"cantrips_known":3,"spell_slots_level_1":4,"spell_slots_level_2":2,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":2},"index":"wizard-3","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"wizard-ability-score-improvement-1","name":"Ability
+        Score Improvement","url":"/api/features/wizard-ability-score-improvement-1"}],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":2},"index":"wizard-4","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":2,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":3},"index":"wizard-5","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":3},"index":"wizard-6","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":1,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":4},"index":"wizard-7","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"wizard-ability-score-improvement-2","name":"Ability
+        Score Improvement","url":"/api/features/wizard-ability-score-improvement-2"}],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":2,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":4},"index":"wizard-8","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":1,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":5},"index":"wizard-9","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/9"},{"level":10,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":5},"index":"wizard-10","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":6},"index":"wizard-11","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/11"},{"level":12,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"wizard-ability-score-improvement-3","name":"Ability
+        Score Improvement","url":"/api/features/wizard-ability-score-improvement-3"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":6},"index":"wizard-12","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":7},"index":"wizard-13","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":7},"index":"wizard-14","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":8},"index":"wizard-15","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/15"},{"level":16,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"wizard-ability-score-improvement-4","name":"Ability
+        Score Improvement","url":"/api/features/wizard-ability-score-improvement-4"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":8},"index":"wizard-16","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"arcane_recovery_levels":9},"index":"wizard-17","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"spell-mastery","name":"Spell
+        Mastery","url":"/api/features/spell-mastery"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":3,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"arcane_recovery_levels":9},"index":"wizard-18","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/18"},{"level":19,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"wizard-ability-score-improvement-5","name":"Ability
+        Score Improvement","url":"/api/features/wizard-ability-score-improvement-5"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":3,"spell_slots_level_6":2,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"arcane_recovery_levels":10},"index":"wizard-19","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"signature-spell","name":"Signature
+        Spell","url":"/api/features/signature-spell"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":3,"spell_slots_level_6":2,"spell_slots_level_7":2,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"arcane_recovery_levels":10},"index":"wizard-20","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/20"}]'
+  recorded_at: Sun, 05 Nov 2023 05:23:12 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/fireball
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:13 GMT
+      X-Ratelimit-Reset:
+      - '1699161794'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1570'
+      Etag:
+      - W/"622-Mtc7pANQhoeHhQT4wqBsNZ8ePDc"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"fireball","name":"Fireball","desc":["A bright streak flashes
+        from your pointing finger to a point you choose within range and then blossoms
+        with a low roar into an explosion of flame. Each creature in a 20-foot-radius
+        sphere centered on that point must make a dexterity saving throw. A target
+        takes 8d6 fire damage on a failed save, or half as much damage on a successful
+        one.","The fire spreads around corners. It ignites flammable objects in the
+        area that aren''t being worn or carried."],"higher_level":["When you cast
+        this spell using a spell slot of 4th level or higher, the damage increases
+        by 1d6 for each slot level above 3rd."],"range":"150 feet","components":["V","S","M"],"material":"A
+        tiny ball of bat guano and sulfur.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":3,"damage":{"damage_type":{"index":"fire","name":"Fire","url":"/api/damage-types/fire"},"damage_at_slot_level":{"3":"8d6","4":"9d6","5":"10d6","6":"11d6","7":"12d6","8":"13d6","9":"14d6"}},"dc":{"dc_type":{"index":"dex","name":"DEX","url":"/api/ability-scores/dex"},"dc_success":"half"},"area_of_effect":{"type":"sphere","size":20},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"sorcerer","name":"Sorcerer","url":"/api/classes/sorcerer"},{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"fiend","name":"Fiend","url":"/api/subclasses/fiend"}],"url":"/api/spells/fireball"}'
+  recorded_at: Sun, 05 Nov 2023 05:23:13 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/scorching-ray
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:13 GMT
+      X-Ratelimit-Reset:
+      - '1699161794'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1074'
+      Etag:
+      - W/"432-+3rOQvbWCeQNPteFf83SHmgErkg"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"scorching-ray","name":"Scorching Ray","desc":["You create
+        three rays of fire and hurl them at targets within range. You can hurl them
+        at one target or several.","Make a ranged spell attack for each ray. On a
+        hit, the target takes 2d6 fire damage."],"higher_level":["When you cast this
+        spell using a spell slot of 3rd level or higher, you create one additional
+        ray for each slot level above 2nd."],"range":"120 feet","components":["V","S"],"ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":2,"damage":{"damage_type":{"index":"fire","name":"Fire","url":"/api/damage-types/fire"},"damage_at_slot_level":{"2":"2d6"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"sorcerer","name":"Sorcerer","url":"/api/classes/sorcerer"},{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"fiend","name":"Fiend","url":"/api/subclasses/fiend"}],"url":"/api/spells/scorching-ray"}'
+  recorded_at: Sun, 05 Nov 2023 05:23:13 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/magic-missile
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161793&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=8zUP5NU6Dr8XWztvoPkV%2B22hGAZIQxxeRMNNmb1HMfM%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161793&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=8zUP5NU6Dr8XWztvoPkV%2B22hGAZIQxxeRMNNmb1HMfM%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Sun, 05 Nov 2023 05:23:13 GMT
+      X-Ratelimit-Reset:
+      - '1699161794'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1195'
+      Etag:
+      - W/"4ab-cOvsxkQG1XhWreCnh7NJyeBLOeE"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"magic-missile","name":"Magic Missile","desc":["You create
+        three glowing darts of magical force. Each dart hits a creature of your choice
+        that you can see within range. A dart deals 1d4 + 1 force damage to its target.
+        The darts all strike simultaneously, and you can direct them to hit one creature
+        or several."],"higher_level":["When you cast this spell using a spell slot
+        of 2nd level or higher, the spell creates one more dart for each slot level
+        above 1st."],"range":"120 feet","components":["V","S"],"ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":1,"damage":{"damage_type":{"index":"force","name":"Force","url":"/api/damage-types/force"},"damage_at_slot_level":{"1":"1d4
+        + 1","2":"1d4 + 1","3":"1d4 + 1","4":"1d4 + 1","5":"1d4 + 1","6":"1d4 + 1","7":"1d4
+        + 1","8":"1d4 + 1","9":"1d4 + 1"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"sorcerer","name":"Sorcerer","url":"/api/classes/sorcerer"},{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"}],"url":"/api/spells/magic-missile"}'
+  recorded_at: Sun, 05 Nov 2023 05:23:13 GMT
+- request:
+    method: get
     uri: https://www.dnd5eapi.co/api/monsters/adult-black-dragon
     body:
       encoding: US-ASCII
@@ -21,9 +1264,9 @@ http_interactions:
       Server:
       - Cowboy
       Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699038354&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=o%2B0n02uY98SlCYEhmPZma7dIuDazfVmxyWLeJARLmrs%3D"}]}'
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699161794&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=ryH28YT%2FE2S6LJ4i5bPyc%2BY1sDkrqaKFtmCojcTPE7Y%3D"}]}'
       Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699038354&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=o%2B0n02uY98SlCYEhmPZma7dIuDazfVmxyWLeJARLmrs%3D
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699161794&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=ryH28YT%2FE2S6LJ4i5bPyc%2BY1sDkrqaKFtmCojcTPE7Y%3D
       Nel:
       - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
       Connection:
@@ -37,9 +1280,9 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Fri, 03 Nov 2023 19:05:54 GMT
+      - Sun, 05 Nov 2023 05:23:14 GMT
       X-Ratelimit-Reset:
-      - '1699038355'
+      - '1699161795'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -87,5 +1330,5 @@ http_interactions:
         dragon beats its wings. Each creature within 10 ft. of the dragon must succeed
         on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage
         and be knocked prone. The dragon can then fly up to half its flying speed.","dc":{"dc_type":{"index":"dex","name":"DEX","url":"/api/ability-scores/dex"},"dc_value":19,"success_type":"none"},"damage":[{"damage_type":{"index":"bludgeoning","name":"Bludgeoning","url":"/api/damage-types/bludgeoning"},"damage_dice":"2d6+6"}]}],"image":"/api/images/monsters/adult-black-dragon.png","url":"/api/monsters/adult-black-dragon"}'
-  recorded_at: Fri, 03 Nov 2023 19:05:54 GMT
+  recorded_at: Sun, 05 Nov 2023 05:23:14 GMT
 recorded_with: VCR 6.2.0

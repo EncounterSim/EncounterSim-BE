@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_02_173326) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_05_182908) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -19,6 +19,30 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_02_173326) do
     t.integer "outcome"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "p1_attacks_attempted"
+    t.integer "p1_attacks_successful"
+    t.integer "p1_attacks_against_me"
+    t.integer "p1_attacks_hit_me"
+    t.integer "p2_attacks_attempted"
+    t.integer "p2_attacks_successful"
+    t.integer "p2_attacks_against_me"
+    t.integer "p2_attacks_hit_me"
+    t.integer "p3_attacks_attempted"
+    t.integer "p3_attacks_successful"
+    t.integer "p3_attacks_against_me"
+    t.integer "p3_attacks_hit_me"
+    t.integer "p4_attacks_attempted"
+    t.integer "p4_attacks_successful"
+    t.integer "p4_attacks_against_me"
+    t.integer "p4_attacks_hit_me"
+    t.integer "p5_attacks_attempted"
+    t.integer "p5_attacks_successful"
+    t.integer "p5_attacks_against_me"
+    t.integer "p5_attacks_hit_me"
+    t.integer "monster_attacks_attempted"
+    t.integer "monster_attacks_successful"
+    t.integer "monster_attacks_against_me"
+    t.integer "monster_attacks_hit_me"
     t.index ["combat_id"], name: "index_combat_results_on_combat_id"
   end
 
@@ -57,6 +81,12 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_02_173326) do
     t.string "monster"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "p1_initiative"
+    t.integer "p2_initiative"
+    t.integer "p3_initiative"
+    t.integer "p4_initiative"
+    t.integer "p5_initiative"
+    t.integer "monster_initiative"
     t.index ["simulation_id"], name: "index_combats_on_simulation_id"
   end
 

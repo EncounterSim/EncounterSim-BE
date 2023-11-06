@@ -2,25 +2,12 @@ class SimBarbarian < PlayerCharacter
 
   def initialize(data)
     super
-  end
-
-  def reset_damage_dealt
-    super
-  end
-
-  def damage_output(num)
-    super
-  end
-
-  def determine_action
-    super
-  end
-
-  def melee_attack
-    super
+    @resources = 0
   end
 
   def take_damage(amount)
+    @attacks_against_me += 1
+    @attacks_hit_me += 1
     @hit_points -= (amount / 2).round
     (amount / 2).round
   end
