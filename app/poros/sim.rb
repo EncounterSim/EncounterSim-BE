@@ -32,6 +32,7 @@ class Sim
     creature.reset_damage_dealt
     action = creature.determine_action
     target = determine_target(creature)
+    require 'pry'; binding.pry
     if target
       action.each do |each|
         if each[:attack] != nil
