@@ -1,7 +1,7 @@
 class Api::V1::EncountersController < ApplicationController
 
   def index
-    render json: SimulationSerializer.new(Simulation.where(user_id: params[:user_id]))
+    render json: SimulationSerializer.new(Simulation.where(user_id: params[:user_id])), include: ['combats']
   end
 
   def create
@@ -24,6 +24,11 @@ class Api::V1::EncountersController < ApplicationController
   def show
     sim = Simulation.find(params[:id])
     render json: ResultSerializer.new(Result.new(sim.id))
+  end
+
+  def players
+    combat = Combat.where('simulation_id = ?', params[:sim_id]).first
+    render json: CombatSerializer.new(combat)
   end
 
   private
