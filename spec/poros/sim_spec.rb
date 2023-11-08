@@ -115,7 +115,6 @@ RSpec.describe Sim do
       sim_runner.roll_initiative(pcs, enemies)
     end
     
-    require 'pry'; binding.pry
     Result.new(new_sim.id)
   end
 end
