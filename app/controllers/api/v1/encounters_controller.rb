@@ -16,9 +16,6 @@ class Api::V1::EncountersController < ApplicationController
       sim_runner.roll_initiative(pcs, [monster])
     end
     render json: ResultSerializer.new(Result.new(new_sim.id))
-    # Pry here to check simulation data
-    # Simulation.last.combats.last.combat_results
-    # Simulation.last.combats.last.combat_rounds
   end
 
   def show

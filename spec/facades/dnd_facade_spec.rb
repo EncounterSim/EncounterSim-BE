@@ -42,7 +42,7 @@ RSpec.describe DndFacade, test: :model do
     end
 
     it "#monster", :vcr do
-      monster = DndFacade.new.monster("aboleth")
+      monster = DndFacade.new.monster("adult-black-dragon")
       expect(monster).to be_a SimMonster
       expect(monster.name).to be_a String
       expect(monster.armor_class).to be_a Integer

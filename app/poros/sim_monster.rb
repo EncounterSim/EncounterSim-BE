@@ -29,13 +29,37 @@ class SimMonster
   end
 
   def determine_action
+    limited_use = @attacks.select {|attack| attack.usage != nil}
     multiattack = @attacks.select {|attack| attack.name == "Multiattack"}
-    if multiattack == []
-      return [{ attack: @attacks.max_by {|attack| attack.max_damage}, count: 1 }]
-    else
+    if limited_use != [] && limited_use[0].usage[:dice] != nil && limited_use[0].damage_dice != nil
+      if (1..(limited_use[0].usage[:dice].split(/[^\d]/)[1].to_i)).to_a.sample >= limited_use[0].usage[:min_value]
+        use = [{ attack: limited_use[0], count: "aoe"}]
+      elsif multiattack != []
+        attacks = multiattack[0].action.select { |action| action[:type] != "ability" }
+        use = attacks.map do |each|
+          if @attacks.select {|a| (a.name == each[:action_name] || a.name == each[:action_name][0..-2]) && a.damage_dice}[0]
+            {attack: @attacks.select {|a| (a.name == each[:action_name] || a.name == each[:action_name][0..-2]) && a.damage_dice}[0], count: each[:count]}
+          end
+        end.compact
+      else
+        single_attacks = @attacks.select {|attack| attack.name != "Multiattack" && !attack.usage && attack.damage_dice}
+        use = [{ attack: single_attacks.max_by {|attack| attack.max_damage}, count: 1 }]
+      end
+    elsif multiattack != []
       attacks = multiattack[0].action.select { |action| action[:type] != "ability" }
-      attacks.map {|each| {attack: @attacks.select {|a| a.name == each[:action_name]}[0], count: each[:count]}}
+      use = attacks.map do |each|
+        if @attacks.select {|a| (a.name == each[:action_name] || a.name == each[:action_name][0..-2]) && a.damage_dice}[0]
+          {attack: @attacks.select {|a| (a.name == each[:action_name] || a.name == each[:action_name][0..-2]) && a.damage_dice}[0], count: each[:count]}
+        end
+      end.compact
+    else
+      single_attacks = @attacks.select {|attack| attack.name != "Multiattack" && !attack.usage && attack.damage_dice}
+      use = [{ attack: single_attacks.max_by {|attack| attack.max_damage}, count: 1 }]
     end
+    # if @name == "Roper"
+    #   require 'pry'; binding.pry
+    # end
+    use
   end
 
   def damage_output(num)

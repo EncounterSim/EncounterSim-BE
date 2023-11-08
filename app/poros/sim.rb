@@ -34,14 +34,21 @@ class Sim
     target = determine_target(creature)
     if target
       action.each do |each|
-        (each[:count].to_i).times do
-          if target
-            if target.hit_points > 0
-              each[:attack].attack(target, creature)
-            else
-              target = determine_target(creature)
+        if each[:attack] != nil
+          if each[:count] == "aoe"
+            targets = @pcs.select {|pc| pc.hit_points > 0}
+            each[:attack].aoe(targets, creature)
+          else
+            (each[:count].to_i).times do
               if target
-                each[:attack].attack(target, creature)
+                if target.hit_points > 0
+                  each[:attack].attack(target, creature)
+                else
+                  target = determine_target(creature)
+                  if target
+                    each[:attack].attack(target, creature)
+                  end
+                end
               end
             end
           end
@@ -54,7 +61,7 @@ class Sim
     if @pcs.any? {|pc| pc.id == creature.id}
       @enemies.select {|e| e.hit_points > 0}.sample
     else
-      @pcs.select {|p| p.hit_points >0}.sample
+      @pcs.select {|p| p.hit_points > 0}.sample
     end
   end
 
