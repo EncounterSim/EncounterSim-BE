@@ -20,7 +20,7 @@ class PlayerCharacter
     @intelligence = data[:intelligence].to_i
     @wisdom = data[:wisdom].to_i
     @charisma = data[:charisma].to_i
-    @spellcasting = data[:spellcasting] if data[:spellcasting]
+    @spellcasting = data[:spellcasting].to_h if data[:spellcasting]
     @spells = data[:spells]
     @features = data[:features]
     @class_specific = data[:class_specific]
@@ -112,11 +112,7 @@ class PlayerCharacter
   end
 
   def spell_count
-    if @spellcasting.class != Hash
-      @spellcasting.to_unsafe_h.sum {|k, v| k.to_s[-1].to_i > 0 ? v : 0}
-    else
-      @spellcasting.sum {|k, v| k.to_s[-1].to_i > 0 ? v : 0}
-    end
+    @spellcasting.sum {|k, v| k.to_s[-1].to_i > 0 ? v : 0}
   end
 
   def count_resources

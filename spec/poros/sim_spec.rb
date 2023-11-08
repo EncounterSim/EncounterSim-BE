@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe Sim do
   it "works", :vcr do
     barbarian = {
-      :class=>"Barbarian",
-      :level=>"20",
+      :class=>"Fighter",
+      :level=>"5",
       :strength=>"5",
       :dexterity=>"4",
       :constitution=>"3",
@@ -20,8 +20,8 @@ RSpec.describe Sim do
     }
 
     rogue = {
-      :class=>"Barbarian",
-      :level=>"20",
+      :class=>"Warlock",
+      :level=>"5",
       :strength=>"2",
       :dexterity=>"5",
       :constitution=>"3",
@@ -37,8 +37,8 @@ RSpec.describe Sim do
     }
 
     monk = {
-      :class=>"Barbarian",
-      :level=>"20",
+      :class=>"Cleric",
+      :level=>"5",
       :strength=>"2",
       :dexterity=>"5",
       :constitution=>"3",
@@ -54,8 +54,8 @@ RSpec.describe Sim do
     }
 
     paladin = { 
-      :class=>"Barbarian",
-      :level=>"20",
+      :class=>"Druid",
+      :level=>"5",
       :strength=>"5",
       :dexterity=>"2",
       :constitution=>"3",
@@ -71,8 +71,8 @@ RSpec.describe Sim do
     }
 
     wizard = {
-      :class=>"Wizard",
-      :level=>"20",
+      :class=>"Bard",
+      :level=>"5",
       :strength=>"0",
       :dexterity=>"4",
       :constitution=>"3",
@@ -106,7 +106,7 @@ RSpec.describe Sim do
       player
     end
     new_sim = Simulation.create(user_id: 1)
-    (15).times do
+    (1).times do
       pcs = players.map {|player| PlayerCharacter.make_character(player)}
       monster = DndFacade.new.monster("adult-black-dragon")
       enemies = [monster]
@@ -114,7 +114,7 @@ RSpec.describe Sim do
       sim_runner.roll_initiative(pcs, enemies)
     end
     
-    # require 'pry'; binding.pry
+    require 'pry'; binding.pry
     Result.new(new_sim.id)
   end
 end

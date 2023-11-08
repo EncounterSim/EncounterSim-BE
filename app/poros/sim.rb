@@ -9,7 +9,6 @@ class Sim
   end
 
   def start_combat
-    # require 'pry'; binding.pry
     @combat = Simulation.find(@simulation).combats.create!
     round = @combat.combat_rounds.create!
     @pcs.each_with_index do |pc, num|
@@ -22,7 +21,7 @@ class Sim
 
     @enemies.each_with_index do |e, num|
       @combat.update!(monster: e.name)
-      @combat.update!(monster_initiative: find_initiative(e.name))
+      @combat.update!(monster_initiative: find_initiative(e.id))
       round.update!(monster_health: e.hit_points,
                     monster_resources: 0,
                     monster_damage_dealt: 0)
