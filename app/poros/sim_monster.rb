@@ -66,7 +66,7 @@ class SimMonster
     prof = @proficiencies.select {|each| each[:proficiency][:index][-3..-1] == save_mod}
     if prof == []
       mods = {"str": @strength, "dex": @dexterity, "con": @constitution, "wis": @wisdom, "cha": @charisma, "int": @intelligence}
-      mods[save_mod]
+      mods[:"#{save_mod}"]
     else
       prof[0][:value]
     end

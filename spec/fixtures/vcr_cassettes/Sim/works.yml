@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.dnd5eapi.co/api/classes/barbarian/levels
+    uri: https://www.dnd5eapi.co/api/classes/fighter/levels
     body:
       encoding: US-ASCII
       string: ''
@@ -20,6 +20,12 @@ http_interactions:
     headers:
       Server:
       - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699322698&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=FHVcNtMW9hDbQQg%2BsOWTaaCx9QPNpIPAGbOrWrLiNWk%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699322698&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=FHVcNtMW9hDbQQg%2BsOWTaaCx9QPNpIPAGbOrWrLiNWk%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
       Connection:
       - keep-alive
       X-Powered-By:
@@ -31,96 +37,39 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Mon, 06 Nov 2023 21:43:04 GMT
+      - Tue, 07 Nov 2023 02:04:58 GMT
       X-Ratelimit-Reset:
-      - '1699306986'
+      - '1699322700'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '7956'
+      - '7561'
       Etag:
-      - W/"1f14-L4xeESyvE1HH5BpeTqQ1uTQXGj4"
+      - W/"1d89-RIRv76e25tbv1o1yLv9x9YnKuTU"
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"rage","name":"Rage","url":"/api/features/rage"},{"index":"barbarian-unarmored-defense","name":"Unarmored
-        Defense","url":"/api/features/barbarian-unarmored-defense"}],"class_specific":{"rage_count":2,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-1","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"reckless-attack","name":"Reckless
-        Attack","url":"/api/features/reckless-attack"},{"index":"danger-sense","name":"Danger
-        Sense","url":"/api/features/danger-sense"}],"class_specific":{"rage_count":2,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-2","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"primal-path","name":"Primal
-        Path","url":"/api/features/primal-path"}],"class_specific":{"rage_count":3,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-3","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"barbarian-ability-score-improvement-1","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-1"}],"class_specific":{"rage_count":3,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-4","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"barbarian-extra-attack","name":"Extra
-        Attack","url":"/api/features/barbarian-extra-attack"},{"index":"fast-movement","name":"Fast
-        Movement","url":"/api/features/fast-movement"}],"class_specific":{"rage_count":3,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-5","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"class_specific":{"rage_count":4,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-6","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"feral-instinct","name":"Feral
-        Instinct","url":"/api/features/feral-instinct"}],"class_specific":{"rage_count":4,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-7","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"barbarian-ability-score-improvement-2","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-2"}],"class_specific":{"rage_count":4,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-8","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"brutal-critical-1-die","name":"Brutal
-        Critical (1 die)","url":"/api/features/brutal-critical-1-die"}],"class_specific":{"rage_count":4,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-9","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/9"},{"level":10,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"class_specific":{"rage_count":4,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-10","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"relentless-rage","name":"Relentless
-        Rage","url":"/api/features/relentless-rage"}],"class_specific":{"rage_count":4,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-11","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/11"},{"level":12,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"barbarian-ability-score-improvement-3","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-3"}],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-12","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"brutal-critical-2-dice","name":"Brutal
-        Critical (2 dice)","url":"/api/features/brutal-critical-2-dice"}],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":2},"index":"barbarian-13","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":2},"index":"barbarian-14","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"persistent-rage","name":"Persistent
-        Rage","url":"/api/features/persistent-rage"}],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":2},"index":"barbarian-15","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/15"},{"level":16,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"barbarian-ability-score-improvement-4","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-4"}],"class_specific":{"rage_count":5,"rage_damage_bonus":4,"brutal_critical_dice":2},"index":"barbarian-16","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"brutal-critical-3-dice","name":"Brutal
-        Critical (3 dice)","url":"/api/features/brutal-critical-3-dice"}],"class_specific":{"rage_count":6,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-17","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"indomitable-might","name":"Indomitable
-        Might","url":"/api/features/indomitable-might"}],"class_specific":{"rage_count":6,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-18","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/18"},{"level":19,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"barbarian-ability-score-improvement-5","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-5"}],"class_specific":{"rage_count":6,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-19","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"primal-champion","name":"Primal
-        Champion","url":"/api/features/primal-champion"}],"class_specific":{"rage_count":9999,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-20","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/20"}]'
-  recorded_at: Mon, 06 Nov 2023 21:43:04 GMT
-- request:
-    method: get
-    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.11
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Connection:
-      - keep-alive
-      X-Powered-By:
-      - Express
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Ratelimit-Limit:
-      - '10000'
-      X-Ratelimit-Remaining:
-      - '9998'
-      Date:
-      - Mon, 06 Nov 2023 21:43:05 GMT
-      X-Ratelimit-Reset:
-      - '1699306986'
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '1350'
-      Etag:
-      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
-        arrow streaks toward a target within range and bursts in a spray of acid.
-        Make a ranged spell attack against the target. On a hit, the target takes
-        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
-        On a miss, the arrow splashes the target with acid for half as much of the
-        initial damage and no damage at the end of its next turn."],"higher_level":["When
-        you cast this spell using a spell slot of 3rd level or higher, the damage
-        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
-        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
-        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
-        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
-  recorded_at: Mon, 06 Nov 2023 21:43:05 GMT
+      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"fighter-fighting-style","name":"Fighting
+        Style","url":"/api/features/fighter-fighting-style"},{"index":"second-wind","name":"Second
+        Wind","url":"/api/features/second-wind"}],"class_specific":{"action_surges":0,"indomitable_uses":0,"extra_attacks":0},"index":"fighter-1","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"action-surge-1-use","name":"Action
+        Surge (1 use)","url":"/api/features/action-surge-1-use"}],"class_specific":{"action_surges":1,"indomitable_uses":0,"extra_attacks":0},"index":"fighter-2","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"martial-archetype","name":"Martial
+        Archetype","url":"/api/features/martial-archetype"}],"class_specific":{"action_surges":1,"indomitable_uses":0,"extra_attacks":0},"index":"fighter-3","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"fighter-ability-score-improvement-1","name":"Ability
+        Score Improvement","url":"/api/features/fighter-ability-score-improvement-1"}],"class_specific":{"action_surges":1,"indomitable_uses":0,"extra_attacks":0},"index":"fighter-4","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"extra-attack-1","name":"Extra
+        Attack","url":"/api/features/extra-attack-1"}],"class_specific":{"action_surges":1,"indomitable_uses":0,"extra_attacks":1},"index":"fighter-5","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/5"},{"level":6,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"fighter-ability-score-improvement-2","name":"Ability
+        Score Improvement","url":"/api/features/fighter-ability-score-improvement-2"}],"class_specific":{"action_surges":1,"indomitable_uses":0,"extra_attacks":1},"index":"fighter-6","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/6"},{"level":7,"ability_score_bonuses":2,"prof_bonus":3,"features":[],"class_specific":{"action_surges":1,"indomitable_uses":0,"extra_attacks":1},"index":"fighter-7","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/7"},{"level":8,"ability_score_bonuses":3,"prof_bonus":3,"features":[{"index":"fighter-ability-score-improvement-3","name":"Ability
+        Score Improvement","url":"/api/features/fighter-ability-score-improvement-3"}],"class_specific":{"action_surges":1,"indomitable_uses":0,"extra_attacks":1},"index":"fighter-8","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/8"},{"level":9,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"indomitable-1-use","name":"Indomitable
+        (1 use)","url":"/api/features/indomitable-1-use"}],"class_specific":{"action_surges":1,"indomitable_uses":1,"extra_attacks":1},"index":"fighter-9","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/9"},{"level":10,"ability_score_bonuses":3,"prof_bonus":4,"features":[],"class_specific":{"action_surges":1,"indomitable_uses":1,"extra_attacks":1},"index":"fighter-10","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/10"},{"level":11,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"extra-attack-2","name":"Extra
+        Attack (2)","url":"/api/features/extra-attack-2"}],"class_specific":{"action_surges":1,"indomitable_uses":1,"extra_attacks":2},"index":"fighter-11","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/11"},{"level":12,"ability_score_bonuses":4,"prof_bonus":4,"features":[{"index":"fighter-ability-score-improvement-4","name":"Ability
+        Score Improvement","url":"/api/features/fighter-ability-score-improvement-4"}],"class_specific":{"action_surges":1,"indomitable_uses":1,"extra_attacks":2},"index":"fighter-12","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/12"},{"level":13,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"indomitable-2-uses","name":"Indomitable
+        (2 uses)","url":"/api/features/indomitable-2-uses"}],"class_specific":{"action_surges":1,"indomitable_uses":2,"extra_attacks":2},"index":"fighter-13","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/13"},{"level":14,"ability_score_bonuses":5,"prof_bonus":5,"features":[{"index":"fighter-ability-score-improvement-5","name":"Ability
+        Score Improvement","url":"/api/features/fighter-ability-score-improvement-5"}],"class_specific":{"action_surges":1,"indomitable_uses":2,"extra_attacks":2},"index":"fighter-14","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/14"},{"level":15,"ability_score_bonuses":5,"prof_bonus":5,"features":[],"class_specific":{"action_surges":1,"indomitable_uses":2,"extra_attacks":2},"index":"fighter-15","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/15"},{"level":16,"ability_score_bonuses":6,"prof_bonus":5,"features":[{"index":"fighter-ability-score-improvement-6","name":"Ability
+        Score Improvement","url":"/api/features/fighter-ability-score-improvement-6"}],"class_specific":{"action_surges":1,"indomitable_uses":2,"extra_attacks":2},"index":"fighter-16","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/16"},{"level":17,"ability_score_bonuses":6,"prof_bonus":6,"features":[{"index":"action-surge-2-uses","name":"Action
+        Surge (2 uses)","url":"/api/features/action-surge-2-uses"},{"index":"indomitable-3-uses","name":"Indomitable
+        (3 uses)","url":"/api/features/indomitable-3-uses"}],"class_specific":{"action_surges":2,"indomitable_uses":3,"extra_attacks":2},"index":"fighter-17","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/17"},{"level":18,"ability_score_bonuses":6,"prof_bonus":6,"features":[],"class_specific":{"action_surges":2,"indomitable_uses":3,"extra_attacks":2},"index":"fighter-18","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/18"},{"level":19,"ability_score_bonuses":7,"prof_bonus":6,"features":[{"index":"fighter-ability-score-improvement-7","name":"Ability
+        Score Improvement","url":"/api/features/fighter-ability-score-improvement-7"}],"class_specific":{"action_surges":2,"indomitable_uses":3,"extra_attacks":2},"index":"fighter-19","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/19"},{"level":20,"ability_score_bonuses":7,"prof_bonus":6,"features":[{"index":"extra-attack-3","name":"Extra
+        Attack (3)","url":"/api/features/extra-attack-3"}],"class_specific":{"action_surges":2,"indomitable_uses":3,"extra_attacks":3},"index":"fighter-20","class":{"index":"fighter","name":"Fighter","url":"/api/classes/fighter"},"url":"/api/classes/fighter/levels/20"}]'
+  recorded_at: Tue, 07 Nov 2023 02:04:58 GMT
 - request:
     method: get
     uri: https://www.dnd5eapi.co/api/spells/acid-arrow
@@ -142,9 +91,9 @@ http_interactions:
       Server:
       - Cowboy
       Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699306985&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=RsUIorJUibNpf11ZE5E15sg3nW1iLQPg4LcCGocrXTg%3D"}]}'
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699322698&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=FHVcNtMW9hDbQQg%2BsOWTaaCx9QPNpIPAGbOrWrLiNWk%3D"}]}'
       Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699306985&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=RsUIorJUibNpf11ZE5E15sg3nW1iLQPg4LcCGocrXTg%3D
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699322698&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=FHVcNtMW9hDbQQg%2BsOWTaaCx9QPNpIPAGbOrWrLiNWk%3D
       Nel:
       - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
       Connection:
@@ -158,9 +107,9 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Mon, 06 Nov 2023 21:43:05 GMT
+      - Tue, 07 Nov 2023 02:04:58 GMT
       X-Ratelimit-Reset:
-      - '1699306987'
+      - '1699322700'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -182,196 +131,7 @@ http_interactions:
         feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
         adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
         action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
-  recorded_at: Mon, 06 Nov 2023 21:43:05 GMT
-- request:
-    method: get
-    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.11
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699306985&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=RsUIorJUibNpf11ZE5E15sg3nW1iLQPg4LcCGocrXTg%3D"}]}'
-      Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699306985&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=RsUIorJUibNpf11ZE5E15sg3nW1iLQPg4LcCGocrXTg%3D
-      Nel:
-      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
-      Connection:
-      - keep-alive
-      X-Powered-By:
-      - Express
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Ratelimit-Limit:
-      - '10000'
-      X-Ratelimit-Remaining:
-      - '9999'
-      Date:
-      - Mon, 06 Nov 2023 21:43:05 GMT
-      X-Ratelimit-Reset:
-      - '1699306987'
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '1350'
-      Etag:
-      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
-        arrow streaks toward a target within range and bursts in a spray of acid.
-        Make a ranged spell attack against the target. On a hit, the target takes
-        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
-        On a miss, the arrow splashes the target with acid for half as much of the
-        initial damage and no damage at the end of its next turn."],"higher_level":["When
-        you cast this spell using a spell slot of 3rd level or higher, the damage
-        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
-        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
-        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
-        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
-  recorded_at: Mon, 06 Nov 2023 21:43:05 GMT
-- request:
-    method: get
-    uri: https://www.dnd5eapi.co/api/classes/barbarian/levels
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.11
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Connection:
-      - keep-alive
-      X-Powered-By:
-      - Express
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Ratelimit-Limit:
-      - '10000'
-      X-Ratelimit-Remaining:
-      - '9999'
-      Date:
-      - Mon, 06 Nov 2023 21:43:06 GMT
-      X-Ratelimit-Reset:
-      - '1699306987'
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '7956'
-      Etag:
-      - W/"1f14-L4xeESyvE1HH5BpeTqQ1uTQXGj4"
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"rage","name":"Rage","url":"/api/features/rage"},{"index":"barbarian-unarmored-defense","name":"Unarmored
-        Defense","url":"/api/features/barbarian-unarmored-defense"}],"class_specific":{"rage_count":2,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-1","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"reckless-attack","name":"Reckless
-        Attack","url":"/api/features/reckless-attack"},{"index":"danger-sense","name":"Danger
-        Sense","url":"/api/features/danger-sense"}],"class_specific":{"rage_count":2,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-2","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"primal-path","name":"Primal
-        Path","url":"/api/features/primal-path"}],"class_specific":{"rage_count":3,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-3","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"barbarian-ability-score-improvement-1","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-1"}],"class_specific":{"rage_count":3,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-4","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"barbarian-extra-attack","name":"Extra
-        Attack","url":"/api/features/barbarian-extra-attack"},{"index":"fast-movement","name":"Fast
-        Movement","url":"/api/features/fast-movement"}],"class_specific":{"rage_count":3,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-5","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"class_specific":{"rage_count":4,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-6","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"feral-instinct","name":"Feral
-        Instinct","url":"/api/features/feral-instinct"}],"class_specific":{"rage_count":4,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-7","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"barbarian-ability-score-improvement-2","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-2"}],"class_specific":{"rage_count":4,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-8","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"brutal-critical-1-die","name":"Brutal
-        Critical (1 die)","url":"/api/features/brutal-critical-1-die"}],"class_specific":{"rage_count":4,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-9","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/9"},{"level":10,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"class_specific":{"rage_count":4,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-10","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"relentless-rage","name":"Relentless
-        Rage","url":"/api/features/relentless-rage"}],"class_specific":{"rage_count":4,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-11","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/11"},{"level":12,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"barbarian-ability-score-improvement-3","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-3"}],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-12","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"brutal-critical-2-dice","name":"Brutal
-        Critical (2 dice)","url":"/api/features/brutal-critical-2-dice"}],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":2},"index":"barbarian-13","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":2},"index":"barbarian-14","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"persistent-rage","name":"Persistent
-        Rage","url":"/api/features/persistent-rage"}],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":2},"index":"barbarian-15","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/15"},{"level":16,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"barbarian-ability-score-improvement-4","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-4"}],"class_specific":{"rage_count":5,"rage_damage_bonus":4,"brutal_critical_dice":2},"index":"barbarian-16","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"brutal-critical-3-dice","name":"Brutal
-        Critical (3 dice)","url":"/api/features/brutal-critical-3-dice"}],"class_specific":{"rage_count":6,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-17","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"indomitable-might","name":"Indomitable
-        Might","url":"/api/features/indomitable-might"}],"class_specific":{"rage_count":6,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-18","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/18"},{"level":19,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"barbarian-ability-score-improvement-5","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-5"}],"class_specific":{"rage_count":6,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-19","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"primal-champion","name":"Primal
-        Champion","url":"/api/features/primal-champion"}],"class_specific":{"rage_count":9999,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-20","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/20"}]'
-  recorded_at: Mon, 06 Nov 2023 21:43:06 GMT
-- request:
-    method: get
-    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.11
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699306986&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=PDBX8EsrFhWdvQQDSua%2Fb%2FYuJEOielRJhVX6jj5SJ%2FA%3D"}]}'
-      Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699306986&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=PDBX8EsrFhWdvQQDSua%2Fb%2FYuJEOielRJhVX6jj5SJ%2FA%3D
-      Nel:
-      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
-      Connection:
-      - keep-alive
-      X-Powered-By:
-      - Express
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Ratelimit-Limit:
-      - '10000'
-      X-Ratelimit-Remaining:
-      - '9999'
-      Date:
-      - Mon, 06 Nov 2023 21:43:06 GMT
-      X-Ratelimit-Reset:
-      - '1699306988'
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '1350'
-      Etag:
-      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
-        arrow streaks toward a target within range and bursts in a spray of acid.
-        Make a ranged spell attack against the target. On a hit, the target takes
-        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
-        On a miss, the arrow splashes the target with acid for half as much of the
-        initial damage and no damage at the end of its next turn."],"higher_level":["When
-        you cast this spell using a spell slot of 3rd level or higher, the damage
-        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
-        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
-        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
-        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
-  recorded_at: Mon, 06 Nov 2023 21:43:06 GMT
+  recorded_at: Tue, 07 Nov 2023 02:04:58 GMT
 - request:
     method: get
     uri: https://www.dnd5eapi.co/api/spells/acid-arrow
@@ -403,9 +163,9 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Mon, 06 Nov 2023 21:43:06 GMT
+      - Tue, 07 Nov 2023 02:04:58 GMT
       X-Ratelimit-Reset:
-      - '1699306988'
+      - '1699322700'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -427,7 +187,7 @@ http_interactions:
         feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
         adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
         action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
-  recorded_at: Mon, 06 Nov 2023 21:43:06 GMT
+  recorded_at: Tue, 07 Nov 2023 02:04:58 GMT
 - request:
     method: get
     uri: https://www.dnd5eapi.co/api/spells/acid-arrow
@@ -449,9 +209,9 @@ http_interactions:
       Server:
       - Cowboy
       Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699306987&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=%2FhHCWVmiReosNrjsP5Y8A65BnaM%2B04u%2FVPTkzcXVIVU%3D"}]}'
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699322699&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=EZ2lBfwnvN1IIkb4GQqLAVX%2BEOVL30nkGIEcJm5QMok%3D"}]}'
       Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699306987&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=%2FhHCWVmiReosNrjsP5Y8A65BnaM%2B04u%2FVPTkzcXVIVU%3D
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699322699&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=EZ2lBfwnvN1IIkb4GQqLAVX%2BEOVL30nkGIEcJm5QMok%3D
       Nel:
       - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
       Connection:
@@ -465,9 +225,9 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Mon, 06 Nov 2023 21:43:07 GMT
+      - Tue, 07 Nov 2023 02:04:59 GMT
       X-Ratelimit-Reset:
-      - '1699306988'
+      - '1699322701'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -489,10 +249,10 @@ http_interactions:
         feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
         adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
         action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
-  recorded_at: Mon, 06 Nov 2023 21:43:07 GMT
+  recorded_at: Tue, 07 Nov 2023 02:04:59 GMT
 - request:
     method: get
-    uri: https://www.dnd5eapi.co/api/classes/barbarian/levels
+    uri: https://www.dnd5eapi.co/api/classes/warlock/levels
     body:
       encoding: US-ASCII
       string: ''
@@ -511,9 +271,9 @@ http_interactions:
       Server:
       - Cowboy
       Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699306987&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=%2FhHCWVmiReosNrjsP5Y8A65BnaM%2B04u%2FVPTkzcXVIVU%3D"}]}'
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699322699&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=EZ2lBfwnvN1IIkb4GQqLAVX%2BEOVL30nkGIEcJm5QMok%3D"}]}'
       Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699306987&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=%2FhHCWVmiReosNrjsP5Y8A65BnaM%2B04u%2FVPTkzcXVIVU%3D
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699322699&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=EZ2lBfwnvN1IIkb4GQqLAVX%2BEOVL30nkGIEcJm5QMok%3D
       Nel:
       - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
       Connection:
@@ -527,40 +287,35 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Mon, 06 Nov 2023 21:43:07 GMT
+      - Tue, 07 Nov 2023 02:04:59 GMT
       X-Ratelimit-Reset:
-      - '1699306988'
+      - '1699322701'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '7956'
+      - '14007'
       Etag:
-      - W/"1f14-L4xeESyvE1HH5BpeTqQ1uTQXGj4"
+      - W/"36b7-yUZXRM2xnGwh4uUg4y8iHkKa540"
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"rage","name":"Rage","url":"/api/features/rage"},{"index":"barbarian-unarmored-defense","name":"Unarmored
-        Defense","url":"/api/features/barbarian-unarmored-defense"}],"class_specific":{"rage_count":2,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-1","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"reckless-attack","name":"Reckless
-        Attack","url":"/api/features/reckless-attack"},{"index":"danger-sense","name":"Danger
-        Sense","url":"/api/features/danger-sense"}],"class_specific":{"rage_count":2,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-2","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"primal-path","name":"Primal
-        Path","url":"/api/features/primal-path"}],"class_specific":{"rage_count":3,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-3","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"barbarian-ability-score-improvement-1","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-1"}],"class_specific":{"rage_count":3,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-4","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"barbarian-extra-attack","name":"Extra
-        Attack","url":"/api/features/barbarian-extra-attack"},{"index":"fast-movement","name":"Fast
-        Movement","url":"/api/features/fast-movement"}],"class_specific":{"rage_count":3,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-5","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"class_specific":{"rage_count":4,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-6","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"feral-instinct","name":"Feral
-        Instinct","url":"/api/features/feral-instinct"}],"class_specific":{"rage_count":4,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-7","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"barbarian-ability-score-improvement-2","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-2"}],"class_specific":{"rage_count":4,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-8","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"brutal-critical-1-die","name":"Brutal
-        Critical (1 die)","url":"/api/features/brutal-critical-1-die"}],"class_specific":{"rage_count":4,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-9","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/9"},{"level":10,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"class_specific":{"rage_count":4,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-10","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"relentless-rage","name":"Relentless
-        Rage","url":"/api/features/relentless-rage"}],"class_specific":{"rage_count":4,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-11","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/11"},{"level":12,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"barbarian-ability-score-improvement-3","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-3"}],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-12","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"brutal-critical-2-dice","name":"Brutal
-        Critical (2 dice)","url":"/api/features/brutal-critical-2-dice"}],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":2},"index":"barbarian-13","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":2},"index":"barbarian-14","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"persistent-rage","name":"Persistent
-        Rage","url":"/api/features/persistent-rage"}],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":2},"index":"barbarian-15","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/15"},{"level":16,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"barbarian-ability-score-improvement-4","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-4"}],"class_specific":{"rage_count":5,"rage_damage_bonus":4,"brutal_critical_dice":2},"index":"barbarian-16","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"brutal-critical-3-dice","name":"Brutal
-        Critical (3 dice)","url":"/api/features/brutal-critical-3-dice"}],"class_specific":{"rage_count":6,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-17","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"indomitable-might","name":"Indomitable
-        Might","url":"/api/features/indomitable-might"}],"class_specific":{"rage_count":6,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-18","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/18"},{"level":19,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"barbarian-ability-score-improvement-5","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-5"}],"class_specific":{"rage_count":6,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-19","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"primal-champion","name":"Primal
-        Champion","url":"/api/features/primal-champion"}],"class_specific":{"rage_count":9999,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-20","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/20"}]'
-  recorded_at: Mon, 06 Nov 2023 21:43:07 GMT
+      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"otherworldly-patron","name":"Otherworldly
+        Patron","url":"/api/features/otherworldly-patron"},{"index":"pact-magic","name":"Pact
+        Magic","url":"/api/features/pact-magic"}],"spellcasting":{"cantrips_known":2,"spells_known":2,"spell_slots_level_1":1,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":0,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-1","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"eldritch-invocations","name":"Eldritch
+        Invocations","url":"/api/features/eldritch-invocations"}],"spellcasting":{"cantrips_known":2,"spells_known":3,"spell_slots_level_1":2,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":2,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-2","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"pact-boon","name":"Pact
+        Boon","url":"/api/features/pact-boon"}],"spellcasting":{"cantrips_known":2,"spells_known":4,"spell_slots_level_1":0,"spell_slots_level_2":2,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":2,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-3","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"warlock-ability-score-improvement-1","name":"Ability
+        Score Improvement","url":"/api/features/warlock-ability-score-improvement-1"}],"spellcasting":{"cantrips_known":3,"spells_known":5,"spell_slots_level_1":0,"spell_slots_level_2":2,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":3,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-4","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":3,"spells_known":6,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":2,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":3,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-5","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":3,"spells_known":7,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":2,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":4,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-6","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":3,"spells_known":8,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":2,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":4,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-7","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"warlock-ability-score-improvement-2","name":"Ability
+        Score Improvement","url":"/api/features/warlock-ability-score-improvement-2"}],"spellcasting":{"cantrips_known":3,"spells_known":9,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":2,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":4,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-8","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"spellcasting":{"cantrips_known":3,"spells_known":10,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":2,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":5,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-9","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/9"},{"level":10,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"spellcasting":{"cantrips_known":4,"spells_known":10,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":2,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":5,"mystic_arcanum_level_6":0,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-10","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"mystic-arcanum-6th-level","name":"Mystic
+        Arcanum (6th level)","url":"/api/features/mystic-arcanum-6th-level"}],"spellcasting":{"cantrips_known":4,"spells_known":11,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":3,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":5,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-11","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/11"},{"level":12,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"warlock-ability-score-improvement-3","name":"Ability
+        Score Improvement","url":"/api/features/warlock-ability-score-improvement-3"}],"spellcasting":{"cantrips_known":4,"spells_known":11,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":3,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":6,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":0,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-12","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"mystic-arcanum-7th-level","name":"Mystic
+        Arcanum (7th level)","url":"/api/features/mystic-arcanum-7th-level"}],"spellcasting":{"cantrips_known":4,"spells_known":12,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":3,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":6,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-13","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"spellcasting":{"cantrips_known":4,"spells_known":12,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":3,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":6,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":0,"mystic_arcanum_level_9":0},"index":"warlock-14","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"mystic-arcanum-8th-level","name":"Mystic
+        Arcanum (8th level)","url":"/api/features/mystic-arcanum-8th-level"}],"spellcasting":{"cantrips_known":4,"spells_known":13,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":3,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":7,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":1,"mystic_arcanum_level_9":0},"index":"warlock-15","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/15"},{"level":16,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"warlock-ability-score-improvement-4","name":"Ability
+        Score Improvement","url":"/api/features/warlock-ability-score-improvement-4"}],"spellcasting":{"cantrips_known":4,"spells_known":13,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":3,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":7,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":1,"mystic_arcanum_level_9":0},"index":"warlock-16","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"mystic-arcanum-9th-level","name":"Mystic
+        Arcanum (9th level)","url":"/api/features/mystic-arcanum-9th-level"}],"spellcasting":{"cantrips_known":4,"spells_known":14,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":4,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":7,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":1,"mystic_arcanum_level_9":1},"index":"warlock-17","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[],"spellcasting":{"cantrips_known":4,"spells_known":14,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":4,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":8,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":1,"mystic_arcanum_level_9":1},"index":"warlock-18","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/18"},{"level":19,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"warlock-ability-score-improvement-5","name":"Ability
+        Score Improvement","url":"/api/features/warlock-ability-score-improvement-5"}],"spellcasting":{"cantrips_known":4,"spells_known":15,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":4,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":8,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":1,"mystic_arcanum_level_9":1},"index":"warlock-19","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"eldritch-master","name":"Eldritch
+        Master","url":"/api/features/eldritch-master"}],"spellcasting":{"cantrips_known":4,"spells_known":15,"spell_slots_level_1":0,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":4,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"invocations_known":8,"mystic_arcanum_level_6":1,"mystic_arcanum_level_7":1,"mystic_arcanum_level_8":1,"mystic_arcanum_level_9":1},"index":"warlock-20","class":{"index":"warlock","name":"Warlock","url":"/api/classes/warlock"},"url":"/api/classes/warlock/levels/20"}]'
+  recorded_at: Tue, 07 Nov 2023 02:04:59 GMT
 - request:
     method: get
     uri: https://www.dnd5eapi.co/api/spells/acid-arrow
@@ -582,9 +337,9 @@ http_interactions:
       Server:
       - Cowboy
       Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699306987&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=%2FhHCWVmiReosNrjsP5Y8A65BnaM%2B04u%2FVPTkzcXVIVU%3D"}]}'
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699322699&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=EZ2lBfwnvN1IIkb4GQqLAVX%2BEOVL30nkGIEcJm5QMok%3D"}]}'
       Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699306987&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=%2FhHCWVmiReosNrjsP5Y8A65BnaM%2B04u%2FVPTkzcXVIVU%3D
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699322699&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=EZ2lBfwnvN1IIkb4GQqLAVX%2BEOVL30nkGIEcJm5QMok%3D
       Nel:
       - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
       Connection:
@@ -598,9 +353,9 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Mon, 06 Nov 2023 21:43:07 GMT
+      - Tue, 07 Nov 2023 02:04:59 GMT
       X-Ratelimit-Reset:
-      - '1699306989'
+      - '1699322701'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -622,7 +377,7 @@ http_interactions:
         feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
         adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
         action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
-  recorded_at: Mon, 06 Nov 2023 21:43:07 GMT
+  recorded_at: Tue, 07 Nov 2023 02:04:59 GMT
 - request:
     method: get
     uri: https://www.dnd5eapi.co/api/spells/acid-arrow
@@ -644,9 +399,9 @@ http_interactions:
       Server:
       - Cowboy
       Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699306988&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=o3zA4VNhFUr%2BBbDn86cZ3feCpw9gt3uk97KG%2FFPNcXQ%3D"}]}'
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699322700&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=CjOwuDbTfGUFsZmagKAWnDOZdvQaiiZ5LGAPB2P%2BoGE%3D"}]}'
       Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699306988&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=o3zA4VNhFUr%2BBbDn86cZ3feCpw9gt3uk97KG%2FFPNcXQ%3D
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699322700&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=CjOwuDbTfGUFsZmagKAWnDOZdvQaiiZ5LGAPB2P%2BoGE%3D
       Nel:
       - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
       Connection:
@@ -660,9 +415,9 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Mon, 06 Nov 2023 21:43:08 GMT
+      - Tue, 07 Nov 2023 02:05:00 GMT
       X-Ratelimit-Reset:
-      - '1699306989'
+      - '1699322702'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -684,7 +439,138 @@ http_interactions:
         feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
         adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
         action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
-  recorded_at: Mon, 06 Nov 2023 21:43:08 GMT
+  recorded_at: Tue, 07 Nov 2023 02:05:00 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Tue, 07 Nov 2023 02:05:00 GMT
+      X-Ratelimit-Reset:
+      - '1699322702'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1350'
+      Etag:
+      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
+        arrow streaks toward a target within range and bursts in a spray of acid.
+        Make a ranged spell attack against the target. On a hit, the target takes
+        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
+        On a miss, the arrow splashes the target with acid for half as much of the
+        initial damage and no damage at the end of its next turn."],"higher_level":["When
+        you cast this spell using a spell slot of 3rd level or higher, the damage
+        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
+        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
+        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
+  recorded_at: Tue, 07 Nov 2023 02:05:00 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/classes/cleric/levels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699322700&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=CjOwuDbTfGUFsZmagKAWnDOZdvQaiiZ5LGAPB2P%2BoGE%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699322700&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=CjOwuDbTfGUFsZmagKAWnDOZdvQaiiZ5LGAPB2P%2BoGE%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Tue, 07 Nov 2023 02:05:00 GMT
+      X-Ratelimit-Reset:
+      - '1699322702'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '13061'
+      Etag:
+      - W/"3305-JZcvNcEU/PL/WmE7IiDhfPnXQPI"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"spellcasting-cleric","name":"Spellcasting:
+        Cleric","url":"/api/features/spellcasting-cleric"},{"index":"divine-domain","name":"Divine
+        Domain","url":"/api/features/divine-domain"},{"index":"domain-spells-1","name":"Domain
+        Spells","url":"/api/features/domain-spells-1"}],"spellcasting":{"cantrips_known":3,"spell_slots_level_1":2,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":0,"destroy_undead_cr":0},"index":"cleric-1","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"channel-divinity-1-rest","name":"Channel
+        Divinity (1/rest)","url":"/api/features/channel-divinity-1-rest"},{"index":"channel-divinity-turn-undead","name":"Channel
+        Divinity: Turn Undead","url":"/api/features/channel-divinity-turn-undead"}],"spellcasting":{"cantrips_known":3,"spell_slots_level_1":3,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":1,"destroy_undead_cr":0},"index":"cleric-2","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"domain-spells-2","name":"Domain
+        Spells","url":"/api/features/domain-spells-2"}],"spellcasting":{"cantrips_known":3,"spell_slots_level_1":4,"spell_slots_level_2":2,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":1,"destroy_undead_cr":0},"index":"cleric-3","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"cleric-ability-score-improvement-1","name":"Ability
+        Score Improvement","url":"/api/features/cleric-ability-score-improvement-1"}],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":1,"destroy_undead_cr":0},"index":"cleric-4","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"domain-spells-3","name":"Domain
+        Spells","url":"/api/features/domain-spells-3"},{"index":"destroy-undead-cr-1-2-or-below","name":"Destroy
+        Undead (CR 1/2 or below)","url":"/api/features/destroy-undead-cr-1-2-or-below"}],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":2,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":1,"destroy_undead_cr":0.5},"index":"cleric-5","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"channel-divinity-2-rest","name":"Channel
+        Divinity (2/rest)","url":"/api/features/channel-divinity-2-rest"}],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":2,"destroy_undead_cr":0.5},"index":"cleric-6","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"domain-spells-4","name":"Domain
+        Spells","url":"/api/features/domain-spells-4"}],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":1,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":2,"destroy_undead_cr":0.5},"index":"cleric-7","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"cleric-ability-score-improvement-2","name":"Ability
+        Score Improvement","url":"/api/features/cleric-ability-score-improvement-2"},{"index":"destroy-undead-cr-1-or-below","name":"Destroy
+        Undead (CR 1 or below)","url":"/api/features/destroy-undead-cr-1-or-below"}],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":2,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":2,"destroy_undead_cr":1},"index":"cleric-8","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"domain-spells-5","name":"Domain
+        Spells","url":"/api/features/domain-spells-5"}],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":1,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":2,"destroy_undead_cr":1},"index":"cleric-9","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/9"},{"level":10,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"divine-intervention","name":"Divine
+        Intervention","url":"/api/features/divine-intervention"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":2,"destroy_undead_cr":1},"index":"cleric-10","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"destroy-undead-cr-2-or-below","name":"Destroy
+        Undead (CR 2 or below)","url":"/api/features/destroy-undead-cr-2-or-below"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":2,"destroy_undead_cr":2},"index":"cleric-11","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/11"},{"level":12,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"cleric-ability-score-improvement-3","name":"Ability
+        Score Improvement","url":"/api/features/cleric-ability-score-improvement-3"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":2,"destroy_undead_cr":2},"index":"cleric-12","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":2,"destroy_undead_cr":2},"index":"cleric-13","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"destroy-undead-cr-3-or-below","name":"Destroy
+        Undead (CR 3 or below)","url":"/api/features/destroy-undead-cr-3-or-below"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":2,"destroy_undead_cr":3},"index":"cleric-14","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":2,"destroy_undead_cr":3},"index":"cleric-15","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/15"},{"level":16,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"cleric-ability-score-improvement-4","name":"Ability
+        Score Improvement","url":"/api/features/cleric-ability-score-improvement-4"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":0},"class_specific":{"channel_divinity_charges":2,"destroy_undead_cr":3},"index":"cleric-16","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"destroy-undead-cr-4-or-below","name":"Destroy
+        Undead (CR 4 or below)","url":"/api/features/destroy-undead-cr-4-or-below"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"channel_divinity_charges":2,"destroy_undead_cr":4},"index":"cleric-17","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"channel-divinity-3-rest","name":"Channel
+        Divinity (3/rest)","url":"/api/features/channel-divinity-3-rest"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":3,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"channel_divinity_charges":3,"destroy_undead_cr":4},"index":"cleric-18","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/18"},{"level":19,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"cleric-ability-score-improvement-5","name":"Ability
+        Score Improvement","url":"/api/features/cleric-ability-score-improvement-5"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":3,"spell_slots_level_6":2,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"channel_divinity_charges":3,"destroy_undead_cr":4},"index":"cleric-19","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"divine-intervention-improvement","name":"Divine
+        Intervention Improvement","url":"/api/features/divine-intervention-improvement"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":3,"spell_slots_level_6":2,"spell_slots_level_7":2,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"channel_divinity_charges":3,"destroy_undead_cr":4},"index":"cleric-20","class":{"index":"cleric","name":"Cleric","url":"/api/classes/cleric"},"url":"/api/classes/cleric/levels/20"}]'
+  recorded_at: Tue, 07 Nov 2023 02:05:01 GMT
 - request:
     method: get
     uri: https://www.dnd5eapi.co/api/spells/acid-arrow
@@ -706,9 +592,9 @@ http_interactions:
       Server:
       - Cowboy
       Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699306988&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=o3zA4VNhFUr%2BBbDn86cZ3feCpw9gt3uk97KG%2FFPNcXQ%3D"}]}'
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699322701&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=N8wbnJ0qii5rqoww7R077H67SZEcaIonB0xO1XK5mhw%3D"}]}'
       Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699306988&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=o3zA4VNhFUr%2BBbDn86cZ3feCpw9gt3uk97KG%2FFPNcXQ%3D
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699322701&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=N8wbnJ0qii5rqoww7R077H67SZEcaIonB0xO1XK5mhw%3D
       Nel:
       - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
       Connection:
@@ -722,9 +608,9 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Mon, 06 Nov 2023 21:43:08 GMT
+      - Tue, 07 Nov 2023 02:05:01 GMT
       X-Ratelimit-Reset:
-      - '1699306989'
+      - '1699322703'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -746,10 +632,10 @@ http_interactions:
         feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
         adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
         action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
-  recorded_at: Mon, 06 Nov 2023 21:43:08 GMT
+  recorded_at: Tue, 07 Nov 2023 02:05:01 GMT
 - request:
     method: get
-    uri: https://www.dnd5eapi.co/api/classes/barbarian/levels
+    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
     body:
       encoding: US-ASCII
       string: ''
@@ -768,9 +654,9 @@ http_interactions:
       Server:
       - Cowboy
       Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699306988&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=o3zA4VNhFUr%2BBbDn86cZ3feCpw9gt3uk97KG%2FFPNcXQ%3D"}]}'
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699322701&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=N8wbnJ0qii5rqoww7R077H67SZEcaIonB0xO1XK5mhw%3D"}]}'
       Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699306988&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=o3zA4VNhFUr%2BBbDn86cZ3feCpw9gt3uk97KG%2FFPNcXQ%3D
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699322701&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=N8wbnJ0qii5rqoww7R077H67SZEcaIonB0xO1XK5mhw%3D
       Nel:
       - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
       Connection:
@@ -784,40 +670,145 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Mon, 06 Nov 2023 21:43:08 GMT
+      - Tue, 07 Nov 2023 02:05:01 GMT
       X-Ratelimit-Reset:
-      - '1699306990'
+      - '1699322703'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '7956'
+      - '1350'
       Etag:
-      - W/"1f14-L4xeESyvE1HH5BpeTqQ1uTQXGj4"
+      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"rage","name":"Rage","url":"/api/features/rage"},{"index":"barbarian-unarmored-defense","name":"Unarmored
-        Defense","url":"/api/features/barbarian-unarmored-defense"}],"class_specific":{"rage_count":2,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-1","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"reckless-attack","name":"Reckless
-        Attack","url":"/api/features/reckless-attack"},{"index":"danger-sense","name":"Danger
-        Sense","url":"/api/features/danger-sense"}],"class_specific":{"rage_count":2,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-2","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"primal-path","name":"Primal
-        Path","url":"/api/features/primal-path"}],"class_specific":{"rage_count":3,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-3","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"barbarian-ability-score-improvement-1","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-1"}],"class_specific":{"rage_count":3,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-4","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"barbarian-extra-attack","name":"Extra
-        Attack","url":"/api/features/barbarian-extra-attack"},{"index":"fast-movement","name":"Fast
-        Movement","url":"/api/features/fast-movement"}],"class_specific":{"rage_count":3,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-5","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"class_specific":{"rage_count":4,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-6","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"feral-instinct","name":"Feral
-        Instinct","url":"/api/features/feral-instinct"}],"class_specific":{"rage_count":4,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-7","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"barbarian-ability-score-improvement-2","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-2"}],"class_specific":{"rage_count":4,"rage_damage_bonus":2,"brutal_critical_dice":0},"index":"barbarian-8","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"brutal-critical-1-die","name":"Brutal
-        Critical (1 die)","url":"/api/features/brutal-critical-1-die"}],"class_specific":{"rage_count":4,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-9","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/9"},{"level":10,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"class_specific":{"rage_count":4,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-10","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"relentless-rage","name":"Relentless
-        Rage","url":"/api/features/relentless-rage"}],"class_specific":{"rage_count":4,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-11","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/11"},{"level":12,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"barbarian-ability-score-improvement-3","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-3"}],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":1},"index":"barbarian-12","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"brutal-critical-2-dice","name":"Brutal
-        Critical (2 dice)","url":"/api/features/brutal-critical-2-dice"}],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":2},"index":"barbarian-13","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":2},"index":"barbarian-14","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"persistent-rage","name":"Persistent
-        Rage","url":"/api/features/persistent-rage"}],"class_specific":{"rage_count":5,"rage_damage_bonus":3,"brutal_critical_dice":2},"index":"barbarian-15","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/15"},{"level":16,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"barbarian-ability-score-improvement-4","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-4"}],"class_specific":{"rage_count":5,"rage_damage_bonus":4,"brutal_critical_dice":2},"index":"barbarian-16","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"brutal-critical-3-dice","name":"Brutal
-        Critical (3 dice)","url":"/api/features/brutal-critical-3-dice"}],"class_specific":{"rage_count":6,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-17","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"indomitable-might","name":"Indomitable
-        Might","url":"/api/features/indomitable-might"}],"class_specific":{"rage_count":6,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-18","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/18"},{"level":19,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"barbarian-ability-score-improvement-5","name":"Ability
-        Score Improvement","url":"/api/features/barbarian-ability-score-improvement-5"}],"class_specific":{"rage_count":6,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-19","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"primal-champion","name":"Primal
-        Champion","url":"/api/features/primal-champion"}],"class_specific":{"rage_count":9999,"rage_damage_bonus":4,"brutal_critical_dice":3},"index":"barbarian-20","class":{"index":"barbarian","name":"Barbarian","url":"/api/classes/barbarian"},"url":"/api/classes/barbarian/levels/20"}]'
-  recorded_at: Mon, 06 Nov 2023 21:43:08 GMT
+      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
+        arrow streaks toward a target within range and bursts in a spray of acid.
+        Make a ranged spell attack against the target. On a hit, the target takes
+        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
+        On a miss, the arrow splashes the target with acid for half as much of the
+        initial damage and no damage at the end of its next turn."],"higher_level":["When
+        you cast this spell using a spell slot of 3rd level or higher, the damage
+        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
+        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
+        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
+  recorded_at: Tue, 07 Nov 2023 02:05:01 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/acid-arrow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Tue, 07 Nov 2023 02:05:02 GMT
+      X-Ratelimit-Reset:
+      - '1699322704'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1350'
+      Etag:
+      - W/"546-wuxpQUdCv2m+bt7WFrL8Irt8fyo"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"acid-arrow","name":"Acid Arrow","desc":["A shimmering green
+        arrow streaks toward a target within range and bursts in a spray of acid.
+        Make a ranged spell attack against the target. On a hit, the target takes
+        4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
+        On a miss, the arrow splashes the target with acid for half as much of the
+        initial damage and no damage at the end of its next turn."],"higher_level":["When
+        you cast this spell using a spell slot of 3rd level or higher, the damage
+        (both initial and later) increases by 1d4 for each slot level above 2nd."],"range":"90
+        feet","components":["V","S","M"],"material":"Powdered rhubarb leaf and an
+        adder''s stomach.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
+        action","level":2,"attack_type":"ranged","damage":{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_at_slot_level":{"2":"4d4","3":"5d4","4":"6d4","5":"7d4","6":"8d4","7":"9d4","8":"10d4","9":"11d4"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"land","name":"Land","url":"/api/subclasses/land"}],"url":"/api/spells/acid-arrow"}'
+  recorded_at: Tue, 07 Nov 2023 02:05:02 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/classes/druid/levels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Tue, 07 Nov 2023 02:05:02 GMT
+      X-Ratelimit-Reset:
+      - '1699322704'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '12268'
+      Etag:
+      - W/"2fec-sT2u1iy+gY9BXwvhLqLqFWLpmX8"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"spellcasting-druid","name":"Spellcasting:
+        Druid","url":"/api/features/spellcasting-druid"},{"index":"druidic","name":"Druidic","url":"/api/features/druidic"}],"spellcasting":{"cantrips_known":2,"spell_slots_level_1":2,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":0,"wild_shape_swim":false,"wild_shape_fly":false},"index":"druid-1","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"wild-shape-cr-1-4-or-below-no-flying-or-swim-speed","name":"Wild
+        Shape (CR 1/4 or below, no flying or swim speed)","url":"/api/features/wild-shape-cr-1-4-or-below-no-flying-or-swim-speed"},{"index":"druid-circle","name":"Druid
+        Circle","url":"/api/features/druid-circle"}],"spellcasting":{"cantrips_known":2,"spell_slots_level_1":3,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":0.25,"wild_shape_swim":false,"wild_shape_fly":false},"index":"druid-2","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[],"spellcasting":{"cantrips_known":2,"spell_slots_level_1":4,"spell_slots_level_2":2,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":0.25,"wild_shape_swim":false,"wild_shape_fly":false},"index":"druid-3","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"wild-shape-cr-1-2-or-below-no-flying-speed","name":"Wild
+        Shape (CR 1/2 or below, no flying speed)","url":"/api/features/wild-shape-cr-1-2-or-below-no-flying-speed"},{"index":"druid-ability-score-improvement-1","name":"Ability
+        Score Improvement","url":"/api/features/druid-ability-score-improvement-1"}],"spellcasting":{"cantrips_known":3,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":0.5,"wild_shape_swim":true,"wild_shape_fly":false},"index":"druid-4","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":3,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":2,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":0.5,"wild_shape_swim":true,"wild_shape_fly":false},"index":"druid-5","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":3,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":0.5,"wild_shape_swim":true,"wild_shape_fly":false},"index":"druid-6","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":3,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":1,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":1,"wild_shape_swim":true,"wild_shape_fly":false},"index":"druid-7","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"wild-shape-cr-1-or-below","name":"Wild
+        Shape (CR 1 or below)","url":"/api/features/wild-shape-cr-1-or-below"},{"index":"druid-ability-score-improvement-2","name":"Ability
+        Score Improvement","url":"/api/features/druid-ability-score-improvement-2"}],"spellcasting":{"cantrips_known":3,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":2,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":1,"wild_shape_swim":true,"wild_shape_fly":true},"index":"druid-8","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"spellcasting":{"cantrips_known":3,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":1,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":1,"wild_shape_swim":true,"wild_shape_fly":true},"index":"druid-9","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/9"},{"level":10,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":1,"wild_shape_swim":true,"wild_shape_fly":true},"index":"druid-10","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":1,"wild_shape_swim":true,"wild_shape_fly":true},"index":"druid-11","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/11"},{"level":12,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"druid-ability-score-improvement-3","name":"Ability
+        Score Improvement","url":"/api/features/druid-ability-score-improvement-3"}],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":1,"wild_shape_swim":true,"wild_shape_fly":true},"index":"druid-12","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":1,"wild_shape_swim":true,"wild_shape_fly":true},"index":"druid-13","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":1,"wild_shape_swim":true,"wild_shape_fly":true},"index":"druid-14","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":1,"wild_shape_swim":true,"wild_shape_fly":true},"index":"druid-15","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/15"},{"level":16,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"druid-ability-score-improvement-4","name":"Ability
+        Score Improvement","url":"/api/features/druid-ability-score-improvement-4"}],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":0},"class_specific":{"wild_shape_max_cr":1,"wild_shape_swim":true,"wild_shape_fly":true},"index":"druid-16","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"wild_shape_max_cr":1,"wild_shape_swim":true,"wild_shape_fly":true},"index":"druid-17","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"druid-timeless-body","name":"Timeless
+        Body","url":"/api/features/druid-timeless-body"},{"index":"beast-spells","name":"Beast
+        Spells","url":"/api/features/beast-spells"}],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":3,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"wild_shape_max_cr":1,"wild_shape_swim":true,"wild_shape_fly":true},"index":"druid-18","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/18"},{"level":19,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"druid-ability-score-improvement-5","name":"Ability
+        Score Improvement","url":"/api/features/druid-ability-score-improvement-5"}],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":3,"spell_slots_level_6":2,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"wild_shape_max_cr":1,"wild_shape_swim":true,"wild_shape_fly":true},"index":"druid-19","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"archdruid","name":"Archdruid","url":"/api/features/archdruid"}],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":3,"spell_slots_level_6":2,"spell_slots_level_7":2,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"wild_shape_max_cr":1,"wild_shape_swim":true,"wild_shape_fly":true},"index":"druid-20","class":{"index":"druid","name":"Druid","url":"/api/classes/druid"},"url":"/api/classes/druid/levels/20"}]'
+  recorded_at: Tue, 07 Nov 2023 02:05:02 GMT
 - request:
     method: get
     uri: https://www.dnd5eapi.co/api/spells/branding-smite
@@ -839,9 +830,9 @@ http_interactions:
       Server:
       - Cowboy
       Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699306989&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=rM%2FDdX8%2BPVTa3TVyJTQru0MeD0PWNLxUoM8LVnhTE9w%3D"}]}'
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699322702&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=M5uPZ%2FpXe0Ss5Tuk5rn7norP6n7oImc%2FbMQPrn6hXlM%3D"}]}'
       Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699306989&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=rM%2FDdX8%2BPVTa3TVyJTQru0MeD0PWNLxUoM8LVnhTE9w%3D
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699322702&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=M5uPZ%2FpXe0Ss5Tuk5rn7norP6n7oImc%2FbMQPrn6hXlM%3D
       Nel:
       - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
       Connection:
@@ -855,9 +846,9 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Mon, 06 Nov 2023 21:43:09 GMT
+      - Tue, 07 Nov 2023 02:05:02 GMT
       X-Ratelimit-Reset:
-      - '1699306990'
+      - '1699322704'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -877,7 +868,61 @@ http_interactions:
         level or higher, the extra damage increases by 1d6 for each slot level above
         2nd."],"range":"Self","components":["V"],"ritual":false,"duration":"Up to
         1 minute","concentration":true,"casting_time":"1 bonus action","level":2,"damage":{"damage_type":{"index":"radiant","name":"Radiant","url":"/api/damage-types/radiant"},"damage_at_slot_level":{"2":"2d6","3":"3d6","4":"4d6","5":"5d6","6":"6d6","7":"7d6","8":"8d6","9":"9d6"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"}],"subclasses":[],"url":"/api/spells/branding-smite"}'
-  recorded_at: Mon, 06 Nov 2023 21:43:09 GMT
+  recorded_at: Tue, 07 Nov 2023 02:05:02 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/spells/branding-smite
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Tue, 07 Nov 2023 02:05:03 GMT
+      X-Ratelimit-Reset:
+      - '1699322705'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1102'
+      Etag:
+      - W/"44e-BQ7CAVZykqR69GR8pDOz8N2beck"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"branding-smite","name":"Branding Smite","desc":["The next
+        time you hit a creature with a weapon attack before this spell ends, the weapon
+        gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant
+        damage to the target, which becomes visible if it''s invisible, and the target
+        sheds dim light in a 5-foot radius and can''t become invisible until the spell
+        ends."],"higher_level":["When you cast this spell using a spell slot of 3rd
+        level or higher, the extra damage increases by 1d6 for each slot level above
+        2nd."],"range":"Self","components":["V"],"ritual":false,"duration":"Up to
+        1 minute","concentration":true,"casting_time":"1 bonus action","level":2,"damage":{"damage_type":{"index":"radiant","name":"Radiant","url":"/api/damage-types/radiant"},"damage_at_slot_level":{"2":"2d6","3":"3d6","4":"4d6","5":"5d6","6":"6d6","7":"7d6","8":"8d6","9":"9d6"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"}],"subclasses":[],"url":"/api/spells/branding-smite"}'
+  recorded_at: Tue, 07 Nov 2023 02:05:03 GMT
 - request:
     method: get
     uri: https://www.dnd5eapi.co/api/spells/branding-smite
@@ -899,9 +944,9 @@ http_interactions:
       Server:
       - Cowboy
       Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699306989&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=rM%2FDdX8%2BPVTa3TVyJTQru0MeD0PWNLxUoM8LVnhTE9w%3D"}]}'
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699322703&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=KUFAmj8nvardzcwplQdw2WUQYPuX14f7hmOeDf3ZyF4%3D"}]}'
       Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699306989&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=rM%2FDdX8%2BPVTa3TVyJTQru0MeD0PWNLxUoM8LVnhTE9w%3D
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699322703&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=KUFAmj8nvardzcwplQdw2WUQYPuX14f7hmOeDf3ZyF4%3D
       Nel:
       - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
       Connection:
@@ -913,11 +958,11 @@ http_interactions:
       X-Ratelimit-Limit:
       - '10000'
       X-Ratelimit-Remaining:
-      - '9998'
+      - '9999'
       Date:
-      - Mon, 06 Nov 2023 21:43:09 GMT
+      - Tue, 07 Nov 2023 02:05:03 GMT
       X-Ratelimit-Reset:
-      - '1699306990'
+      - '1699322705'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -937,10 +982,10 @@ http_interactions:
         level or higher, the extra damage increases by 1d6 for each slot level above
         2nd."],"range":"Self","components":["V"],"ritual":false,"duration":"Up to
         1 minute","concentration":true,"casting_time":"1 bonus action","level":2,"damage":{"damage_type":{"index":"radiant","name":"Radiant","url":"/api/damage-types/radiant"},"damage_at_slot_level":{"2":"2d6","3":"3d6","4":"4d6","5":"5d6","6":"6d6","7":"7d6","8":"8d6","9":"9d6"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"}],"subclasses":[],"url":"/api/spells/branding-smite"}'
-  recorded_at: Mon, 06 Nov 2023 21:43:09 GMT
+  recorded_at: Tue, 07 Nov 2023 02:05:03 GMT
 - request:
     method: get
-    uri: https://www.dnd5eapi.co/api/spells/branding-smite
+    uri: https://www.dnd5eapi.co/api/classes/bard/levels
     body:
       encoding: US-ASCII
       string: ''
@@ -959,9 +1004,9 @@ http_interactions:
       Server:
       - Cowboy
       Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699306989&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=rM%2FDdX8%2BPVTa3TVyJTQru0MeD0PWNLxUoM8LVnhTE9w%3D"}]}'
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699322703&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=KUFAmj8nvardzcwplQdw2WUQYPuX14f7hmOeDf3ZyF4%3D"}]}'
       Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699306989&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=rM%2FDdX8%2BPVTa3TVyJTQru0MeD0PWNLxUoM8LVnhTE9w%3D
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699322703&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=KUFAmj8nvardzcwplQdw2WUQYPuX14f7hmOeDf3ZyF4%3D
       Nel:
       - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
       Connection:
@@ -975,91 +1020,42 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Mon, 06 Nov 2023 21:43:09 GMT
+      - Tue, 07 Nov 2023 02:05:03 GMT
       X-Ratelimit-Reset:
-      - '1699306991'
+      - '1699322705'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '1102'
+      - '14542'
       Etag:
-      - W/"44e-BQ7CAVZykqR69GR8pDOz8N2beck"
+      - W/"38ce-9jkXX3zp84HP3OAYYoPaBlULkc0"
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"index":"branding-smite","name":"Branding Smite","desc":["The next
-        time you hit a creature with a weapon attack before this spell ends, the weapon
-        gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant
-        damage to the target, which becomes visible if it''s invisible, and the target
-        sheds dim light in a 5-foot radius and can''t become invisible until the spell
-        ends."],"higher_level":["When you cast this spell using a spell slot of 3rd
-        level or higher, the extra damage increases by 1d6 for each slot level above
-        2nd."],"range":"Self","components":["V"],"ritual":false,"duration":"Up to
-        1 minute","concentration":true,"casting_time":"1 bonus action","level":2,"damage":{"damage_type":{"index":"radiant","name":"Radiant","url":"/api/damage-types/radiant"},"damage_at_slot_level":{"2":"2d6","3":"3d6","4":"4d6","5":"5d6","6":"6d6","7":"7d6","8":"8d6","9":"9d6"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"paladin","name":"Paladin","url":"/api/classes/paladin"}],"subclasses":[],"url":"/api/spells/branding-smite"}'
-  recorded_at: Mon, 06 Nov 2023 21:43:09 GMT
-- request:
-    method: get
-    uri: https://www.dnd5eapi.co/api/classes/wizard/levels
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.11
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699306990&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=q1ErUElUORD%2F7iszVnVez69uhcX9XdonSx1rOVT82cE%3D"}]}'
-      Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699306990&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=q1ErUElUORD%2F7iszVnVez69uhcX9XdonSx1rOVT82cE%3D
-      Nel:
-      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
-      Connection:
-      - keep-alive
-      X-Powered-By:
-      - Express
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Ratelimit-Limit:
-      - '10000'
-      X-Ratelimit-Remaining:
-      - '9999'
-      Date:
-      - Mon, 06 Nov 2023 21:43:10 GMT
-      X-Ratelimit-Reset:
-      - '1699306991'
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '11027'
-      Etag:
-      - W/"2b13-DQLgqlgkjbgI3M7SGqK8Ub1aB6Q"
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"spellcasting-wizard","name":"Spellcasting:
-        Wizard","url":"/api/features/spellcasting-wizard"},{"index":"arcane-recovery","name":"Arcane
-        Recovery","url":"/api/features/arcane-recovery"}],"spellcasting":{"cantrips_known":3,"spell_slots_level_1":2,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":1},"index":"wizard-1","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"arcane-tradition","name":"Arcane
-        Tradition","url":"/api/features/arcane-tradition"}],"spellcasting":{"cantrips_known":3,"spell_slots_level_1":3,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":1},"index":"wizard-2","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[],"spellcasting":{"cantrips_known":3,"spell_slots_level_1":4,"spell_slots_level_2":2,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":2},"index":"wizard-3","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"wizard-ability-score-improvement-1","name":"Ability
-        Score Improvement","url":"/api/features/wizard-ability-score-improvement-1"}],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":2},"index":"wizard-4","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":2,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":3},"index":"wizard-5","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":3},"index":"wizard-6","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":1,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":4},"index":"wizard-7","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"wizard-ability-score-improvement-2","name":"Ability
-        Score Improvement","url":"/api/features/wizard-ability-score-improvement-2"}],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":2,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":4},"index":"wizard-8","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"spellcasting":{"cantrips_known":4,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":1,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":5},"index":"wizard-9","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/9"},{"level":10,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":5},"index":"wizard-10","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":6},"index":"wizard-11","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/11"},{"level":12,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"wizard-ability-score-improvement-3","name":"Ability
-        Score Improvement","url":"/api/features/wizard-ability-score-improvement-3"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":6},"index":"wizard-12","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":7},"index":"wizard-13","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":7},"index":"wizard-14","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":8},"index":"wizard-15","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/15"},{"level":16,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"wizard-ability-score-improvement-4","name":"Ability
-        Score Improvement","url":"/api/features/wizard-ability-score-improvement-4"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":0},"class_specific":{"arcane_recovery_levels":8},"index":"wizard-16","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"arcane_recovery_levels":9},"index":"wizard-17","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"spell-mastery","name":"Spell
-        Mastery","url":"/api/features/spell-mastery"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":3,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"arcane_recovery_levels":9},"index":"wizard-18","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/18"},{"level":19,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"wizard-ability-score-improvement-5","name":"Ability
-        Score Improvement","url":"/api/features/wizard-ability-score-improvement-5"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":3,"spell_slots_level_6":2,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"arcane_recovery_levels":10},"index":"wizard-19","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"signature-spell","name":"Signature
-        Spell","url":"/api/features/signature-spell"}],"spellcasting":{"cantrips_known":5,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":3,"spell_slots_level_6":2,"spell_slots_level_7":2,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"arcane_recovery_levels":10},"index":"wizard-20","class":{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"},"url":"/api/classes/wizard/levels/20"}]'
-  recorded_at: Mon, 06 Nov 2023 21:43:10 GMT
+      string: '[{"level":1,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"spellcasting-bard","name":"Spellcasting:
+        Bard","url":"/api/features/spellcasting-bard"},{"index":"bardic-inspiration-d6","name":"Bardic
+        Inspiration (d6)","url":"/api/features/bardic-inspiration-d6"}],"spellcasting":{"cantrips_known":2,"spells_known":4,"spell_slots_level_1":2,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":6,"song_of_rest_die":0,"magical_secrets_max_5":0,"magical_secrets_max_7":0,"magical_secrets_max_9":0},"index":"bard-1","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/1"},{"level":2,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"jack-of-all-trades","name":"Jack
+        of All Trades","url":"/api/features/jack-of-all-trades"},{"index":"song-of-rest-d6","name":"Song
+        of Rest (d6)","url":"/api/features/song-of-rest-d6"}],"spellcasting":{"cantrips_known":2,"spells_known":5,"spell_slots_level_1":3,"spell_slots_level_2":0,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":6,"song_of_rest_die":6,"magical_secrets_max_5":0,"magical_secrets_max_7":0,"magical_secrets_max_9":0},"index":"bard-2","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/2"},{"level":3,"ability_score_bonuses":0,"prof_bonus":2,"features":[{"index":"bard-expertise-1","name":"Expertise","url":"/api/features/bard-expertise-1"},{"index":"bard-college","name":"Bard
+        College","url":"/api/features/bard-college"}],"spellcasting":{"cantrips_known":2,"spells_known":6,"spell_slots_level_1":4,"spell_slots_level_2":2,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":6,"song_of_rest_die":6,"magical_secrets_max_5":0,"magical_secrets_max_7":0,"magical_secrets_max_9":0},"index":"bard-3","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/3"},{"level":4,"ability_score_bonuses":1,"prof_bonus":2,"features":[{"index":"bard-ability-score-improvement-1","name":"Ability
+        Score Improvement","url":"/api/features/bard-ability-score-improvement-1"}],"spellcasting":{"cantrips_known":3,"spells_known":7,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":0,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":6,"song_of_rest_die":6,"magical_secrets_max_5":0,"magical_secrets_max_7":0,"magical_secrets_max_9":0},"index":"bard-4","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/4"},{"level":5,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"bardic-inspiration-d8","name":"Bardic
+        Inspiration (d8)","url":"/api/features/bardic-inspiration-d8"},{"index":"font-of-inspiration","name":"Font
+        of Inspiration","url":"/api/features/font-of-inspiration"}],"spellcasting":{"cantrips_known":3,"spells_known":8,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":2,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":8,"song_of_rest_die":6,"magical_secrets_max_5":0,"magical_secrets_max_7":0,"magical_secrets_max_9":0},"index":"bard-5","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/5"},{"level":6,"ability_score_bonuses":1,"prof_bonus":3,"features":[{"index":"countercharm","name":"Countercharm","url":"/api/features/countercharm"}],"spellcasting":{"cantrips_known":3,"spells_known":9,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":0,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":8,"song_of_rest_die":6,"magical_secrets_max_5":0,"magical_secrets_max_7":0,"magical_secrets_max_9":0},"index":"bard-6","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/6"},{"level":7,"ability_score_bonuses":1,"prof_bonus":3,"features":[],"spellcasting":{"cantrips_known":3,"spells_known":10,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":1,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":8,"song_of_rest_die":6,"magical_secrets_max_5":0,"magical_secrets_max_7":0,"magical_secrets_max_9":0},"index":"bard-7","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/7"},{"level":8,"ability_score_bonuses":2,"prof_bonus":3,"features":[{"index":"bard-ability-score-improvement-2","name":"Ability
+        Score Improvement","url":"/api/features/bard-ability-score-improvement-2"}],"spellcasting":{"cantrips_known":3,"spells_known":11,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":2,"spell_slots_level_5":0,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":8,"song_of_rest_die":6,"magical_secrets_max_5":0,"magical_secrets_max_7":0,"magical_secrets_max_9":0},"index":"bard-8","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/8"},{"level":9,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"song-of-rest-d8","name":"Song
+        of Rest (d8)","url":"/api/features/song-of-rest-d8"}],"spellcasting":{"cantrips_known":3,"spells_known":12,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":1,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":8,"song_of_rest_die":8,"magical_secrets_max_5":0,"magical_secrets_max_7":0,"magical_secrets_max_9":0},"index":"bard-9","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/9"},{"level":10,"ability_score_bonuses":2,"prof_bonus":4,"features":[{"index":"bard-expertise-2","name":"Expertise","url":"/api/features/bard-expertise-2"},{"index":"bardic-inspiration-d10","name":"Bardic
+        Inspiration (d10)","url":"/api/features/bardic-inspiration-d10"},{"index":"magical-secrets-1","name":"Magical
+        Secrets","url":"/api/features/magical-secrets-1"}],"spellcasting":{"cantrips_known":4,"spells_known":14,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":0,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":10,"song_of_rest_die":8,"magical_secrets_max_5":2,"magical_secrets_max_7":0,"magical_secrets_max_9":0},"index":"bard-10","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/10"},{"level":11,"ability_score_bonuses":2,"prof_bonus":4,"features":[],"spellcasting":{"cantrips_known":4,"spells_known":15,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":10,"song_of_rest_die":8,"magical_secrets_max_5":2,"magical_secrets_max_7":0,"magical_secrets_max_9":0},"index":"bard-11","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/11"},{"level":12,"ability_score_bonuses":3,"prof_bonus":4,"features":[{"index":"bard-ability-score-improvement-3","name":"Ability
+        Score Improvement","url":"/api/features/bard-ability-score-improvement-3"}],"spellcasting":{"cantrips_known":4,"spells_known":15,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":0,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":10,"song_of_rest_die":8,"magical_secrets_max_5":2,"magical_secrets_max_7":0,"magical_secrets_max_9":0},"index":"bard-12","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/12"},{"level":13,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"song-of-rest-d10","name":"Song
+        of Rest (d10)","url":"/api/features/song-of-rest-d10"}],"spellcasting":{"cantrips_known":4,"spells_known":16,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":10,"song_of_rest_die":10,"magical_secrets_max_5":2,"magical_secrets_max_7":0,"magical_secrets_max_9":0},"index":"bard-13","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/13"},{"level":14,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"magical-secrets-2","name":"Magical
+        Secrets","url":"/api/features/magical-secrets-2"}],"spellcasting":{"cantrips_known":4,"spells_known":18,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":0,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":10,"song_of_rest_die":10,"magical_secrets_max_5":2,"magical_secrets_max_7":2,"magical_secrets_max_9":0},"index":"bard-14","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/14"},{"level":15,"ability_score_bonuses":3,"prof_bonus":5,"features":[{"index":"bardic-inspiration-d12","name":"Bardic
+        Inspiration (d12)","url":"/api/features/bardic-inspiration-d12"}],"spellcasting":{"cantrips_known":4,"spells_known":19,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":12,"song_of_rest_die":10,"magical_secrets_max_5":2,"magical_secrets_max_7":2,"magical_secrets_max_9":0},"index":"bard-15","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/15"},{"level":16,"ability_score_bonuses":4,"prof_bonus":5,"features":[{"index":"bard-ability-score-improvement-4","name":"Ability
+        Score Improvement","url":"/api/features/bard-ability-score-improvement-4"}],"spellcasting":{"cantrips_known":4,"spells_known":19,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":0},"class_specific":{"bardic_inspiration_die":12,"song_of_rest_die":10,"magical_secrets_max_5":2,"magical_secrets_max_7":2,"magical_secrets_max_9":0},"index":"bard-16","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/16"},{"level":17,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"song-of-rest-d12","name":"Song
+        of Rest (d12)","url":"/api/features/song-of-rest-d12"}],"spellcasting":{"cantrips_known":4,"spells_known":20,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":2,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"bardic_inspiration_die":12,"song_of_rest_die":12,"magical_secrets_max_5":2,"magical_secrets_max_7":2,"magical_secrets_max_9":0},"index":"bard-17","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/17"},{"level":18,"ability_score_bonuses":4,"prof_bonus":6,"features":[{"index":"magical-secrets-3","name":"Magical
+        Secrets","url":"/api/features/magical-secrets-3"}],"spellcasting":{"cantrips_known":4,"spells_known":22,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":3,"spell_slots_level_6":1,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"bardic_inspiration_die":12,"song_of_rest_die":12,"magical_secrets_max_5":2,"magical_secrets_max_7":2,"magical_secrets_max_9":2},"index":"bard-18","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/18"},{"level":19,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"bard-ability-score-improvement-5","name":"Ability
+        Score Improvement","url":"/api/features/bard-ability-score-improvement-5"}],"spellcasting":{"cantrips_known":4,"spells_known":22,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":3,"spell_slots_level_6":2,"spell_slots_level_7":1,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"bardic_inspiration_die":12,"song_of_rest_die":12,"magical_secrets_max_5":2,"magical_secrets_max_7":2,"magical_secrets_max_9":2},"index":"bard-19","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/19"},{"level":20,"ability_score_bonuses":5,"prof_bonus":6,"features":[{"index":"superior-inspiration","name":"Superior
+        Inspiration","url":"/api/features/superior-inspiration"}],"spellcasting":{"cantrips_known":4,"spells_known":22,"spell_slots_level_1":4,"spell_slots_level_2":3,"spell_slots_level_3":3,"spell_slots_level_4":3,"spell_slots_level_5":3,"spell_slots_level_6":2,"spell_slots_level_7":2,"spell_slots_level_8":1,"spell_slots_level_9":1},"class_specific":{"bardic_inspiration_die":12,"song_of_rest_die":12,"magical_secrets_max_5":2,"magical_secrets_max_7":2,"magical_secrets_max_9":2},"index":"bard-20","class":{"index":"bard","name":"Bard","url":"/api/classes/bard"},"url":"/api/classes/bard/levels/20"}]'
+  recorded_at: Tue, 07 Nov 2023 02:05:03 GMT
 - request:
     method: get
     uri: https://www.dnd5eapi.co/api/spells/fireball
@@ -1080,12 +1076,6 @@ http_interactions:
     headers:
       Server:
       - Cowboy
-      Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699306990&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=q1ErUElUORD%2F7iszVnVez69uhcX9XdonSx1rOVT82cE%3D"}]}'
-      Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699306990&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=q1ErUElUORD%2F7iszVnVez69uhcX9XdonSx1rOVT82cE%3D
-      Nel:
-      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
       Connection:
       - keep-alive
       X-Powered-By:
@@ -1097,9 +1087,9 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Mon, 06 Nov 2023 21:43:10 GMT
+      - Tue, 07 Nov 2023 02:05:04 GMT
       X-Ratelimit-Reset:
-      - '1699306991'
+      - '1699322706'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -1121,7 +1111,7 @@ http_interactions:
         by 1d6 for each slot level above 3rd."],"range":"150 feet","components":["V","S","M"],"material":"A
         tiny ball of bat guano and sulfur.","ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
         action","level":3,"damage":{"damage_type":{"index":"fire","name":"Fire","url":"/api/damage-types/fire"},"damage_at_slot_level":{"3":"8d6","4":"9d6","5":"10d6","6":"11d6","7":"12d6","8":"13d6","9":"14d6"}},"dc":{"dc_type":{"index":"dex","name":"DEX","url":"/api/ability-scores/dex"},"dc_success":"half"},"area_of_effect":{"type":"sphere","size":20},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"sorcerer","name":"Sorcerer","url":"/api/classes/sorcerer"},{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"fiend","name":"Fiend","url":"/api/subclasses/fiend"}],"url":"/api/spells/fireball"}'
-  recorded_at: Mon, 06 Nov 2023 21:43:10 GMT
+  recorded_at: Tue, 07 Nov 2023 02:05:04 GMT
 - request:
     method: get
     uri: https://www.dnd5eapi.co/api/spells/scorching-ray
@@ -1143,9 +1133,9 @@ http_interactions:
       Server:
       - Cowboy
       Report-To:
-      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699306990&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=q1ErUElUORD%2F7iszVnVez69uhcX9XdonSx1rOVT82cE%3D"}]}'
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699322704&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=Qihfc1%2B1JH90qSIcqtWYKf2XDz3HDk23Z8mcT0Ecitw%3D"}]}'
       Reporting-Endpoints:
-      - heroku-nel=https://nel.heroku.com/reports?ts=1699306990&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=q1ErUElUORD%2F7iszVnVez69uhcX9XdonSx1rOVT82cE%3D
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699322704&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=Qihfc1%2B1JH90qSIcqtWYKf2XDz3HDk23Z8mcT0Ecitw%3D
       Nel:
       - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
       Connection:
@@ -1159,9 +1149,9 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Mon, 06 Nov 2023 21:43:10 GMT
+      - Tue, 07 Nov 2023 02:05:04 GMT
       X-Ratelimit-Reset:
-      - '1699306992'
+      - '1699322706'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -1179,7 +1169,7 @@ http_interactions:
         spell using a spell slot of 3rd level or higher, you create one additional
         ray for each slot level above 2nd."],"range":"120 feet","components":["V","S"],"ritual":false,"duration":"Instantaneous","concentration":false,"casting_time":"1
         action","level":2,"damage":{"damage_type":{"index":"fire","name":"Fire","url":"/api/damage-types/fire"},"damage_at_slot_level":{"2":"2d6"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"sorcerer","name":"Sorcerer","url":"/api/classes/sorcerer"},{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"},{"index":"fiend","name":"Fiend","url":"/api/subclasses/fiend"}],"url":"/api/spells/scorching-ray"}'
-  recorded_at: Mon, 06 Nov 2023 21:43:10 GMT
+  recorded_at: Tue, 07 Nov 2023 02:05:04 GMT
 - request:
     method: get
     uri: https://www.dnd5eapi.co/api/spells/magic-missile
@@ -1211,9 +1201,9 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '9999'
       Date:
-      - Mon, 06 Nov 2023 21:43:11 GMT
+      - Tue, 07 Nov 2023 02:05:04 GMT
       X-Ratelimit-Reset:
-      - '1699306992'
+      - '1699322706'
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -1234,5 +1224,93 @@ http_interactions:
         action","level":1,"damage":{"damage_type":{"index":"force","name":"Force","url":"/api/damage-types/force"},"damage_at_slot_level":{"1":"1d4
         + 1","2":"1d4 + 1","3":"1d4 + 1","4":"1d4 + 1","5":"1d4 + 1","6":"1d4 + 1","7":"1d4
         + 1","8":"1d4 + 1","9":"1d4 + 1"}},"school":{"index":"evocation","name":"Evocation","url":"/api/magic-schools/evocation"},"classes":[{"index":"sorcerer","name":"Sorcerer","url":"/api/classes/sorcerer"},{"index":"wizard","name":"Wizard","url":"/api/classes/wizard"}],"subclasses":[{"index":"lore","name":"Lore","url":"/api/subclasses/lore"}],"url":"/api/spells/magic-missile"}'
-  recorded_at: Mon, 06 Nov 2023 21:43:11 GMT
+  recorded_at: Tue, 07 Nov 2023 02:05:04 GMT
+- request:
+    method: get
+    uri: https://www.dnd5eapi.co/api/monsters/adult-black-dragon
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699322705&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=edOaUjvJg2euDq4xrLiHQvLvFZAwlZX2CeQikFlUu0M%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1699322705&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=edOaUjvJg2euDq4xrLiHQvLvFZAwlZX2CeQikFlUu0M%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      Date:
+      - Tue, 07 Nov 2023 02:05:05 GMT
+      X-Ratelimit-Reset:
+      - '1699322707'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4921'
+      Etag:
+      - W/"1339-/vBK8nfTUDekZyRRUxf77yQsKOY"
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"index":"adult-black-dragon","name":"Adult Black Dragon","size":"Huge","type":"dragon","alignment":"chaotic
+        evil","armor_class":[{"type":"natural","value":19}],"hit_points":195,"hit_dice":"17d12","hit_points_roll":"17d12+85","speed":{"walk":"40
+        ft.","fly":"80 ft.","swim":"40 ft."},"strength":23,"dexterity":14,"constitution":21,"intelligence":14,"wisdom":13,"charisma":17,"proficiencies":[{"value":7,"proficiency":{"index":"saving-throw-dex","name":"Saving
+        Throw: DEX","url":"/api/proficiencies/saving-throw-dex"}},{"value":10,"proficiency":{"index":"saving-throw-con","name":"Saving
+        Throw: CON","url":"/api/proficiencies/saving-throw-con"}},{"value":6,"proficiency":{"index":"saving-throw-wis","name":"Saving
+        Throw: WIS","url":"/api/proficiencies/saving-throw-wis"}},{"value":8,"proficiency":{"index":"saving-throw-cha","name":"Saving
+        Throw: CHA","url":"/api/proficiencies/saving-throw-cha"}},{"value":11,"proficiency":{"index":"skill-perception","name":"Skill:
+        Perception","url":"/api/proficiencies/skill-perception"}},{"value":7,"proficiency":{"index":"skill-stealth","name":"Skill:
+        Stealth","url":"/api/proficiencies/skill-stealth"}}],"damage_vulnerabilities":[],"damage_resistances":[],"damage_immunities":["acid"],"condition_immunities":[],"senses":{"blindsight":"60
+        ft.","darkvision":"120 ft.","passive_perception":21},"languages":"Common,
+        Draconic","challenge_rating":14,"proficiency_bonus":5,"xp":11500,"special_abilities":[{"name":"Amphibious","desc":"The
+        dragon can breathe air and water."},{"name":"Legendary Resistance","desc":"If
+        the dragon fails a saving throw, it can choose to succeed instead.","usage":{"type":"per
+        day","times":3,"rest_types":[]}}],"actions":[{"name":"Multiattack","multiattack_type":"actions","desc":"The
+        dragon can use its Frightful Presence. It then makes three attacks: one with
+        its bite and two with its claws.","actions":[{"action_name":"Frightful Presence","count":1,"type":"ability"},{"action_name":"Bite","count":1,"type":"melee"},{"action_name":"Claw","count":2,"type":"melee"}]},{"name":"Bite","desc":"Melee
+        Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing
+        damage plus 4 (1d8) acid damage.","attack_bonus":11,"damage":[{"damage_type":{"index":"piercing","name":"Piercing","url":"/api/damage-types/piercing"},"damage_dice":"2d10+6"},{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_dice":"1d8"}],"actions":[]},{"name":"Claw","desc":"Melee
+        Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing
+        damage.","attack_bonus":11,"damage":[{"damage_type":{"index":"slashing","name":"Slashing","url":"/api/damage-types/slashing"},"damage_dice":"2d6+6"}],"actions":[]},{"name":"Tail","desc":"Melee
+        Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning
+        damage.","attack_bonus":11,"damage":[{"damage_type":{"index":"bludgeoning","name":"Bludgeoning","url":"/api/damage-types/bludgeoning"},"damage_dice":"2d8+6"}],"actions":[]},{"name":"Frightful
+        Presence","desc":"Each creature of the dragon''s choice that is within 120
+        feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw
+        or become frightened for 1 minute. A creature can repeat the saving throw
+        at the end of each of its turns, ending the effect on itself on a success.
+        If a creature''s saving throw is successful or the effect ends for it, the
+        creature is immune to the dragon''s Frightful Presence for the next 24 hours.","dc":{"dc_type":{"index":"wis","name":"WIS","url":"/api/ability-scores/wis"},"dc_value":16,"success_type":"none"},"actions":[]},{"name":"Acid
+        Breath","desc":"The dragon exhales acid in a 60-foot line that is 5 feet wide.
+        Each creature in that line must make a DC 18 Dexterity saving throw, taking
+        54 (12d8) acid damage on a failed save, or half as much damage on a successful
+        one.","usage":{"type":"recharge on roll","dice":"1d6","min_value":5},"dc":{"dc_type":{"index":"dex","name":"DEX","url":"/api/ability-scores/dex"},"dc_value":18,"success_type":"half"},"damage":[{"damage_type":{"index":"acid","name":"Acid","url":"/api/damage-types/acid"},"damage_dice":"12d8"}],"actions":[]}],"legendary_actions":[{"name":"Detect","desc":"The
+        dragon makes a Wisdom (Perception) check."},{"name":"Tail Attack","desc":"The
+        dragon makes a tail attack."},{"name":"Wing Attack (Costs 2 Actions)","desc":"The
+        dragon beats its wings. Each creature within 10 ft. of the dragon must succeed
+        on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage
+        and be knocked prone. The dragon can then fly up to half its flying speed.","dc":{"dc_type":{"index":"dex","name":"DEX","url":"/api/ability-scores/dex"},"dc_value":19,"success_type":"none"},"damage":[{"damage_type":{"index":"bludgeoning","name":"Bludgeoning","url":"/api/damage-types/bludgeoning"},"damage_dice":"2d6+6"}]}],"image":"/api/images/monsters/adult-black-dragon.png","url":"/api/monsters/adult-black-dragon"}'
+  recorded_at: Tue, 07 Nov 2023 02:05:05 GMT
 recorded_with: VCR 6.2.0

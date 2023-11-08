@@ -35,23 +35,28 @@ class Api::V1::EncountersController < ApplicationController
   def parse_players(players_hash)
     active_players = players_hash.select {|p| p[:hit_points] != ""}
     active_players.map.with_index do |player, index|
-      level_info = DndFacade.new.player(player[:class].downcase)
-      player[:id] = index
-      player[:damage_die] = "#{player[:damage_die1]}"+"#{player[:damage_die2]}"
-      player[:prof_bonus] = level_info[player[:level].to_i - 1][:prof_bonus]
-      player[:spells] = [DndFacade.new.spell(index_name(player[:spell1])), DndFacade.new.spell(index_name(player[:spell2])), DndFacade.new.spell(index_name(player[:spell3]))]
+      player_hash = player_permit(player).to_h
+      level_info = DndFacade.new.player(player_hash[:class].downcase)
+      player_hash[:id] = index
+      player_hash[:damage_die] = "#{player_hash[:damage_die1]}"+"#{player_hash[:damage_die2]}"
+      player_hash[:prof_bonus] = level_info[player_hash[:level].to_i - 1][:prof_bonus]
+      player_hash[:spells] = [DndFacade.new.spell(index_name(player_hash[:spell1])), DndFacade.new.spell(index_name(player_hash[:spell2])), DndFacade.new.spell(index_name(player_hash[:spell3]))]
       if level_info[0][:spellcasting]
-        player[:spellcasting] = level_info[player[:level].to_i - 1][:spellcasting]
+        player_hash[:spellcasting] = level_info[player_hash[:level].to_i - 1][:spellcasting]
       end
-      player[:class_specific] = level_info[player[:level].to_i - 1][:class_specific]
-      player[:features] = []
+      player_hash[:class_specific] = level_info[player_hash[:level].to_i - 1][:class_specific]
+      player_hash[:features] = []
       index = 0
-      while index <= (player[:level].to_i - 1)
+      while index <= (player_hash[:level].to_i - 1)
         feat_names = level_info[index][:features].map { |each| each[:name] }
-        player[:features].concat(feat_names)
+        player_hash[:features].concat(feat_names)
         index += 1
       end
-      player
+      player_hash
     end
+  end
+
+  def player_permit(player)
+    player.permit(:class, :level, :strength, :dexterity, :constitution, :wisdom, :charisma, :intelligence, :spell1, :spell2, :spell3, :hit_points, :armor_class, :damage_die1, :damage_die2)
   end
 end
