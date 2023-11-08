@@ -7,7 +7,7 @@ class SimSpell
     @duration = data[:duration]
     @casting_time = data[:casting_time]
     @level = data[:level]
-    @damage = data[:damage][:damage_at_slot_level]
+    @damage = data[:damage][:damage_at_slot_level] if data[:damage]
     @saving_throw = {
       type: data[:dc][:dc_type][:index], 
       dc_success: data[:dc][:dc_success]

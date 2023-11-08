@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Sim do
   it "works", :vcr do
     barbarian = {
-      :class=>"Fighter",
+      :class=>"Barbarian",
       :level=>"5",
       :strength=>"5",
       :dexterity=>"4",
@@ -20,7 +20,7 @@ RSpec.describe Sim do
     }
 
     rogue = {
-      :class=>"Warlock",
+      :class=>"Rogue",
       :level=>"5",
       :strength=>"2",
       :dexterity=>"5",
@@ -32,12 +32,12 @@ RSpec.describe Sim do
       :spell2=>"acid-arrow",
       :spell3=>"acid-arrow",
       :hit_points=>"55",
-      :armor_class=>"17",
+      :armor_class=>"16",
       :damage_die=>"1d6"
     }
 
     monk = {
-      :class=>"Cleric",
+      :class=>"Monk",
       :level=>"5",
       :strength=>"2",
       :dexterity=>"5",
@@ -54,7 +54,7 @@ RSpec.describe Sim do
     }
 
     paladin = { 
-      :class=>"Druid",
+      :class=>"Paladin",
       :level=>"5",
       :strength=>"5",
       :dexterity=>"2",
@@ -71,10 +71,10 @@ RSpec.describe Sim do
     }
 
     wizard = {
-      :class=>"Bard",
+      :class=>"Wizard",
       :level=>"5",
       :strength=>"0",
-      :dexterity=>"4",
+      :dexterity=>"0",
       :constitution=>"3",
       :wisdom=>"2",
       :charisma=>"1",
@@ -83,7 +83,7 @@ RSpec.describe Sim do
       :spell2=>"scorching-ray",
       :spell3=>"magic-missile",
       :hit_points=>"45",
-      :armor_class=>"17",
+      :armor_class=>"15",
       :damage_die=>"2d10"
     }
     data = [barbarian, rogue, monk, paladin, wizard]
@@ -106,18 +106,15 @@ RSpec.describe Sim do
       player
     end
     new_sim = Simulation.create(user_id: 1)
-    # monster_names = DndFacade.new.monsters
-    # monsters = monster_names.map {|m| DndFacade.new.monster(m.index)}
-    # # (1).times do
-    # monsters.each do |monster|
-    #   pcs = players.map {|player| PlayerCharacter.make_character(player)}
-    #   # monster = DndFacade.new.monster("tarrasque")
-    #   enemies = [monster]
-    #   sim_runner = Sim.new(new_sim.id)
-    #   sim_runner.roll_initiative(pcs, enemies)
-    # end
+    monster_names = DndFacade.new.monsters
+    (1).times do
+      pcs = players.map {|player| PlayerCharacter.make_character(player)}
+      monster = DndFacade.new.monster("air-elemental")
+      enemies = [monster]
+      sim_runner = Sim.new(new_sim.id)
+      sim_runner.roll_initiative(pcs, enemies)
+    end
     
-    # require 'pry'; binding.pry
-    # Result.new(new_sim.id)
+    Result.new(new_sim.id)
   end
 end

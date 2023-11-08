@@ -56,9 +56,6 @@ class SimMonster
       single_attacks = @attacks.select {|attack| attack.name != "Multiattack" && !attack.usage && attack.damage_dice}
       use = [{ attack: single_attacks.max_by {|attack| attack.max_damage}, count: 1 }]
     end
-    # if @name == "Roper"
-    #   require 'pry'; binding.pry
-    # end
     use
   end
 

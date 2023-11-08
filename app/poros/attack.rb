@@ -39,22 +39,38 @@ class Attack
       if roll == "Critical Miss"
         target.missed_me
       elsif roll == "Critical Hit"
-        creature.damage_output(target.take_damage(roll_crit))
+        if creature.name == "Paladin"
+          creature.damage_output(target.take_damage(roll_crit), "crit")
+        else
+          creature.damage_output(target.take_damage(roll_crit))
+        end
       elsif roll < target.armor_class
-        target.missed_me
+          target.missed_me
       else
-        creature.damage_output(target.take_damage(roll_damage))
+        if creature.name == "Paladin"
+          creature.damage_output(target.take_damage(roll_damage), "norm")
+        else
+          creature.damage_output(target.take_damage(roll_damage))
+        end
       end
     else
       roll = (roll_die + target.saving_throw(@saving_throw[:type]))
       if roll >= @saving_throw[:threshold]
         if @saving_throw[:success] == "half"
-          creature.damage_output(target.take_damage(roll_damage / 2))
+          if creature.name == "Paladin"
+            creature.damage_output(target.take_damage(roll_damage / 2, "half"))
+          else
+            creature.damage_output(target.take_damage(roll_damage / 2))
+          end
         else
-          target.missed_me
+        target.missed_me
         end
       else
-        creature.damage_output(target.take_damage(roll_damage))
+        if creature.name == "Paladin"
+          creature.damage_output(target.take_damage(roll_damage, "norm"))
+        else
+          creature.damage_output(target.take_damage(roll_damage))
+        end
       end
     end
   end
