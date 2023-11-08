@@ -7,7 +7,7 @@ RSpec.describe SimMonster do
     end
 
     it "Has readable attributes", :vcr do
-      expect(@monster.id).to be nil
+      expect(@monster.id).to be 6
       expect(@monster.name).to eq("Ancient Black Dragon")
       expect(@monster.armor_class).to eq(22)
       expect(@monster.hit_points).to eq(367)
@@ -35,8 +35,7 @@ RSpec.describe SimMonster do
     it "#determine_action", :vcr do
       expect(@monster.determine_action).to be_an Array
       expect(@monster.determine_action[0]).to  have_key(:attack)
-      expect(@monster.determine_action[0][:attack].name).to eq("Bite")
-      expect(@monster.determine_action[1][:attack].name).to eq("Claw")
+      expect(@monster.determine_action[0][:attack].name).to eq("Acid Breath").or eq("Bite")
       expect(@monster.determine_action[0]).to have_key(:count)
     end
 

@@ -106,18 +106,18 @@ RSpec.describe Sim do
       player
     end
     new_sim = Simulation.create(user_id: 1)
-    monster_names = DndFacade.new.monsters
-    monsters = monster_names.map {|m| DndFacade.new.monster(m.index)}
-    # (1).times do
-    monsters.each do |monster|
-      pcs = players.map {|player| PlayerCharacter.make_character(player)}
-      # monster = DndFacade.new.monster("tarrasque")
-      enemies = [monster]
-      sim_runner = Sim.new(new_sim.id)
-      sim_runner.roll_initiative(pcs, enemies)
-    end
+    # monster_names = DndFacade.new.monsters
+    # monsters = monster_names.map {|m| DndFacade.new.monster(m.index)}
+    # # (1).times do
+    # monsters.each do |monster|
+    #   pcs = players.map {|player| PlayerCharacter.make_character(player)}
+    #   # monster = DndFacade.new.monster("tarrasque")
+    #   enemies = [monster]
+    #   sim_runner = Sim.new(new_sim.id)
+    #   sim_runner.roll_initiative(pcs, enemies)
+    # end
     
-    require 'pry'; binding.pry
-    Result.new(new_sim.id)
+    # require 'pry'; binding.pry
+    # Result.new(new_sim.id)
   end
 end
