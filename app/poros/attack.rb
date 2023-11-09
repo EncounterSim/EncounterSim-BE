@@ -58,7 +58,7 @@ class Attack
       if roll >= @saving_throw[:threshold]
         if @saving_throw[:success] == "half"
           if creature.name == "Paladin"
-            creature.damage_output(target.take_damage(roll_damage / 2, "half"))
+            creature.damage_output(target.take_damage(roll_damage / 2), "half")
           else
             creature.damage_output(target.take_damage(roll_damage / 2))
           end
@@ -67,7 +67,7 @@ class Attack
         end
       else
         if creature.name == "Paladin"
-          creature.damage_output(target.take_damage(roll_damage, "norm"))
+          creature.damage_output(target.take_damage(roll_damage), "norm")
         else
           creature.damage_output(target.take_damage(roll_damage))
         end

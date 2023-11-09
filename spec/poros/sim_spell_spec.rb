@@ -2,12 +2,17 @@ require 'rails_helper'
 
 RSpec.describe Attack do
   before :each do
-    attack_info = {name: "Melee Attack",
-                   attack_bonus: 8,
-                   damage: [{damage_dice: "2d6+5"}, {damage_dice: "1d8"}]}
-    @attack = Attack.new(attack_info)
+    spell_info = {name: "Spell Attack",
+                  duration: "instant",
+                  casting_time: "1 action",
+                  level: 1,
+                  damage: {"damage_at_slot_level": {"1": "8d6", "2": "8d6"}},
+                  dc: {"dc_type": {"index": "dex"}, "dc_success": "half"},
+                  area_of_effect: {"type": "sphere", "size": 20}}
+    @spell = SimSpell.new(spell_info)
     paladin_data = { 
       :class=>"Paladin",
+      :prof_bonus=>3,
       :level=>"5",
       :strength=>"5",
       :dexterity=>"2",
@@ -18,6 +23,7 @@ RSpec.describe Attack do
       :spell1=>"branding-smite",
       :spell2=>"branding-smite",
       :spell3=>"branding-smite",
+      :features=>["this"],
       :spellcasting=>{
         "spell_slots_level_1": 4,
         "spell_slots_level_2": 2,
@@ -39,7 +45,7 @@ RSpec.describe Attack do
       intelligence: 13,
       wisdom: 10,
       charisma: 15,
-      proficiencies: "data[:proficiencies]",
+      proficiencies: [{proficiency: {index: "con"}, value: 6}],
       proficiency_bonus: 8,
       special_abilities: "data[:special_abilities]",
       actions: [{
@@ -59,31 +65,19 @@ RSpec.describe Attack do
     @monster = SimMonster.new(monster_data)
   end
 
-  it "has readable attributes" do
-    expect(@attack).to be_an Attack
-    expect(@attack.name).to be_a String
-    expect(@attack.hit_bonus).to be_a Integer
-    expect(@attack.damage_dice).to be_an Array
-  end
-
-  it "#max_damage" do
-    expect(@attack.max_damage).to eq(25)
-  end
-
   it "#attack with saving throw" do
-    attack_info1 = {name: "Save dc",
-                    dc: {dc_type: {index: "dex"}, dc_value: 15, success_type: "half"},
-                    damage: [{damage_dice: "8d6"}]}
-    save = Attack.new(attack_info1)
-    expect(save.attack(@paladin, @monster)).to be_an Integer
+    expect(@spell.attack(@monster, @paladin)).to be_an Integer
   end
-  
-  it "#aoe" do
-    attack_info1 = {name: "AOE",
-                    dc: {dc_type: {index: "dex"}, dc_value: 15, success_type: "half"},
-                    damage: [{damage_dice: "8d6"}]}
-    save = Attack.new(attack_info1)
-    expect(save.aoe([@paladin], @monster)).to be_an Array
+
+  it "#attack with roll to hit" do
+    spell_info = {name: "Spell Attack",
+    duration: "instant",
+    casting_time: "1 action",
+    level: 1,
+    damage: {"damage_at_slot_level": {"1": "8d6", "2": "8d6"}}}
+
+    spell = SimSpell.new(spell_info)
+
+    expect(spell.attack(@monster, @paladin)).to be_an Integer
   end
-  
 end
