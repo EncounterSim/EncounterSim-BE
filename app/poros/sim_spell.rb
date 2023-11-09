@@ -37,22 +37,38 @@ class SimSpell
       if roll == "Critical Miss"
         target.missed_me
       elsif roll == "Critical Hit"
-        creature.damage_output(target.take_damage(roll_crit(level_cast)))
+        if creature.name == "Paladin"
+          creature.damage_output(target.take_damage(roll_crit(level_cast)), "crit")
+        else
+          creature.damage_output(target.take_damage(roll_crit(level_cast)))
+        end
       elsif roll < target.armor_class
         target.missed_me
       else
-        creature.damage_output(target.take_damage(roll_damage(level_cast)))
+        if creature.name == "Paladin"
+          creature.damage_output(target.take_damage(roll_damage(level_cast)), "norm")
+        else
+          creature.damage_output(target.take_damage(roll_damage(level_cast)))
+        end
       end
     else
       roll = (roll_die + target.saving_throw(@saving_throw[:type]))
       if roll >= creature.spell_save_dc
         if @saving_throw[:dc_success] == "half"
-          creature.damage_output(target.take_damage(roll_damage(level_cast) / 2))
+          if creature.name == "Paladin"
+            creature.damage_output(target.take_damage(roll_damage(level_cast) / 2), "half")
+          else
+            creature.damage_output(target.take_damage(roll_damage(level_cast) / 2))
+          end
         else
           target.missed_me
         end
       else
-        creature.damage_output(target.take_damage(roll_damage(level_cast)))
+        if creature.name == "Paladin"
+          creature.damage_output(target.take_damage(roll_damage(level_cast)), "norm")
+        else
+          creature.damage_output(target.take_damage(roll_damage(level_cast)))
+        end
       end
     end
   end
